@@ -1,7 +1,7 @@
 # Site
-title:          JBlog
+title:          nisoto
 bio:            'Nicolás Soto'
-description:    "Binary Digit."
+description:    "JBlog is a minimal, one column and blue jekyll theme for your blog."
 picture:        'assets/img/profile.png'
 locale:         en_US
 url:            https://nisoto.github.io
