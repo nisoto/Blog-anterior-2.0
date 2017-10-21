@@ -1,22 +1,14 @@
 ---
 layout: page
-title: About the Theme
-tags: [about, Jekyll, theme, JBlog]
+title: Acerca del Blog
+tags: [about, Jekyll, theme, nisoto]
 date: 2016-03-21
 ---
 
-![jekyll Image](http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2015/02/1424055625jekyll.png)
-{: .image-pull-right}
+## ¡Bienvenido a mi blog!
 
-<center><b>JBlog</b> is a simple jekyll theme.</center>
+Mi nombre es Nicolás Soto y soy titulado de Ingeniería Civil en Computación con mención en Informática en la Universidad Tecnológica Metropolitana (UTEM).
 
-## About
+El propósito de este Blog es proporcionarte las herramientas básicas y necesarias para que puedas desempeñarte como programador en los distintos lenguajes de programación que he aprendido a lo largo de mi carrera y experiencia laboral (C, C++, Ruby, etc.).
 
-I have used this theme in my own php and ruby blogs. And there are some shortcomings. If something looks extremely ugly and you can't resist to fix it, just send me a PR. I will be grateful.
-
-
-If you like this theme or using it, please give a **star** for motivation.
-
-You want to **use it?**      
-
-[Install JBlog](https://github.com/alperenbozkurt/JBlog){: .btn .btn-info}
+En la pestaña "Blog" encontrarás todo lo que buscas con respecto a los distintos cursos de programación que dicto, y en la pestaña "Proyectos" podrás encontrar aplicaciones implementadas (y explicadas, obviamente). Sin más que agregar, espero que aquí encuentres lo que andas buscando y de antemano te doy las gracias por visitar mi página.
