@@ -1,13 +1,13 @@
 # Site navigation links
 
-- title: Home
+- title: Inicio
   url: /
 
 - title: Blog
   url: /blog/
 
-- title: Projects
+- title: Proyectos
   url: /projects/
 
-- title: About
+- title: Acerca de
   url: /about/
