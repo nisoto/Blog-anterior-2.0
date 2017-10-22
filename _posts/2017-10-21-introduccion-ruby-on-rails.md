@@ -10,12 +10,14 @@ En este primer capítulo del curso verás qué es primero Ruby on Rails, un poco
 
 Es importante destacar que a lo largo del desarrollo de este curso se hará uso de la versión más estable hasta el momento: la 5.0 (si tienes la versión 4.2 no te preocupes ya que también sirve; en cambio, si posees alguna versión más antigua que la 4.2 es recomendable actualizar).
 
-# Primer capítulo
+# Ruby on Rails
 
-Esto es una **prueba**.
+Ruby on Rails (comúnmente abreviado **RoR**) es un Framework de código abierto para desarrollar aplicaciones y servicios web utilizando Ruby como lenguaje de programación.
 
-Es importante destacar que a lo largo de este capítulo.
+Este Framework fue desarrollado por David Heinemeier Hansson (DDH) como parte de su trabajo en **Basecamp**, y fue lanzado en julio de 2004.
 
-## Subtítulo
+Lo más probable es que pienses qué tiene de especial este Framework si es tan joven, la respuesta es simple: grandes empresas y/o proyectos utilizan esta tecnología (Basecamp como se dijo anteriormente, Github, Airbnb, Twitter, etc.) por lo que a pesar de no tener más de 20 años de vida, ha cambiado y evolucionado mucho en este corto periodo de tiempo.
 
-Hola, esto es una prueba 2.
+# Filosofía
+
+La filosofía de Ruby on Rails se basa en 2 aspectos muy importantes:
