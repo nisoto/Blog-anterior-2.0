@@ -6,12 +6,12 @@ excerpt: "Primer capítulo del curso de Ruby on Rails 5."
 tags: [ruby, ruby-on-rails]
 ---
 
-**Primer capítulo**
-===
+# Primer capítulo
+
 Esto es una **prueba**.
 
-Es importante destacar que a lo largo.
+Es importante destacar que a lo largo de este capítulo.
 
-Subtítulo
----
+## Subtítulo
+
 Hola, esto es una prueba.
