@@ -7,6 +7,7 @@ tags: [ruby, ruby-on-rails]
 ---
 
 # Primer capítulo
+-----------------
 
 Esto es una **prueba**.
 
@@ -14,4 +15,4 @@ Es importante destacar que a lo largo de este capítulo.
 
 ## Subtítulo
 
-Hola, esto es una prueba.
+Hola, esto es una prueba 2.
