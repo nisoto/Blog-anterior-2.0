@@ -22,13 +22,13 @@ Lo más probable es que pienses qué tiene de especial este Framework si es tan 
 
 La filosofía de Ruby on Rails se basa en 2 aspectos muy importantes:
 
-1. **Don't Repeat Yourself (DRY)**
+**1. Don't Repeat Yourself (DRY)**
 
 Significa que no deberíamos repetir código, configuración o en otros casos hasta la documentación.
 
 Un claro ejemplo sería que normalmente en una aplicación de Rails definimos la estructura (o configuración) de la base de datos en un solo lugar, y no en archivos externos y/o varios archivos como ocurre con otros Frameworks, logrando así ahorrar tiempo, trabajo y errores (ya que si queremos modificar algo solo debemos recurrir a dicho archivo y corregirlo).
 
-2. **Convention over configuration**
+**2. Convention over configuration**
 
 Significa que está construido sobre convenciones en lugar de configuraciones, es decir, hacer lo que nosotros podríamos pensar que hace.
 
