@@ -43,6 +43,7 @@ MVC consta de 3 capas, las cuales se detallan a continuación:
 * **Model:** se encarga de encapsular los datos y la lógica de negocios de la aplicación (tiene una constante comunicación con la base de datos).
 * **View:** nos ayuda a construir las vistas (o interfaces), las cuales estarán en constante interacción con el cliente.
 * **Controller:** se encarga de interpretar las entradas o peticiones de los clientes y también de responderlas (comunicándose ya sea con la capa Model o la capa View, dependiendo de lo que solicite el usuario).
+
 La imagen que verás a continuación explica de una manera sencilla todo lo anteriormente explicado:
 
 ![MVC]({{ site.baseurl }}/assets/img/MVC.jpg)
