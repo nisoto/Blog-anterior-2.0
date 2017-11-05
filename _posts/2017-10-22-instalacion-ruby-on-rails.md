@@ -19,6 +19,27 @@ curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 sudo apt-get install -y nodejs
 {% endhighlight %}
 
+Por último, instalamos la gema de Rails:
+
+{% highlight ca65 %}
+gem install rails -v 5.0.1
+{% endhighlight %}
+
+Si instalaste Ruby mediante `rbenv` deberás ejecutar el siguiente comando una vez que se haya completado el proceso de instalación de la gema de rails:
+
+{% highlight ca65 %}
+rbenv rehash
+{% endhighlight %}
+
+Para corroborar que la instalación se haya realizado de forma exitosa, ejecuta el siguiente comando:
+
+{% highlight ca65 %}
+rails -v
+# Rails 5.0.1
+{% endhighlight %}
+
+# Instalación de un gestor de bases de datos
+
+Rails por defecto utiliza sqlite3 como gestor de bases de datos, por lo que lo más probable es que quieras utilizar algún gestor más robusto como MySQL o PostgreSQL. En este apartado instalaremos y configuraremos PostgreSQL:
+
 [Capítulo Anterior](https://nisoto.github.io/introduccion-ruby-on-rails/){: .btn .btn-success}
-
-
