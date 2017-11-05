@@ -14,6 +14,11 @@ Es importante mencionar que antes de instalar Ruby on Rails en tu computadora, p
 
 Lo primero que debemos hacer es instalar el lenguaje Ruby (más arriba, o dentro de mi blog, encontrarás el enlace al post). Una vez que tengas instalado Ruby de manera correcta, el siguiente paso es instalar NodeJS, el cual es muy importante ya que nos permitirá utilizar CoffeeScript y Asset Pipeline (más adelante veremos esos términos así que no te preocupes si no entiendes por el momento):
 
+{% highlight ca65 %}
+curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+sudo apt-get install -y nodejs
+{% endhighlight %}
+
 [Capítulo Anterior](https://nisoto.github.io/introduccion-ruby-on-rails/){: .btn .btn-success}
 
 
