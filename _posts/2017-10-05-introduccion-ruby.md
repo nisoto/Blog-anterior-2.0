@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Introducción al lenguaje Ruby"
-date: 2017-11-04
+date: 2017-10-05
 excerpt: "Primer capítulo del curso de Ruby"
 tags: [ruby]
 ---
