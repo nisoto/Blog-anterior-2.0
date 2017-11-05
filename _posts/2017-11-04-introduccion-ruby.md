@@ -1,8 +1,9 @@
 ---
-layout: page
-title: Introducción al lenguaje Ruby
+layout: post
+title: "Introducción al lenguaje Ruby"
+date: 2017-11-04
+excerpt: "Primer capítulo del curso de Ruby"
 tags: [ruby]
-date: 2016-03-21
 ---
 
 Hola.
