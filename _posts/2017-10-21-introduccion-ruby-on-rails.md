@@ -50,4 +50,4 @@ La imagen que verás a continuación explica de una manera sencilla todo lo ante
 
 Si quieres saber más acerca del lenguaje Ruby, te recomiendo hacer clic [aquí](https://nisoto.github.io/introduccion-ruby/).
 
-<center>[Siguiente Capítulo](https://nisoto.github.io/instalacion-ruby-on-rails/){: .btn .btn-success}</center>
+[Siguiente Capítulo](https://nisoto.github.io/instalacion-ruby-on-rails/){: .btn .btn-success}
