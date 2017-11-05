@@ -47,3 +47,5 @@ MVC consta de 3 capas, las cuales se detallan a continuación:
 La imagen que verás a continuación explica de una manera sencilla todo lo anteriormente explicado:
 
 ![MVC]({{ site.baseurl }}/assets/img/MVC.jpg)
+
+Si quieres saber más acerca del lenguaje Ruby, te recomiendo hacer clic [aquí](https://nisoto.github.io/introduccion-ruby/)
