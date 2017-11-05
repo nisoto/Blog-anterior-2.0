@@ -47,3 +47,11 @@ Cabe destacar que Ruby no sólo es gratuito, también es libre para usarlo, copi
 * Twitter (originalmente)
 
 Ruby es un lenguaje de muy alta demanda en las Start-Ups.
+
+# ¿Por qué Ruby?
+
+* Quieres aumentar tu productividad.
+* Te importa la expresividad.
+* Quieres un lenguaje flexible.
+* No te gusta repetir código (**Don't Repeat Yourself**, lo que en español significa **"No te repitas"**, es decir, escribir menos código y que el mantenimiento sea más práctico).
+* Quieres ser parte de una comunidad activa (Ruby tiene documentación, tutoriales y un largo etc. activos, convirtiendo a dicha comunidad en una de las mejores).
