@@ -51,6 +51,19 @@ Como te habrás dado cuenta, existe un sin fin de métodos para los números, po
 10.methods
 {% endhighlight %}
 
+Puedes escribir cualquier número mientras sea de tipo entero.
+
+# Cadenas
+
+Una cadena o **string** corresponde a un conjunto de caracteres (recuerda que un caracter puede ser una letra, un espacio o incluso un signo). Se inicializan de la siguiente manera:
+
+{% highlight ruby %}
+cadena = "Hola mundo"
+cadena2 = 'Hola mundo'
+{% endhighlight %}
+
+Como pudiste notar, puedes utilizar tanto las comillas dobles como las simples (aunque generalmente se utilizan las comillas dobles).
+
 |     |     |
 |----:|:----|
 | [<](https://nisoto.github.io/variables-ruby/){: .btn .btn-success} | [>](https://nisoto.github.io/){: .btn .btn-success} |
