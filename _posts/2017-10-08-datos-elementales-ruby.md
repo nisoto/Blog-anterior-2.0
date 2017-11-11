@@ -64,6 +64,55 @@ cadena2 = 'Hola mundo'
 
 Como pudiste notar, puedes utilizar tanto las comillas dobles como las simples (aunque generalmente se utilizan las comillas dobles).
 
+Antes de continuar, debes tener claro que una variable es un identificador que se le asigna a un objeto. En los ejemplos anteriores, la cadena es un objeto de la clase String, por lo tanto, contamos con los distintos métodos existentes para dicha clase (los cuales se detallan más adelante).
+
+A la hora de manipular cadenas, por lo general querrás tener variables que incluyan el resultado de una operación. Para ello existen 2 formas:
+
+## Concatenación
+
+Veamos el siguiente ejemplo:
+
+{% highlight ruby %}
+nombre = "Nicolas"
+puts "Hola " + nombre
+{% endhighlight %}
+
+## Interpolación
+
+Tomando el ejemplo anterior:
+
+{% highlight ruby %}
+nombre = "Nicolas"
+puts "Hola #{nombre}"
+{% endhighlight %}
+
+Cabe destacar que lo que está dentro de las llaves se evalúa como **código de Ruby**.
+
+Al igual que los números, las cadenas también son métodos. Veamos algunos de los métodos más utilizados:
+
+{% highlight ruby %}
+# Determinar la cantidad de caracteres de una cadena
+"nicolas".length
+
+# Convertir una cadena a mayúscula
+"nicolas".upcase
+
+# Convertir una cadena a minúscula
+"NICOLAS".downcase
+
+# Convertir la primera letra de una cadena a mayúscula
+"nicolas".capitalize
+{% endhighlight %}
+
+Tal vez te parezca raro que los métodos detallados anteriormente no tengan el respectivo paréntesis al final. Esto se debe a que en Ruby no es obligatorio usar paréntesis, pues solo se recomienda cuando el método recibe parámetros, por ejemplo:
+
+{% highlight ruby %}
+cadena = "Mi primera cadena en Ruby"
+puts cadena.slice(3,7)
+{% endhighlight %}
+
+El método `slice` crea una subcadena, donde el primer parámetro corresponde al inicio de la subcadena (desde donde queremos comenzar) y el segundo parámetro corresponde a la cantidad de caracteres en adelante que queremos mostrar de la cadena.
+
 |     |     |
 |----:|:----|
 | [<](https://nisoto.github.io/variables-ruby/){: .btn .btn-success} | [>](https://nisoto.github.io/){: .btn .btn-success} |
