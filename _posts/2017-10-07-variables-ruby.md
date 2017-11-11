@@ -102,4 +102,4 @@ puts "Hola Mundo"
 
 |     |     |
 |----:|:----|
-| [<](https://nisoto.github.io/instalacion-ruby/){: .btn .btn-success} | [>](https://nisoto.github.io/){: .btn .btn-success} |
+| [<](https://nisoto.github.io/instalacion-ruby/){: .btn .btn-success} | [>](https://nisoto.github.io/datos-elementales-ruby/){: .btn .btn-success} |
