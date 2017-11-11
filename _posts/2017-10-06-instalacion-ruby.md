@@ -22,3 +22,64 @@ Ahora podemos comenzar con la instalación de Ruby, donde tendremos 3 métodos d
 ## Instalación con rbenv
 
 Instalar con rbenv es un proceso muy fácil que consta de sólo 2 pasos: instalar `rbenv` y luego `ruby-build`.
+
+{% highlight ca65 %}
+cd
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+exec $SHELL
+
+git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
+exec $SHELL
+
+rbenv install 2.4.0
+rbenv global 2.4.0
+ruby -v
+{% endhighlight %}
+
+## Instalación con rvm
+
+La instalación con rvm es un poco más sencilla que con `rbenv`:
+
+{% highlight ca65 %}
+sudo apt-get install libgdbm-dev libncurses5-dev automake libtool bison libffi-dev
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+curl -sSL https://get.rvm.io | bash -s stable
+source ~/.rvm/scripts/rvm
+rvm install 2.4.0
+rvm use 2.4.0 --default
+ruby -v
+{% endhighlight %}
+
+## Instalación de fuente
+
+Posiblemente la instalación menos útil de Ruby es desde el ódigo fuente. De todas maneras dejaré los pasos:
+
+{% highlight ca65 %}
+cd
+wget http://ftp.ruby-lang.org/pub/ruby/2.4/ruby-2.4.0.tar.gz
+tar -xzvf ruby-2.4.0.tar.gz
+cd ruby-2.4.0/
+./configure
+make
+sudo make install
+ruby -v
+{% endhighlight %}
+
+Una vez que hayas instalado Ruby utilizando cualquiera de los 3 métodos anteriores, el último paso es instalar Bundler:
+
+{% highlight ca65 %}
+gem install bundler
+{% endhighlight %}
+
+Si instalaste Ruby mediante **rbenv** deberás ejecutar el siguiente comando después de haber instalado Bundler:
+
+{% highlight ca65 %}
+rbenv rehash
+{% endhighlight %}
+
+# Consola Interactiva de Ruby
+
+Una vez instalado Ruby, sólo debes abrir la terminal (`Ctrl` + `Alt` + `T`) y escribir irb para ingresar a la **"Consola Interactiva"** que incluye este lenguaje:
