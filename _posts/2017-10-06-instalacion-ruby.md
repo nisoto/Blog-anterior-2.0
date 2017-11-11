@@ -83,3 +83,31 @@ rbenv rehash
 # Consola Interactiva de Ruby
 
 Una vez instalado Ruby, sólo debes abrir la terminal (`Ctrl` + `Alt` + `T`) y escribir irb para ingresar a la **"Consola Interactiva"** que incluye este lenguaje:
+
+{% highlight ca65 %}
+irb
+irb(main):001:0>
+{% endhighlight %}
+
+A modo de ejemplo crearemos nuestro primer programa, el típico "Hola Mundo" por pantalla:
+
+{% highlight ca65 %}
+irb(main):001:0> puts "Hola Mundo"
+{% endhighlight %}
+
+Si ahora presionas la tecla **Enter** te darás cuenta de que el mensaje que acabas de escribir será mostrado por pantalla, e inmediatamente la consola quedará a la espera de una siguiente instrucción:
+
+{% highlight ca65 %}
+irb(main):001:0> puts "Hola Mundo"
+Hola Mundo
+=> nil
+irb(main):002:0>
+{% endhighlight %}
+
+La consola interactiva de Ruby te servirá bastante si estás aprendiendo a utilizar este lenguaje o si quieres realizar pruebas, pero a la hora de desarrollar programas más elaborados, lo recomendable es utilizar algún editor de texto como sublime text o atom, y luego ejecutar dicho programa por consola utilizando el siguiente comando:
+
+{% highlight ca65 %}
+ruby hola_mundo.rb
+{% endhighlight %}
+
+Donde hola_mundo corresponde al nombre del programa y `.rb` es la extensión de Ruby (así como `.c` lo es para el lenguaje C y `.py` lo es para Python).
