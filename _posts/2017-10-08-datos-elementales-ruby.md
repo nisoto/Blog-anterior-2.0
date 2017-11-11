@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Instalación de Ruby"
-date: 2017-10-06
+title: "Tipos de datos elementales en Ruby"
+date: 2017-10-08
 excerpt: "Cuarto capítulo del curso de Ruby"
 tags: [ruby]
 ---
