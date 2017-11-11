@@ -57,5 +57,5 @@ Ruby es un lenguaje de muy alta demanda en las Start-Ups.
 * Quieres ser parte de una comunidad activa (Ruby tiene documentación, tutoriales y un largo etc. activos, convirtiendo a dicha comunidad en una de las mejores).
 
 |     |     |
-|:---:|:---:|
+|----:|:----|
 | [Volver](https://nisoto.github.io/blog/){: .btn .btn-success} | [Siguiente Capítulo](https://nisoto.github.io/instalacion-ruby/){: .btn .btn-success} |
