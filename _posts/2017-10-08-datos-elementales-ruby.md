@@ -50,3 +50,7 @@ Como te habrás dado cuenta, existe un sin fin de métodos para los números, po
 {% highlight ruby %}
 10.methods
 {% endhighlight %}
+
+|     |     |
+|----:|:----|
+| [<](https://nisoto.github.io/variables-ruby/){: .btn .btn-success} | [>](https://nisoto.github.io/){: .btn .btn-success} |
