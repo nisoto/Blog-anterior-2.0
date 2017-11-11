@@ -73,3 +73,33 @@ Pi = 3.14
 Nombre_del_tutor = "Nicolas"
 NUM = 1
 {% endhighlight %}
+
+# Comentarios
+
+Este apartado se aleja un poco de lo que son las variables y constantes. Sin embargo, el escribir comentarios es una buena práctica a la hora de programar, ya sea en Ruby o cualquier otro lenguaje de programación ya que logramos documentar, por ejemplo, un pequeño fragmento de código o un complejo proyecto, entre otros.
+
+Escribir comentarios agiliza la curva de aprendizaje en cualquier proyecto (y en el lenguaje que sea), ya que cuando dejamos de tener interacción con un lenguaje de programación, es normal que olvidemos las instrucciones que éste ejecuta, por lo que gracias a los comentarios logramos tener una idea más clara de lo que ejecuta el código que estamos analizando.
+
+Para escribir comentarios en Ruby sólo debes utilizar el símbolo `#` al principio del texto que escribirás, por ejemplo:
+
+{% highlight ruby %}
+# Esto es un comentario en Ruby
+puts "Estoy aprendiendo Ruby"
+{% endhighlight %}
+
+En muchas ocasiones los comentarios serán muy largos (de varias líneas), por lo que, como ocurre en muchos otros lenguajes, existen los comentarios multilínea o de bloque, por ejemplo:
+
+{% highlight ruby %}
+=begin
+Esto es un
+comentario
+de muchas
+líneas
+=end
+
+puts "Hola Mundo"
+{% endhighlight %}
+
+|     |     |
+|----:|:----|
+| [<](https://nisoto.github.io/instalacion-ruby/){: .btn .btn-success} | [>](https://nisoto.github.io/){: .btn .btn-success} |
