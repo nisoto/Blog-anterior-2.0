@@ -60,4 +60,4 @@ puts "Mucho gusto #{name}, como estas?"
 
 |     |     |
 |----:|:----|
-| [<](https://nisoto.github.io/datos-elementales-ruby/){: .btn .btn-success} | [>](https://nisoto.github.io/){: .btn .btn-success} |
+| [<](https://nisoto.github.io/datos-elementales-ruby/){: .btn .btn-success} | [>](https://nisoto.github.io/operadores-ruby/){: .btn .btn-success} |
