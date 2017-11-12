@@ -205,4 +205,4 @@ Al imprimir la variable `cadena`, nos daremos cuenta que el texto se ha modifica
 
 |     |     |
 |----:|:----|
-| [<](https://nisoto.github.io/variables-ruby/){: .btn .btn-success} | [>](https://nisoto.github.io/){: .btn .btn-success} |
+| [<](https://nisoto.github.io/variables-ruby/){: .btn .btn-success} | [>](https://nisoto.github.io/entrada-salida-ruby/){: .btn .btn-success} |
