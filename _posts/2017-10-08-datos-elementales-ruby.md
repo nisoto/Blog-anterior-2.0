@@ -111,7 +111,97 @@ cadena = "Mi primera cadena en Ruby"
 puts cadena.slice(3,7)
 {% endhighlight %}
 
-El método `slice` crea una subcadena, donde el primer parámetro corresponde al inicio de la subcadena (desde donde queremos comenzar) y el segundo parámetro corresponde a la cantidad de caracteres en adelante que queremos mostrar de la cadena.
+El método `slice` crea una subcadena, donde el primer parámetro corresponde al inicio de la subcadena (desde donde queremos comenzar) y el segundo parámetro corresponde a la cantidad de caracteres (en adelante) que queremos mostrar de la cadena.
+
+Debido a que existen muchos métodos para las cadenas, y tal como se hizo más arriba para los números, conviene ejecutar la siguiente línea de código (en IRB):
+
+{% highlight ruby %}
+"".methods
+{% endhighlight %}
+
+Para mayor información, te recomiendo que revises la documentación de [Ruby](https://www.ruby-lang.org/es/documentation/).
+
+Una cosa importante es que si utilizas tildes, puede que tengas problemas a la hora de ejecutar tus programas, por lo que te recomiendo agregar, al principio de tu código, la siguiente línea:
+
+{% highlight ruby %}
+# encoding: utf-8
+{% endhighlight %}
+
+## Caracteres no imprimibles
+
+Los caracteres no imprimibles son símbolos creados por las tabulaciones, saltos de línea (enter), etc., que no aparecen al imprimir una cadena o un número, por ejemplo.
+
+{% highlight ruby %}
+\n #Salto de línea
+\t #Tabulación
+{% endhighlight %}
+
+Es importante mencionar que para los caracteres no imprimibles se debe utilizar doble comilla, ya que de esta forma se interpretan, mientras que si utilizamos comillas simples, éstos se conservan. Veamos el siguiente ejemplo para que notes la diferencia:
+
+{% highlight ruby %}
+irb(main):001:0> puts "Hola\n\n\n"
+Hola
+
+
+=> nil
+irb(main):002:0> puts 'Hola\n\n\n'
+Hola\n\n\n
+=> nil
+{% endhighlight %}
+
+Además de los métodos vistos anteriormente para las cadenas, existen otros que pueden ser de gran utilidad:
+
+{% highlight ruby %}
+# Convertir una cadena a número entero
+"2".to_i
+
+# Convertir una cadena a número de punto flotante
+"3".to_f
+
+# Convertir un número (entero o de punto flotante) a cadena
+1.to_s
+
+# Retorna True o False dependiendo si la cadena está vacía o no
+"nicolas".empty?
+
+# Determina si la cadena contiene a la subcadena "Ruby" (retorna True o False)
+"Esto es una cadena en Ruby".include? 'Ruby'
+
+# Invertir una cadena
+"nicolas".reverse
+{% endhighlight %}
+
+¿Qué pasaría ahora si intentamos convertir la cadena `"1asdf"` a número? Mediante los métodos `to_i` o `to_f`, lo que haría Ruby sería tomar la cadena y considerar los números que se encuentran al principio, ignorando todo lo demás. Por ejemplo:
+
+{% highlight ruby %}
+irb(main):001:0> "4asdf".to_i
+=> 4
+irb(main):002:0> "4qwerty".to_f
+=> 4.0
+irb(main):003:0> "345asdf".to_i
+=> 345
+{% endhighlight %}
+
+¿Y si ahora tuviéramos la cadena `"asd1fgh"`? A diferencia del ejemplo anterior (donde el número está al principio), si la cadena que queremos convertir no comienza con un número, el resultado será un `0`. Por ejemplo:
+
+{% highlight ruby %}
+irb(main):001:0> "asd1fgh".to_i
+=> 0
+irb(main):002:0> "asd1fgh".to_f
+=> 0.0
+{% endhighlight %}
+
+## Métodos peligrosos
+
+Un método es peligroso cuando modifica al objeto sobre el que se está trabajando. Consideremos el siguiente ejemnplo:
+
+{% highlight ruby %}
+cadena = "nicolas"
+cadena.upcase! # El signo de exclamación modifica al objeto
+puts cadena
+{% endhighlight %}
+
+Al imprimir la variable `cadena`, nos daremos cuenta que el texto se ha modificado.
 
 |     |     |
 |----:|:----|
