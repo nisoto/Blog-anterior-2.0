@@ -12,7 +12,7 @@ tag:
 ## Capítulos
 
 1. [Introducción al lenguaje Ruby](https://nisoto.github.io/introduccion-ruby/)
-2. [Instalación de Ruby](https://nisoto.github.io/instalacion-ruby/)s
+2. [Instalación de Ruby](https://nisoto.github.io/instalacion-ruby/)
 3. [Variables en Ruby](https://nisoto.github.io/variables-ruby/)
 4. [Tipos de datos elementales en Ruby](https://nisoto.github.io/datos-elementales-ruby/)
 5. [Entrada y salida de datos en Ruby](https://nisoto.github.io/entrada-salida-ruby/)
