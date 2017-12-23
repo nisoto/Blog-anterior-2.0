@@ -34,3 +34,4 @@ Ruby es un lenguaje de programación muy **flexible** y totalmente **orientado a
 | 5 | [Entrada y salida de datos en Ruby](https://nisoto.github.io/entrada-salida-ruby/) | 9 octubre 2017 |
 |----
 | 6 | [Operadores en Ruby](https://nisoto.github.io/operadores-ruby/) | 10 octubre 2017 |
+{: rules="groups"}
