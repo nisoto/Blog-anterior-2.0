@@ -9,7 +9,9 @@ tag:
 - Ruby
 ---
 
-## Capítulos
+Ruby es un lenguaje de programación muy **flexible** y totalmente **orientado a objetos** creado por el programador japonés **Yukihiro “Matz” Matsumoto** y cuyo crecimiento casi exponencial se atribuye a la popularidad alcanzada por el desarrollo de aplicaciones web en el Framework **Ruby on Rails**.
+
+# Capítulos
 
 1. [Introducción al lenguaje Ruby](https://nisoto.github.io/introduccion-ruby/)
 2. [Instalación de Ruby](https://nisoto.github.io/instalacion-ruby/)
