@@ -24,8 +24,13 @@ Ruby es un lenguaje de programación muy **flexible** y totalmente **orientado a
 | No. | Capítulo | Fecha publicación |
 |:---:|:--------:|:-----------------:|
 | 1 | [Introducción al lenguaje Ruby](https://nisoto.github.io/introduccion-ruby/) | 5 octubre 2017 |
+|----
 | 2 | [Instalación de Ruby](https://nisoto.github.io/instalacion-ruby/) | 6 octubre 2017 |
+|----
 | 3 | [Variables en Ruby](https://nisoto.github.io/variables-ruby/) | 7 octubre 2017 |
+|----
 | 4 | [Tipos de datos elementales en Ruby](https://nisoto.github.io/datos-elementales-ruby/) | 8 octubre 2017 |
+|----
 | 5 | [Entrada y salida de datos en Ruby](https://nisoto.github.io/entrada-salida-ruby/) | 9 octubre 2017 |
+|----
 | 6 | [Operadores en Ruby](https://nisoto.github.io/operadores-ruby/) | 10 octubre 2017 |
