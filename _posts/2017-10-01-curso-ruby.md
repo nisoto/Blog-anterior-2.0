@@ -22,7 +22,7 @@ Ruby es un lenguaje de programación muy **flexible** y totalmente **orientado a
 
 
 | No. | Capítulo | Fecha publicación |
-|:---:|:--------:|:-----------------:|
+|:---:|:---------|:-----------------:|
 | 1 | [Introducción al lenguaje Ruby](https://nisoto.github.io/introduccion-ruby/) | 5 octubre 2017 |
 |----
 | 2 | [Instalación de Ruby](https://nisoto.github.io/instalacion-ruby/) | 6 octubre 2017 |
