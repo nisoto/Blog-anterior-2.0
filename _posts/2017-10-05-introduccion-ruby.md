@@ -58,4 +58,4 @@ Ruby es un lenguaje de muy alta demanda en las Start-Ups.
 
 |     |     |     |
 |:----|:---:|----:|
-| < | [Volver](https://nisoto.github.io/curso-ruby/){: .btn .btn-info} | [>](https://nisoto.github.io/instalacion-ruby/){: .btn .btn-info} |
+| [<](https://nisoto.github.io/blog/){: .btn .btn-info} | [Volver](https://nisoto.github.io/curso-ruby/){: .btn .btn-info} | [>](https://nisoto.github.io/instalacion-ruby/){: .btn .btn-info} |
