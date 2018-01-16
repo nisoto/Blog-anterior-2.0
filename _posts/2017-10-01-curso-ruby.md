@@ -3,7 +3,7 @@ layout: post
 title:  "Curso de Ruby"
 image: "/assets/img/ruby3.png"
 date:   2017-10-01
-excerpt: "Curso gratuito del lenguaje de programación Ruby para principiantes."
+excerpt: "Curso gratuito de Ruby para principiantes."
 project: true
 tag:
 - Ruby
