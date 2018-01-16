@@ -112,6 +112,6 @@ ruby hola_mundo.rb
 
 Donde hola_mundo corresponde al nombre del programa y `.rb` es la extensión de Ruby (así como `.c` lo es para el lenguaje C y `.py` lo es para Python).
 
-|     |     |
-|----:|:----|
-| [<](https://nisoto.github.io/introduccion-ruby/){: .btn .btn-success} | [>](https://nisoto.github.io/variables-ruby/){: .btn .btn-success} |
+|     |     |     |
+|:----|:---:|----:|
+| [<](https://nisoto.github.io/introduccion-ruby/){: .btn .btn-info} | [Volver](https://nisoto.github.io/curso-ruby/){: .btn .btn-info} | [>](https://nisoto.github.io/variables-ruby/){: .btn .btn-info} |
