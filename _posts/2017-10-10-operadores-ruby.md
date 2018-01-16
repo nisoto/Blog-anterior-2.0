@@ -83,6 +83,6 @@ Una forma de **alterar la precedencia** es utilizar parántesis en las expresion
 
 Considerando el orden de precedencia, el resultado debería ser `0`; sin embargo, el uso de paréntesis altera la precedencia, causando que la resta pase a primer plano. Dicho lo anterior, el resultado de la expresión será `20`.
 
-|     |     |
-|----:|:----|
-| [<](https://nisoto.github.io/entrada-salida-ruby/){: .btn .btn-success} | [>](https://nisoto.github.io/){: .btn .btn-success} |
+|     |     |     |
+|:----|:---:|----:|
+| [<](https://nisoto.github.io/entrada-salida-ruby/){: .btn .btn-info} | [Volver](https://nisoto.github.io/curso-ruby/){: .btn .btn-info} | [>](https://nisoto.github.io/){: .btn .btn-info} |
