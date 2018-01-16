@@ -58,6 +58,6 @@ name = gets.chomp
 puts "Mucho gusto #{name}, como estas?"
 {% endhighlight %}
 
-|     |     |
-|----:|:----|
-| [<](https://nisoto.github.io/datos-elementales-ruby/){: .btn .btn-success} | [>](https://nisoto.github.io/operadores-ruby/){: .btn .btn-success} |
+|     |     |     |
+|:----|:---:|----:|
+| [<](https://nisoto.github.io/datos-elementales-ruby/){: .btn .btn-info} | [Volver](https://nisoto.github.io/curso-ruby/){: .btn .btn-info} | [>](https://nisoto.github.io/operadores-ruby/){: .btn .btn-info} |
