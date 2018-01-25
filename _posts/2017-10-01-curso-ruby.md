@@ -13,7 +13,7 @@ Ruby es un lenguaje de programación muy **flexible** y totalmente **orientado a
 
 ## Requisitos
 
-Sólo necesitas un computador con conexión a internet.
+Sólo necesitas un computador con conexión a Internet.
 
 ## Capítulos
 
