@@ -27,4 +27,6 @@ Sólo necesitas un computador con conexión a Internet.
 7. Strings
 8. Obteniendo entrada del usuario
 9. Examen N°1
+
 Estructuras de control
+1. Booleanos
