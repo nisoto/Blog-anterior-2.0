@@ -19,7 +19,7 @@ Sólo necesitas un computador con conexión a Internet.
 
 1. **¿Qué es Ruby?**
 * [¿Qué es Ruby?](https://nisoto.github.io/que-es-ruby/)
-* ¡Hola, Ruby!
+* [¡Hola, Ruby!](https://nisoto.github.io/hola-ruby/)
 * Comentarios
 * Variables
 * Haciendo matemáticas
