@@ -17,7 +17,7 @@ Sólo necesitas un computador con conexión a Internet.
 
 ## Capítulos
 
-__**¿Qué es Ruby?**__
+**¿Qué es Ruby?**
 1. ¿Qué es Ruby?
 2. ¡Hola, Ruby!
 3. Comentarios
