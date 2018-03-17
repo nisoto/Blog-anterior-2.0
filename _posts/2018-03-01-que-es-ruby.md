@@ -22,4 +22,4 @@ En Ruby, todo (incluso un simple número) es un **objeto**. Aprenderás más ace
 
 |     |     |     |
 |:----|:---:|----:|
-| [<](https://nisoto.github.io/curso-ruby/){: .btn .btn-info} | [Volver](https://nisoto.github.io/curso-ruby/){: .btn .btn-info} | [>](https://nisoto.github.io/instalacion-ruby/){: .btn .btn-info} |
+| [<](https://nisoto.github.io/curso-ruby/){: .btn .btn-info} | [Volver](https://nisoto.github.io/curso-ruby/){: .btn .btn-info} | [>](https://nisoto.github.io/hola-ruby/){: .btn .btn-info} |
