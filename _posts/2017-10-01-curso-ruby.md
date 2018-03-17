@@ -18,14 +18,14 @@ Sólo necesitas un computador con conexión a Internet.
 ## Capítulos
 
 1. **¿Qué es Ruby?**
-⋅⋅* ¿Qué es Ruby?
-⋅⋅* ¡Hola, Ruby!
-⋅⋅* Comentarios
-⋅⋅* Variables
-⋅⋅* Haciendo matemáticas
-⋅⋅* Precedencia de operaciones
-⋅⋅* Strings
-⋅⋅* Obteniendo entrada del usuario
-⋅⋅* Examen N°1
+* ¿Qué es Ruby?
+* ¡Hola, Ruby!
+* Comentarios
+* Variables
+* Haciendo matemáticas
+* Precedencia de operaciones
+* Strings
+* Obteniendo entrada del usuario
+* Examen N°1
 2. **Estructuras de control**
-⋅⋅* Booleanos 
+* Booleanos 
