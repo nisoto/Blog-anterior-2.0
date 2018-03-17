@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "¿Qué es Ruby"
+title: "¿Qué es Ruby?"
 date: 2018-03-01
 excerpt: "Capítulo N°1 del curso de Ruby"
 tags: [ruby]
 ---
 
-# Ruby
+# ¡Bienvenido a Ruby!
 
 Ruby es un **lenguaje de programación** de propósito general, dinámico y orientado a objetos.
 
