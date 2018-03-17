@@ -18,7 +18,7 @@ Sólo necesitas un computador con conexión a Internet.
 ## Capítulos
 
 1. **¿Qué es Ruby?**
-* ¿Qué es Ruby?
+* [¿Qué es Ruby?](https://nisoto.github.io/que-es-ruby/)
 * ¡Hola, Ruby!
 * Comentarios
 * Variables
