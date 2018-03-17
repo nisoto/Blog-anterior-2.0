@@ -17,7 +17,7 @@ Sólo necesitas un computador con conexión a Internet.
 
 ## Capítulos
 
-¿Qué es Ruby?
+__**¿Qué es Ruby?**__
 1. ¿Qué es Ruby?
 2. ¡Hola, Ruby!
 3. Comentarios
@@ -28,5 +28,5 @@ Sólo necesitas un computador con conexión a Internet.
 8. Obteniendo entrada del usuario
 9. Examen N°1
 
-Estructuras de control
+**Estructuras de control**
 1. Booleanos
