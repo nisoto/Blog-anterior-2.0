@@ -17,9 +17,14 @@ Sólo necesitas un computador con conexión a Internet.
 
 ## Capítulos
 
-1. [Introducción al lenguaje](https://nisoto.github.io/introduccion-ruby/)
-2. [Instalación](https://nisoto.github.io/instalacion-ruby/)
-3. [Variables](https://nisoto.github.io/variables-ruby/)
-4. [Tipos de datos elementales](https://nisoto.github.io/datos-elementales-ruby/)
-5. [Entrada y salida de datos](https://nisoto.github.io/entrada-salida-ruby/)
-6. [Operadores](https://nisoto.github.io/operadores-ruby/)
+¿Qué es Ruby?
+1. ¿Qué es Ruby?
+2. ¡Hola, Ruby!
+3. Comentarios
+4. Variables
+5. Haciendo matemáticas
+6. Precedencia de operaciones
+7. Strings
+8. Obteniendo entrada del usuario
+9. Examen N°1
+Estructuras de control
