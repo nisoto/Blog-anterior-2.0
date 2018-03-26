@@ -21,7 +21,7 @@ Sólo necesitas un computador con conexión a Internet.
 * [¿Qué es Ruby?](https://nisoto.github.io/que-es-ruby/)
 * [¡Hola, Ruby!](https://nisoto.github.io/hola-ruby/)
 * [Comentarios](https://nisoto.github.io/comentarios-ruby/)
-* Variables
+* [Variables](https://nisoto.github.io/variables-ruby/)
 * Haciendo matemáticas
 * Precedencia de operaciones
 * Strings
