@@ -34,8 +34,29 @@ Las variables que comienzan con una letra mayúscula son llamadas **constantes**
 
 {% highlight ruby %}
 MyNum = 42
+# si intentamos cambiar el valor se produce una advertencia
 MyNum = 8
 # warning: already initialized constant MyNum
+{% endhighlight %}
+
+# Tipos de datos
+
+Todas las variables en Ruby pueden ser de todos los **tipos de datos**. Ruby determina automáticamente el tipo de dato por el valor asociado a la variable. Por ejemplo:
+
+{% highlight ruby %}
+x = 42 # integer
+y = 1.58 # floating point value
+z = "Hello" # string
+{% endhighlight %}
+
+Puedes reasignar un valor diferente a una variable en cualquier momento.
+
+Para insertar el valor de una variable dentro de una `string` de comillas dobles (una `string` es una secuencia de caracteres, tal como "Hello"), utiliza el símbolo `#` y llaves con el nombre de la variable. Por ejemplo:
+
+{% highlight ruby %}
+age = 42
+puts "He is #{age} years old"
+# outputs "He is 42 years old"
 {% endhighlight %}
 
 |     |     |     |
