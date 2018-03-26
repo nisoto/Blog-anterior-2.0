@@ -59,6 +59,17 @@ puts "He is #{age} years old"
 # outputs "He is 42 years old"
 {% endhighlight %}
 
+## Ejercicio Nº2
+
+Debes crear un programa que inserte tu nombre dentro de la string "Hello, TuNombre".
+
+Respuesta:
+
+{% highlight ruby %}
+name = "Nicolas"
+puts "Hello "#{name}"
+{% endhighlight %}
+
 |     |     |     |
 |:----|:---:|----:|
 | [<](https://nisoto.github.io/comentarios-ruby/){: .btn .btn-info} | [Volver](https://nisoto.github.io/curso-ruby/){: .btn .btn-info} | [>](https://nisoto.github.io/entrada-salida-ruby/){: .btn .btn-info} |
