@@ -36,4 +36,4 @@ puts "Hello"
 
 |     |     |     |
 |:----|:---:|----:|
-| [<](https://nisoto.github.io/hola-ruby/){: .btn .btn-info} | [Volver](https://nisoto.github.io/curso-ruby/){: .btn .btn-info} | [>](https://nisoto.github.io/datos-elementales-ruby/){: .btn .btn-info} |
+| [<](https://nisoto.github.io/hola-ruby/){: .btn .btn-info} | [Volver](https://nisoto.github.io/curso-ruby/){: .btn .btn-info} | [>](https://nisoto.github.io/variables-ruby/){: .btn .btn-info} |
