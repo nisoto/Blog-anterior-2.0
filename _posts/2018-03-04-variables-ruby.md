@@ -67,7 +67,7 @@ Respuesta:
 
 {% highlight ruby %}
 name = "Nicolas"
-puts "Hello "#{name}"
+puts "Hello #{name}"
 {% endhighlight %}
 
 |     |     |     |
