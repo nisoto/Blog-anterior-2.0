@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Matemáticas en Ruby"
-date: 2017-10-09
-excerpt: "Quinto capítulo del curso de Ruby"
+date: 2018-03-05
+excerpt: "Capítulo N°5 del curso de Ruby"
 tags: [ruby]
 ---
 
