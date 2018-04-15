@@ -72,4 +72,4 @@ puts "Hello #{name}"
 
 |     |     |     |
 |:----|:---:|----:|
-| [<](https://nisoto.github.io/comentarios-ruby/){: .btn .btn-info} | [Volver](https://nisoto.github.io/curso-ruby/){: .btn .btn-info} | [>](https://nisoto.github.io/entrada-salida-ruby/){: .btn .btn-info} |
+| [<](https://nisoto.github.io/comentarios-ruby/){: .btn .btn-info} | [Volver](https://nisoto.github.io/curso-ruby/){: .btn .btn-info} | [>](https://nisoto.github.io/matematicas-ruby/){: .btn .btn-info} |
