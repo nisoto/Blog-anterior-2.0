@@ -68,6 +68,43 @@ El resultado es 32 ya que `2*2*2*2*2 = 32`.
 
 **Nota:** todos los operadores también pueden ser utilizados con valores de punto flotante.
 
+# Operadores abreviados de asignación
+
+Todos los operadores aritméticos tienen formas abreviadas correspondientes para la asignación. Por ejemplo, `a = a+8` puede ser escrito como `a += 8`, los mismo para otros operadores:
+
+{% highlight ruby %}
+x += y # x = x+y
+x-= y # x = x-y
+x *= y # x = x*y
+x /= y # x = x/y
+x %= y # x = x%y
+x **= y # x = x**y
+{% endhighlight %}
+
+Estos son llamados **operadores de auto-asignación**, ya que ejecutan una asignación y una operación aritmética al mismo tiempo.
+
+# Asignación paralela
+
+Ruby también soporta la asignación paralela de variables. Esto permite que varias variables sean inicializadas con una sola línea de código. Por ejemplo:
+
+{% highlight ruby %}
+x = 10
+y = 20
+z = 30
+{% endhighlight %}
+
+Puede ser inicializado más rápidamente utilizando asignación paralela:
+
+{% highlight ruby %}
+x, y, z = 10, 20, 30
+{% endhighlight %}
+
+**Nota:** la asignación paralela es también útil para intercambiar los valores almacenados en dos variables:
+
+{% highlight ruby %}
+a, b = b, a
+{% endhighlight %}
+
 |     |     |     |
 |:----|:---:|----:|
 | [<](https://nisoto.github.io/variables-ruby/){: .btn .btn-info} | [Volver](https://nisoto.github.io/curso-ruby/){: .btn .btn-info} | [>](https://nisoto.github.io/operadores-ruby/){: .btn .btn-info} |
