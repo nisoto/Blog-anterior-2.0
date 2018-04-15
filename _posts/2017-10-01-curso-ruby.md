@@ -22,7 +22,7 @@ Sólo necesitas un computador con conexión a Internet.
 * [¡Hola, Ruby!](https://nisoto.github.io/hola-ruby/)
 * [Comentarios](https://nisoto.github.io/comentarios-ruby/)
 * [Variables](https://nisoto.github.io/variables-ruby/)
-* Haciendo matemáticas
+* [Haciendo matemáticas](https://nisoto.github.io/matematicas-ruby/)
 * Precedencia de operaciones
 * Strings
 * Obteniendo entrada del usuario
