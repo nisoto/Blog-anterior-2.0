@@ -44,8 +44,8 @@ MyNum = 8
 Todas las variables en Ruby pueden ser de todos los **tipos de datos**. Ruby determina automáticamente el tipo de dato por el valor asociado a la variable. Por ejemplo:
 
 {% highlight ruby %}
-x = 42       # integer
-y = 1.58     # floating point value
+x = 42      # integer
+y = 1.58    # floating point value
 z = "Hola"  # string
 {% endhighlight %}
 
