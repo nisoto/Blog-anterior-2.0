@@ -23,7 +23,7 @@ Posteriormente podemos utilizar el nombre de la variable para acceder a su valor
 {% highlight ruby %}
 x = 8
 puts x
-# outputs 8
+# salida: 8
 {% endhighlight %}
 
 **Nota:** los nombres de las variables pueden consistir de caracteres alfanuméricos y el caracter de guión bajo (`_`), pero no pueden comenzar con una letra mayúscula.
@@ -44,30 +44,30 @@ MyNum = 8
 Todas las variables en Ruby pueden ser de todos los **tipos de datos**. Ruby determina automáticamente el tipo de dato por el valor asociado a la variable. Por ejemplo:
 
 {% highlight ruby %}
-x = 42 # integer
-y = 1.58 # floating point value
-z = "Hello" # string
+x = 42       # integer
+y = 1.58     # floating point value
+z = "Hola"  # string
 {% endhighlight %}
 
 Puedes reasignar un valor diferente a una variable en cualquier momento.
 
-Para insertar el valor de una variable dentro de una `string` de comillas dobles (una `string` es una secuencia de caracteres, tal como "Hello"), utiliza el símbolo `#` y llaves con el nombre de la variable. Por ejemplo:
+Para insertar el valor de una variable dentro de una `string` de comillas dobles (una `string` es una secuencia de caracteres, tal como "Hola"), utiliza el símbolo `#` y llaves con el nombre de la variable. Por ejemplo:
 
 {% highlight ruby %}
 age = 42
-puts "He is #{age} years old"
-# outputs "He is 42 years old"
+puts "El tiene #{age} años de edad"
+# salida: "El tiene 42 años de edad"
 {% endhighlight %}
 
 ## Ejercicio Nº2
 
-Debes crear un programa que inserte tu nombre dentro de la string "Hello, TuNombre".
+Debes crear un programa que inserte tu nombre dentro de la string "Hola, TuNombre".
 
 Respuesta:
 
 {% highlight ruby %}
 name = "Nicolas"
-puts "Hello #{name}"
+puts "Hola #{name}"
 {% endhighlight %}
 
 |     |     |     |
