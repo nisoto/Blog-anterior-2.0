@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Operadores en Ruby"
-date: 2017-10-10
-excerpt: "Sexto capítulo del curso de Ruby"
+title: "Precedencia de operaciones en Ruby"
+date: 2018-03-06
+excerpt: "Capítulo N°6 del curso de Ruby"
 tags: [ruby]
 ---
 
@@ -85,4 +85,4 @@ Considerando el orden de precedencia, el resultado debería ser `0`; sin embargo
 
 |     |     |     |
 |:----|:---:|----:|
-| [<](https://nisoto.github.io/entrada-salida-ruby/){: .btn .btn-info} | [Volver](https://nisoto.github.io/curso-ruby/){: .btn .btn-info} | [>](https://nisoto.github.io/){: .btn .btn-info} |
+| [<](https://nisoto.github.io/matematicas-ruby/){: .btn .btn-info} | [Volver](https://nisoto.github.io/curso-ruby/){: .btn .btn-info} | [>](https://nisoto.github.io/){: .btn .btn-info} |
