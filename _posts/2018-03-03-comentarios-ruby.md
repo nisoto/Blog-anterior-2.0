@@ -13,8 +13,8 @@ Los comentarios son líneas de anotaciones dentro del código Ruby que son ignor
 En Ruby, el **símbolo de numeral** (#) es utilizado para crear un comentario de una sola línea. Por ejemplo:
 
 {% highlight ruby %}
-# printing some text
-puts "Hi there"
+# imprimiendo un texto
+puts "Hola Ruby"
 {% endhighlight %}
 
 Todo lo que sigue al símbolo de numeral en esa línea es ignorado cuando el programa es ejecutado.
@@ -25,11 +25,11 @@ También puedes crear comentarios de varias líneas. Todo lo que esté entre las
 
 {% highlight ruby %}
 =begin
-This comment
-spans multiple
-lines
+Este comentario
+posee varias
+lineas
 =end
-puts "Hello"
+puts "Hola"
 {% endhighlight %}
 
 **Nota:** añadir comentarios a tu código es una buena práctica. Facilita un entendimiento claro del código para ti y para otros que lo lean.
