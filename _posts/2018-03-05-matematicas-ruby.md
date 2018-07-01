@@ -107,4 +107,4 @@ a, b = b, a
 
 |     |     |     |
 |:----|:---:|----:|
-| [<](https://nisoto.github.io/variables-ruby/){: .btn .btn-info} | [Volver](https://nisoto.github.io/curso-ruby/){: .btn .btn-info} | [>](https://nisoto.github.io/operadores-ruby/){: .btn .btn-info} |
+| [<](https://nisoto.github.io/variables-ruby/){: .btn .btn-info} | [Volver](https://nisoto.github.io/curso-ruby/){: .btn .btn-info} | [>](https://nisoto.github.io/precedencia-operaciones-ruby/){: .btn .btn-info} |
