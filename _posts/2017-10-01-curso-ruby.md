@@ -23,7 +23,7 @@ Sólo necesitas un computador con conexión a Internet.
 * [Comentarios](https://nisoto.github.io/comentarios-ruby/)
 * [Variables](https://nisoto.github.io/variables-ruby/)
 * [Haciendo matemáticas](https://nisoto.github.io/matematicas-ruby/)
-* Precedencia de operaciones
+* [Precedencia de operaciones](https://nisoto.github.io/precedencia-operaciones-ruby/)
 * Strings
 * Obteniendo entrada del usuario
 * Examen N°1
