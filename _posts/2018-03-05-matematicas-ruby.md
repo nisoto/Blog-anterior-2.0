@@ -16,19 +16,19 @@ y = 2
 
 # Suma
 puts x+y
-# outputs 7
+# salida: 7
 
 # Resta
 puts x-y
-# outputs 3
+# salida: 3
 
 # Multiplicacion
 puts x*y
-# outputs 10
+# salida: 10
 
 # Division
 puts x/y
-# outputs 2
+# salida: 2
 {% endhighlight %}
 
 Cuando divides dos valores enteros, el resultado será un **entero**, como se muestra en el ejemplo anterior. Si deseas tener un resultado de punto flotante, un operando debe ser un valor de punto flotante:
@@ -37,7 +37,7 @@ Cuando divides dos valores enteros, el resultado será un **entero**, como se mu
 x = 5.0
 y = 2
 puts x/y 
-# outputs 2.5
+# salida: 2.5
 {% endhighlight %}
 
 # Operador Módulo
@@ -48,7 +48,7 @@ El operador **módulo**, representado por el símbolo de porcentaje (`%`), repre
 x = 9
 y = 5
 puts x%y
-# outputs 4
+# salida: 4
 {% endhighlight %}
 
 9 dividido entre 5 es 1, con un resto de 4.
@@ -61,7 +61,7 @@ El operador **exponente** está representado por `**` para elevar un número a u
 a = 2
 b = 5
 puts a**b
-# outputs 32
+# salida: 32
 {% endhighlight %}
 
 El resultado es 32 ya que `2*2*2*2*2 = 32`.
@@ -73,12 +73,12 @@ El resultado es 32 ya que `2*2*2*2*2 = 32`.
 Todos los operadores aritméticos tienen formas abreviadas correspondientes para la asignación. Por ejemplo, `a = a+8` puede ser escrito como `a += 8`, los mismo para otros operadores:
 
 {% highlight ruby %}
-x += y # x = x+y
-x-= y # x = x-y
-x *= y # x = x*y
-x /= y # x = x/y
-x %= y # x = x%y
-x **= y # x = x**y
+x += y   # x = x+y
+x -= y   # x = x-y
+x *= y   # x = x*y
+x /= y   # x = x/y
+x %= y   # x = x%y
+x **= y  # x = x**y
 {% endhighlight %}
 
 Estos son llamados **operadores de auto-asignación**, ya que ejecutan una asignación y una operación aritmética al mismo tiempo.
