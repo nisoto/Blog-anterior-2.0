@@ -1,31 +1,19 @@
 ---
 layout: post
-title:  "Curso de Ruby"
+title:  "Juego de pelea en Ruby"
 image: "/assets/img/ruby3.png"
 date:   2017-10-01
-excerpt: "Curso de Ruby para principiantes."
+excerpt: "Juego de pelea"
 project: true
 tag:
 - Ruby
 ---
 
-Ruby es un lenguaje de programación muy **flexible** y totalmente **orientado a objetos** creado por el programador japonés **Yukihiro “Matz” Matsumoto** y cuyo crecimiento casi exponencial se atribuye a la popularidad alcanzada por el desarrollo de aplicaciones web en el Framework **Ruby on Rails**.
+# Descripción
 
-## Requisitos
+Hola amigos.
 
-Sólo necesitas un computador con conexión a Internet.
+# Requisitos
 
-## Capítulos
-
-1. **¿Qué es Ruby?**
-* [¿Qué es Ruby?](https://nisoto.github.io/que-es-ruby/)
-* [¡Hola, Ruby!](https://nisoto.github.io/hola-ruby/)
-* [Comentarios](https://nisoto.github.io/comentarios-ruby/)
-* [Variables](https://nisoto.github.io/variables-ruby/)
-* [Haciendo matemáticas](https://nisoto.github.io/matematicas-ruby/)
-* [Precedencia de operaciones](https://nisoto.github.io/precedencia-operaciones-ruby/)
-* Strings
-* Obteniendo entrada del usuario
-* Examen N°1
-2. **Estructuras de control**
-* Booleanos 
+* Ruby (descárgalo [aquí](https://www.ruby-lang.org/es/downloads/))
+* Cualquier editor de código (opcional)
