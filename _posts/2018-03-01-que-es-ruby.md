@@ -20,6 +20,20 @@ En Ruby, todo (incluso un simple número) es un **objeto**. Aprenderás más ace
 
 **Nota:** Ruby también es completamente gratuito. No solo libre de cargos, sino también libre para ser usado, copiado, modificado y distribuido.
 
+# Primer programa
+
+Vamos a crear nuestro primer programa en Ruby, el clásico "Hola Mundo". Para esto, utilizaremos el método incorporado puts.
+
+{% highlight ruby %}
+puts "Hola Mundo"
+{% endhighlight %}
+
+Este código desplegará el texto **"Hola Mundo"** en la pantalla.
+
+**Nota:** todos los valores de texto (strings) deben ser encerrados entre comillas simples o dobles.
+
+## Ejercicio Nr. 1
+
 |     |     |     |
 |:----|:---:|----:|
-| [<](https://nisoto.github.io/curso-ruby/){: .btn .btn-info} | [Volver](https://nisoto.github.io/curso-ruby/){: .btn .btn-info} | [>](https://nisoto.github.io/hola-ruby/){: .btn .btn-info} |
+| | [Volver](https://nisoto.github.io/blog/){: .btn .btn-info} | [>](https://nisoto.github.io/hola-ruby/){: .btn .btn-info} |
