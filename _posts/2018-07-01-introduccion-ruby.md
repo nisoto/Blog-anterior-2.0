@@ -30,11 +30,11 @@ puts "Hola Mundo"
 
 Este código desplegará el texto **"Hola Mundo"** en la pantalla.
 
-**Nota:** todos los valores de texto (strings) deben ser encerrados entre comillas simples o dobles.
+**Nota:** todos los valores de texto (`strings`) deben ser encerrados entre comillas simples o dobles.
 
-## Ejercicio Nro. 1
+## Ejercicio
 
-Debes crear un programa que imprima por pantalla la frase "Ruby es divertido".
+Debes crear un programa que imprima por pantalla la frase **"Ruby es divertido"**.
 
 Respuesta:
 
