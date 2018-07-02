@@ -36,4 +36,4 @@ Este código desplegará el texto **"Hola Mundo"** en la pantalla.
 
 |     |     |     |
 |:----|:---:|----:|
-| | [Volver](https://nisoto.github.io/blog/){: .btn .btn-info} | [>](https://nisoto.github.io/hola-ruby/){: .btn .btn-info} |
+| [<](https://nisoto.github.io/blog/){: .btn .btn-info} | [Volver](https://nisoto.github.io/blog/){: .btn .btn-info} | [>](https://nisoto.github.io/hola-ruby/){: .btn .btn-info} |
