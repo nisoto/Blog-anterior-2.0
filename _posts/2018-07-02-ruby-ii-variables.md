@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Variables en Ruby"
-date: 2018-03-04
-excerpt: "Capítulo N°4 del curso de Ruby"
+title: "Ruby II: Variables"
+date: 2018-07-02
+excerpt: "Capítulo N°2 del curso de Ruby"
 tags: [ruby]
 ---
 
@@ -72,4 +72,4 @@ puts "Hola #{name}"
 
 |     |     |     |
 |:----|:---:|----:|
-| [<](https://nisoto.github.io/comentarios-ruby/){: .btn .btn-info} | [Volver](https://nisoto.github.io/curso-ruby/){: .btn .btn-info} | [>](https://nisoto.github.io/matematicas-ruby/){: .btn .btn-info} |
+| [<](https://nisoto.github.io/ruby-i-introduccion/){: .btn .btn-info} | [Volver](https://nisoto.github.io/blog/){: .btn .btn-info} | [>](https://nisoto.github.io/matematicas-ruby/){: .btn .btn-info} |
