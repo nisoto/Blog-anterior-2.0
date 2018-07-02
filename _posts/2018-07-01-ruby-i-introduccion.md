@@ -95,4 +95,4 @@ puts "Hola"
 
 |     |     |     |
 |:----|:---:|----:|
-| [<](https://nisoto.github.io/blog/){: .btn .btn-info} | [Volver](https://nisoto.github.io/blog/){: .btn .btn-info} | [>](https://nisoto.github.io/hola-ruby/){: .btn .btn-info} |
+| [<](https://nisoto.github.io/blog/){: .btn .btn-info} | [Volver](https://nisoto.github.io/blog/){: .btn .btn-info} | [>](https://nisoto.github.io/ruby-ii-variables/){: .btn .btn-info} |
