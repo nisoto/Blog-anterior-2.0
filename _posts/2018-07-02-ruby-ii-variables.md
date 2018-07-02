@@ -61,7 +61,7 @@ puts "El tiene #{age} años de edad"
 
 ## Ejercicio
 
-Debes crear un programa que inserte tu nombre dentro de la string "Hola, TuNombre".
+Debes crear un programa que inserte tu nombre dentro de la `string` "Hola, TuNombre".
 
 Respuesta:
 
