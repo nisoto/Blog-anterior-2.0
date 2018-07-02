@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "¿Qué es Ruby?"
+title: "Ruby I: Introducción y primer programa"
 date: 2018-03-01
 excerpt: "Capítulo N°1 del curso de Ruby"
 tags: [ruby]
@@ -22,7 +22,7 @@ En Ruby, todo (incluso un simple número) es un **objeto**. Aprenderás más ace
 
 # Primer programa
 
-Vamos a crear nuestro primer programa en Ruby, el clásico "Hola Mundo". Para esto, utilizaremos el método incorporado puts.
+Vamos a crear nuestro primer programa en Ruby, el clásico **"Hola Mundo"**. Para esto, utilizaremos el método incorporado `puts`.
 
 {% highlight ruby %}
 puts "Hola Mundo"
@@ -32,7 +32,51 @@ Este código desplegará el texto **"Hola Mundo"** en la pantalla.
 
 **Nota:** todos los valores de texto (strings) deben ser encerrados entre comillas simples o dobles.
 
-## Ejercicio Nr. 1
+## Ejercicio Nro. 1
+
+Debes crear un programa que imprima por pantalla la frase "Ruby es divertido".
+
+Respuesta:
+
+{% highlight ruby %}
+puts "Ruby es divertido"
+{% endhighlight %}
+
+# Método Print
+
+Otro método que puede ser utilizado para desplegar salida en la pantalla es `print`. Por ejemplo:
+
+{% highlight ruby %}
+print "Hola Mundo"
+{% endhighlight %}
+
+Este código despliega la misma salida que antes, con la excepción de que `puts` añade automáticamente una nueva línea (o salto de línea) después de la salida, mientras que `print` no lo hace. Por ejemplo:
+
+{% highlight ruby %}
+puts "Hola"
+print "aqui"
+print "Ruby"
+{% endhighlight %}
+
+Resultado:
+
+{% highlight ruby %}
+Hola
+aquiRuby
+{% endhighlight %}
+
+# Comentarios
+
+Los comentarios son líneas de anotaciones dentro del código Ruby que son ignoradas en tiempo de ejecución del programa.
+
+En Ruby, el **símbolo de numeral** (#) es utilizado para crear un comentario de una sola línea. Por ejemplo:
+
+{% highlight ruby %}
+# imprimiendo un texto
+puts "Hola Ruby"
+{% endhighlight %}
+
+Todo lo que sigue al símbolo de numeral en esa línea es ignorado cuando el programa es ejecutado.
 
 |     |     |     |
 |:----|:---:|----:|
