@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Ruby I: Introducción y primer programa"
-date: 2018-03-01
+date: 2018-07-01
 excerpt: "Capítulo N°1 del curso de Ruby"
 tags: [ruby]
 ---
@@ -77,6 +77,21 @@ puts "Hola Ruby"
 {% endhighlight %}
 
 Todo lo que sigue al símbolo de numeral en esa línea es ignorado cuando el programa es ejecutado.
+
+## Comentarios de varias líneas
+
+También puedes crear comentarios de varias líneas. Todo lo que esté entre las palabras reservadas `begin` y `end` es considerado un comentario:
+
+{% highlight ruby %}
+=begin
+Este comentario
+posee varias
+lineas
+=end
+puts "Hola"
+{% endhighlight %}
+
+**Nota:** añadir comentarios a tu código es una buena práctica. Facilita un entendimiento claro del código para ti y para otros que lo lean.
 
 |     |     |     |
 |:----|:---:|----:|
