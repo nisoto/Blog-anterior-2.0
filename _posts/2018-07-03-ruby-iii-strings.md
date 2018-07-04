@@ -21,10 +21,23 @@ puts text
 Una `string` formada con comillas dobles también puede incluir la secuencia de escape `\n`, la cual representa una nueva línea:
 
 {% highlight ruby %}
-text = "Hola \n Ruby es divertido'
+text = "Hola \n Ruby es divertido"
 puts text
 # salida: Hola
 #          Ruby es divertido
 {% endhighlight %}
 
 **Nota:** sólo las secuencias de escape `\'` y `\\` pueden ser utilizadas con `strings` de comillas simples.
+
+# Interpolación de cadenas
+
+Puedes incrustar cualquier expresión de Ruby dentro de una `string` de comillas dobles utilizando `#{}`, tal cual como lo haces con nombres de variables:
+
+{% highlight ruby %}
+a = 5
+b = 2
+puts "La suma es #{a+b}"
+# salida: La suma es 7
+{% endhighlight %}
+
+Ruby evalúa los marcadores y los reemplaza por valores.
