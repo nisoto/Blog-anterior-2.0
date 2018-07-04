@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Ruby III: Strings"
-date: 2018-03-03
+date: 2018-07-03
 excerpt: "Capítulo N°3 del curso de Ruby"
 tags: [ruby]
 ---
