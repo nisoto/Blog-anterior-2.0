@@ -199,4 +199,4 @@ puts x
 
 |     |     |     |
 |:----|:---:|----:|
-| [<](https://nisoto.github.io/ruby-i-introduccion/){: .btn .btn-info} | [Volver](https://nisoto.github.io/blog/){: .btn .btn-info} | [>](https://nisoto.github.io/matematicas-ruby/){: .btn .btn-info} |
+| [<](https://nisoto.github.io/ruby-i-introduccion/){: .btn .btn-info} | [Volver](https://nisoto.github.io/blog/){: .btn .btn-info} | [>](https://nisoto.github.io/ruby-iii-strings/){: .btn .btn-info} |
