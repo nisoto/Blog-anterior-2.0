@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ruby III: Strings"
+title: "Ruby III: Strings y entrada/salida de datos"
 date: 2018-07-03
 excerpt: "Capítulo N°3 del curso de Ruby"
 tags: [ruby]
@@ -69,6 +69,15 @@ puts '5'*4
 {% endhighlight %}
 
 Las `strings` no pueden ser multiplicadas por otras `strings`.
+
+# Input
+
+Para obtener la entrada del usuario en Ruby, utilizamos el método `gets`, el cual retorna lo que el usuario escribe como una `string`. Para almacenar la entrada para su posterior uso, podemos asignar el valor de retorno a una variable. Por ejemplo:
+
+{% highlight ruby %}
+x = gets
+puts x
+{% endhighlight %}
 
 |     |     |     |
 |:----|:---:|----:|
