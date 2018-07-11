@@ -79,6 +79,16 @@ x = gets
 puts x
 {% endhighlight %}
 
+`gets` obtiene una línea de texto, incluyendo el salto de línea al final. Si no quieres incluir el salto de línea, se debe utilizar el método `chomp`:
+
+{% highlight ruby %}
+puts "Ingresa tu nombre: "
+name = gets.chomp
+puts "Bienvenido #{name}"
+{% endhighlight %}
+
+**Nota:** el valor de la entrada es una `string`. Para convertirla a un **entero**, puedes utilizar el método `gets.to_i`.
+
 |     |     |     |
 |:----|:---:|----:|
 | [<](https://nisoto.github.io/ruby-ii-variables/){: .btn .btn-info} | [Volver](https://nisoto.github.io/blog/){: .btn .btn-info} | [>](https://nisoto.github.io/blog/){: .btn .btn-info} |
