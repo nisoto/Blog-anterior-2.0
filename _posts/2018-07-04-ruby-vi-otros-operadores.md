@@ -8,14 +8,14 @@ tags: [ruby]
 
 # Booleanos
 
-En Ruby, existen dos valores Booleanos: **true** (verdadero) y *false* (falso):
+En Ruby, existen dos valores Booleanos: **true** (verdadero) y *false* (falso). Por ejemplo:
 
 {% highlight ruby %}
 isOnline = true
 userIsAdmin = false
 {% endhighlight %}
 
-Otro valor que encontrarás usualmente es `nil`, el cual representa la ausencia de valor (vacío).
+Otro valor que encontrarás usualmente es **`nil`**, el cual representa la ausencia de valor (vacío).
 
 Si intentas evaluar un valor distinto que **true** o **false** como un Booleano, Ruby automáticamente lo tratará como un Booleano. Cuando esto ocurre, un valor no-Booleano que es evaluado como verdadero es llamado **`truthy`**, y un no-Booleano que evalúa a falso es llamado **`falsey`**.
 
@@ -37,3 +37,16 @@ puts a == 5 # true
 {% endhighlight %}
 
 Ten cuidado de no confundir **asignación** (=) con **comparación** (==).
+
+Otro operador de comparación, el operador **distinto que** (`!=`), evalúa a verdadero si los operandos comparados no son iguales, y falso si lo son, es decir:
+
+{% highlight ruby %}
+a = 8
+b = 7
+
+puts a != b # true
+{% endhighlight %}
+
+|     |     |     |
+|:----|:---:|----:|
+| [<](https://nisoto.github.io/ruby-iii-strings/){: .btn .btn-info} | [Volver](https://nisoto.github.io/blog/){: .btn .btn-info} | [>](https://nisoto.github.io/blog/){: .btn .btn-info} |
