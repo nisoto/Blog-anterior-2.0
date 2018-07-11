@@ -47,6 +47,30 @@ b = 7
 puts a != b # true
 {% endhighlight %}
 
+Ruby también tiene operadores que determinan si un valor es **mayor que** o **menor que** otro. Estos operadores son `>` y `<` respectivamente. De forma similar, los operadores **mayor o igual que** y **menor o igual que** son `>=` y `<=`. Por ejemplo:
+
+{% highlight ruby %}
+puts 12 > 8    # true
+
+puts 5 < 2     # false
+
+puts 5 >= 5.0  # true
+
+puts 3 <= 6    # true
+{% endhighlight %}
+
+También está el método `.eql?`, el cual resulta en verdadero sólo si ambos argumentos tienen el **mismo tipo e igual valores**. Por ejemplo:
+
+{% highlight ruby %}
+puts 3 == 3.0     # true
+
+puts 3.eql?(3.0)  # false
+{% endhighlight %}
+
+`3.eql?(3.0)` es **falso** porque `3` es un entero y `3.0` es un flotante.
+
+**Nota:** los operadores mayor que y menor que también pueden ser utilizados para comparar `strings` lexicográficamente (el orden alfabético de las palabras basado en el orden alfabético de las letras que las componen).
+
 |     |     |     |
 |:----|:---:|----:|
 | [<](https://nisoto.github.io/ruby-iii-strings/){: .btn .btn-info} | [Volver](https://nisoto.github.io/blog/){: .btn .btn-info} | [>](https://nisoto.github.io/blog/){: .btn .btn-info} |
