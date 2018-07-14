@@ -73,4 +73,4 @@ puts 3.eql?(3.0)  # false
 
 |     |     |     |
 |:----|:---:|----:|
-| [<](https://nisoto.github.io/ruby-iii-strings/){: .btn .btn-info} | [Volver](https://nisoto.github.io/blog/){: .btn .btn-info} | [>](https://nisoto.github.io/blog/){: .btn .btn-info} |
+| [<](https://nisoto.github.io/ruby-iii-strings/){: .btn .btn-info} | [Volver](https://nisoto.github.io/blog/){: .btn .btn-info} | [>](https://nisoto.github.io/ruby-v-sentencia-if/){: .btn .btn-info} |
