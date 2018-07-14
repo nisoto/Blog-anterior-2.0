@@ -25,3 +25,19 @@ La condición `a > 7` es evaluada. Cuando es **verdadera**, las declaraciones de
 |     |     |     |
 |:----|:---:|----:|
 | [<](https://nisoto.github.io/ruby-iv-otros-operadores/){: .btn .btn-info} | [Volver](https://nisoto.github.io/blog/){: .btn .btn-info} | [>](https://nisoto.github.io/blog/){: .btn .btn-info} |
+
+Las expresiones `if` pueden ser anidadas una dentro de otra, esto significa que el `if` más interno es el código del externo. Esta es una forma de ver si varias condiciones son satisfechas.
+
+{% highlight ruby %}
+num = 16
+if num > 7
+    puts "El numero es mayor que 7"
+    if num < 42
+        puts "El numero es mayor que 7 menor que 42"
+    end
+end
+# salida: El numero es mayor que 7
+#         El numero es mayor que 7 menor que 42
+{% endhighlight %}
+
+Ten presente que una vez que una condición `if` falle, se saldrá del bloque completo.
