@@ -38,6 +38,22 @@ end
 
 Ten presente que una vez que una condición `if` falle, se saldrá del bloque completo.
 
+# Declaraciones else
+
+Un bloque `else` en una expresión `if` contiene código que es invocado cuando la condición `if` evalúa a **falso**. Por ejemplo:
+
+{% highlight ruby %}
+age = 15
+if age > 18
+    puts "Bienvenido"
+else
+    puts "Eres menor de edad"
+end
+# salida: "Eres menor de edad"
+{% endhighlight %}
+
+**Nota:** la palabra clave `end` sólo es necesaria para la declaración `if`, ya que el bloque `else` es parte de la expresión `if`.
+
 |     |     |     |
 |:----|:---:|----:|
 | [<](https://nisoto.github.io/ruby-iv-otros-operadores/){: .btn .btn-info} | [Volver](https://nisoto.github.io/blog/){: .btn .btn-info} | [>](https://nisoto.github.io/blog/){: .btn .btn-info} |
