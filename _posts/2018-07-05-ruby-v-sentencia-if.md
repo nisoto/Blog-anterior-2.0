@@ -54,6 +54,54 @@ end
 
 **Nota:** la palabra clave `end` sólo es necesaria para la declaración `if`, ya que el bloque `else` es parte de la expresión `if`.
 
+# Declaraciones elsif
+
+El bloque `elsif` (abreviado para `else if`) es útil cuando quieres evaluar varias condiciones. Una serie de expresiones `if elsif` pueden tener un bloque `else` final, el cual es invocado si ninguna de las expresiones `if` o `elsif` son verdaderas. Por ejemplo:
+
+{% highlight ruby %}
+num = 8
+if num == 3
+    puts "El numero es igual a 3"
+elsif num == 10
+    puts "El numero es igual a 10"
+elsif num == 7
+    puts "El numero es igual a 7"
+else
+    puts "Numero no encontrado"
+end
+# salida: "Numero no encontrado"
+{% endhighlight %}
+
+**Nota:** cuando un bloque `elsif` es ejecutado, se sale de la expresión `if` completa.
+
+# Declaraciones unless
+
+La expresión `unless` es lo opuesto de una expresión `if`, ya que ejecutará código cuando un condicional es **falso**. Por ejemplo:
+
+{% highlight ruby %}
+a = 42
+unless a < 10
+    puts "Si"
+else
+    puts "No"
+end
+# salida: "Yes"
+{% endhighlight %}
+
+Puedes utilizar un bloque `else` con el `unless`, tal y como se detalla en el ejemplo anterior. La palabra clave `end` también es requerida para cerrar el bloque.
+
+Los modificadores `if` y `unless` también pueden ser utilizados para ejecutar código, es decir:
+
+{% highlight ruby %}
+a = 42
+puts "Si" if a > 10 
+puts "Si" unless a < 10
+{% endhighlight %}
+
+El còdigo antes del `if` es ejecutado sólo si la condición evalúa a **verdadero**, mientras que el código antes del `unless` es ejecutado sólo si la condición es **falsa**.
+
+**Nota:** como puedes ver, el código Ruby es mucho más corto y fácil de leer, haciéndolo un lenguaje de programación muy intuitivo.
+
 |     |     |     |
 |:----|:---:|----:|
 | [<](https://nisoto.github.io/ruby-iv-otros-operadores/){: .btn .btn-info} | [Volver](https://nisoto.github.io/blog/){: .btn .btn-info} | [>](https://nisoto.github.io/blog/){: .btn .btn-info} |
