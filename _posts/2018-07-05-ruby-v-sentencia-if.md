@@ -102,6 +102,21 @@ El còdigo antes del `if` es ejecutado sólo si la condición evalúa a **verdad
 
 **Nota:** como puedes ver, el código Ruby es mucho más corto y fácil de leer, haciéndolo un lenguaje de programación muy intuitivo.
 
+## Ejercicio
+
+Debes crear un programa que determine si el número `43` es par o impar.
+
+Respuesta:
+
+{% highlight ruby %}
+num = 43
+if num%2 == 0
+    puts "El numero es par"
+else
+    puts "El numero es impar"
+end
+{% endhighlight %}
+
 |     |     |     |
 |:----|:---:|----:|
 | [<](https://nisoto.github.io/ruby-iv-otros-operadores/){: .btn .btn-info} | [Volver](https://nisoto.github.io/blog/){: .btn .btn-info} | [>](https://nisoto.github.io/blog/){: .btn .btn-info} |
