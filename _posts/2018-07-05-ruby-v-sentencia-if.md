@@ -22,10 +22,6 @@ La condición `a > 7` es evaluada. Cuando es **verdadera**, las declaraciones de
 
 **Nota:** la palabra clave `end` es requerida para indicar el final del `if`.
 
-|     |     |     |
-|:----|:---:|----:|
-| [<](https://nisoto.github.io/ruby-iv-otros-operadores/){: .btn .btn-info} | [Volver](https://nisoto.github.io/blog/){: .btn .btn-info} | [>](https://nisoto.github.io/blog/){: .btn .btn-info} |
-
 Las expresiones `if` pueden ser anidadas una dentro de otra, esto significa que el `if` más interno es el código del externo. Esta es una forma de ver si varias condiciones son satisfechas.
 
 {% highlight ruby %}
@@ -41,3 +37,7 @@ end
 {% endhighlight %}
 
 Ten presente que una vez que una condición `if` falle, se saldrá del bloque completo.
+
+|     |     |     |
+|:----|:---:|----:|
+| [<](https://nisoto.github.io/ruby-iv-otros-operadores/){: .btn .btn-info} | [Volver](https://nisoto.github.io/blog/){: .btn .btn-info} | [>](https://nisoto.github.io/blog/){: .btn .btn-info} |
