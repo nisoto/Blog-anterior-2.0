@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ruby VI: Otros operadores"
+title: "Ruby IV: Otros operadores"
 date: 2018-07-04
 excerpt: "Capítulo N°4 del curso de Ruby"
 tags: [ruby]
