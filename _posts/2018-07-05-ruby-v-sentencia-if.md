@@ -119,4 +119,4 @@ end
 
 |     |     |     |
 |:----|:---:|----:|
-| [<](https://nisoto.github.io/ruby-iv-otros-operadores/){: .btn .btn-info} | [Volver](https://nisoto.github.io/blog/){: .btn .btn-info} | [>](https://nisoto.github.io/blog/){: .btn .btn-info} |
+| [<](https://nisoto.github.io/ruby-iv-booleanos-comparacion/){: .btn .btn-info} | [Volver](https://nisoto.github.io/blog/){: .btn .btn-info} | [>](https://nisoto.github.io/blog/){: .btn .btn-info} |
