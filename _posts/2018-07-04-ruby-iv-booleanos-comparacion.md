@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ruby IV: Booleanos y operadores de comparación"
+title: "Ruby IV: Booleanos y comparación"
 date: 2018-07-04
 excerpt: "Capítulo N°4 del curso de Ruby"
 tags: [ruby]
