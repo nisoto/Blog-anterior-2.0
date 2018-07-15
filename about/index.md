@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Acerca del Blog
+title: Acerca de
 tags: [about, Jekyll, theme, nisoto]
 date: 2016-03-21
 ---
