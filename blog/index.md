@@ -1,5 +1,5 @@
 ---
 layout: post-index
-title: Todos los posts
+title: Posts
 excerpt: "A List of Posts"
 ---
