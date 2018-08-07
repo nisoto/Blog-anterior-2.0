@@ -43,3 +43,11 @@ Cabe destacar que Ruby aparte de ser gratuito, también es libre para usarlo, co
 5. **Airbnb**
 6. **Twitter** (originalmente)
 7. Y un largo etc.
+
+# ¿Por qué utilizar Ruby?
+
+* Si quieres **incrementar tu productividad**.
+* Si te importa la **expresividad**.
+* Si quieres un lenguaje flexible.
+* Si no te gusta repetir código (**Don’t Repeat Yourself**, lo que en español significa **"No te repitas"**; es decir, escribir menos código y que el mantenimiento sea más práctico).
+* Si quieres ser parte de una **comunidad activa** (Ruby tiene documentación, tutoriales y un largo etc. activos, además de poseer una de las mejores comunidades en lenguajes de programación).
