@@ -36,7 +36,7 @@ Cabe destacar que Ruby aparte de ser gratuito, también es libre para usarlo, co
 
 # ¿Quiénes usan Ruby?
 
-1. **Basecamp** (principales promotores de este lenguaje ya que ellos son los creadores del famoso Framework **Ruby on Rails**)
+1. **Basecamp** (principales promotores ya que ellos son los creadores del famoso Framework **Ruby on Rails**)
 2. **Github**
 3. **Heroku**
 4. **Tumblr**
