@@ -24,3 +24,22 @@ Cabe destacar que Ruby aparte de ser gratuito, también es libre para usarlo, co
 4. **Todo es un objeto**, lo que ofrece flexibilidad al lenguaje.
 5. **Es Muy productivo** ya que puedes terminar proyectos más rápidos que con otros lenguajes.
 6. **Puedes reescribir el lenguaje**, es decir, puedes abrir una clase del lenguaje y agregar tus propios métodos (reescribir el lenguaje), tal como se detalló un poco más arriba.
+
+# El legado de Ruby
+
+* Existen múltiples implementaciones del lenguaje (ya sea con C, C++ y Java, entre otros).
+* Ha inspirado la creación de otros lenguajes como **Elixir** o **CoffeeScript**, lo que quiere decir que este lenguaje está tan bien diseñado que otras tecnologías quieren replicar esas ventajas.
+* Está hecho principalmente para crear aplicaciones Web. Cabe mencionar que se hizo muy popular con Ruby on Rails (Framework que apareció hace unos 10 años atrás aproximadamente).
+* Existen utilidades de la terminal como SASS o HomeBrew.
+* Se puede utilizar Ruby para crear aplicaciones móviles nativos con **Rubymotion** (el cual se puede compilar tanto en Android como en iOS).
+* Se pueden crear interfaces gráficas con **QT** o **Swing**.
+
+# ¿Quiénes usan Ruby?
+
+1. **Basecamp** (principales promotores de este lenguaje ya que ellos son los creadores del famoso Framework **Ruby on Rails**)
+2. **Github**
+3. **Heroku**
+4. **Tumblr**
+5. **Airbnb**
+6. **Twitter** (originalmente)
+7. Y un largo etc.
