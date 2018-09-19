@@ -24,10 +24,10 @@ Conviene siempre instalar la última versión disponible!
 
 RubyInstaller tiene la ventaja de que se actualiza más rápido
 
-{% highlight ruby %}
+```
 $ ruby -v
 ruby 2.5.1p57 (2018-03-29 revision 63029) [x64-mingw32]
-{% endhighlight %}
+```
 
 # Consola Interactiva de Ruby (IRB)
 
