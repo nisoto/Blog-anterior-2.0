@@ -40,23 +40,23 @@ irb(main):001:0>
 
 Todo lo que escribamos luego de este comando será evaluado como código de Ruby. Escribiremos el clásico "Hola Mundo" por pantalla:
 
-{% highlight ruby %}
+```ruby
 irb(main):001:0> puts "Hola Mundo"
-{% endhighlight %}
+```
 
 Si ahora presionamos la tecla **Enter** el mensaje que acabamos de escribir será mostrado por pantalla, e inmediatamente la consola quedará a la espera de una siguiente instrucción:
 
-{% highlight ruby %}
+```ruby
 irb(main):001:0> puts "Hola Mundo"
 Hola Mundo
 => nil
 irb(main):002:0>
-{% endhighlight %}
+```
 
 La Consola Interactiva de Ruby sirve bastante si estás aprendiendo a utilizar este lenguaje o si quieres realizar algunas pruebas, pero a la hora de desarrollar programas más elaborados, lo recomendable es utilizar algún editor de texto como **Sublime Text** y luego ejecutar dicho programa por consola utilizando el siguiente comando:
 
-{% highlight ruby %}
+```
 $ ruby hola_mundo.rb
-{% endhighlight %}
+```
 
 Donde **hola_mundo** corresponde al nombre del programa y `.rb` es la extensión de Ruby (así como `.c` lo es para el lenguaje C y `.py` lo es para Python).
