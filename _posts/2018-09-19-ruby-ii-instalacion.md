@@ -33,10 +33,10 @@ ruby 2.5.1p57 (2018-03-29 revision 63029) [x64-mingw32]
 
 Una vez instalado Ruby, sólo debes escribir **irb** en la terminal para ingresar a la **"Consola interactiva"** que incluye este lenguaje:
 
-{% highlight ruby %}
+```ruby
 $ irb
 irb(main):001:0>
-{% endhighlight %}
+```
 
 Todo lo que escribamos luego de este comando será evaluado como código de Ruby. Escribiremos el clásico "Hola Mundo" por pantalla:
 
