@@ -6,13 +6,39 @@ excerpt: "Capítulo N°2 del curso de Ruby"
 tags: [ruby]
 ---
 
-# Hola
+# Instalación
 
-Amigos.
+## Linux y Mac
 
-Si utilizas Linux o Mac, ya tienes instalado Ruby ya que estos Sistemas Operativos ya vienen con una versión de Ruby preconfigurada.
+Sistemas Operativos como Linux y Mac OS ya poseen una versión de Ruby preconfigurada, por lo que no será necesario instalar este lenguaje a menos que tengas una versión antigua (inferior a 2.0) ya que en ese caso conviene actualizar:
 
-Cualquier versión servirá, siempre y cuando sea superior a 2
+### Ubuntu
+
+Para el caso de Ubuntu (Linux), lo recomendable es instalar Ruby por medio de **rvm**, lo cual nos permitirá definir qué versión de Ruby queremos utilizar:
+
+```
+sudo apt-get install libgdbm-dev libncurses5-dev automake libtool bison libffi-dev
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+curl -sSL https://get.rvm.io | bash -s stable
+source ~/.rvm/scripts/rvm
+rvm install 2.5.1
+rvm use 2.5.1 --default
+gem install bundler
+```
+
+### Mac OS
+
+```
+brew install rbenv ruby-build
+echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bash_profile
+source ~/.bash_profile
+rbenv install 2.5.1
+rbenv global 2.5.1
+```
+
+Cabe destacar que los comandos de instalación de Ruby en Ubuntu y Mac OS han sido extraídos de **GoRails**, tomando en cuenta las últimas versiones de estos Sistemas Operativos (18.10 y 10.14 respectivamente), por lo que si posees alguna versión más antigua de éstos, te recomiendo visitar esta [página](https://gorails.com/setup/ubuntu/18.10).
+
+## Windows
 
 Si utilizas Windows
 
