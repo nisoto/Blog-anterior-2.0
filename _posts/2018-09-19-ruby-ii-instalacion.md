@@ -8,7 +8,7 @@ tags: [ruby]
 
 # Instalación
 
-## Linux y Mac
+## Linux y Mac OS
 
 Sistemas Operativos como Linux y Mac OS ya poseen una versión de Ruby preconfigurada, por lo que no será necesario instalar este lenguaje a menos que tengas una versión antigua (inferior a 2.0) ya que en ese caso conviene actualizar:
 
