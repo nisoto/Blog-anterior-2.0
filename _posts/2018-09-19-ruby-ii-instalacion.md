@@ -42,7 +42,7 @@ Cabe destacar que los comandos de instalación de Ruby en Ubuntu y Mac OS han si
 
 Si utilizas Windows (cualquiera sea su versión) podrás intalar este lenguaje desde [RubyInstaller](https://rubyinstaller.org/) o [RailsInstaller](http://railsinstaller.org/en), la opción que elijas dependerá de tus necesitades personales (por ejemplo, si estás interesado en aprender Ruby on Rails conviene instalar RailsInstaller).
 
-Podemos verificar la correcta instalación de este lenguaje (cualquiera sea su Sistema Operativo) abriendo la terminal y escribiendo el siguiente comando:
+Podemos verificar la correcta instalación de este lenguaje (cualquiera sea tu Sistema Operativo) abriendo la terminal y escribiendo el siguiente comando:
 
 ```
 $ ruby -v
