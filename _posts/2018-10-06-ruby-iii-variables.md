@@ -61,3 +61,21 @@ Existen algunas restricciones que deberías considerar a la hora de trabajar con
 1. A una variable no debes darle nombres de palabras reservadas del lenguaje (tales como `new`, `def`, `if`, etc.). Si eres un principiante en el mundo de la programación, las palabras reservadas por lo general toman un color azul.
 2. No debes colocar la primera letra del nombre de una variable con mayúsculas porque en ese caso estarías hablando de una **constante**.
 3. El nombre de una variable no puede comenzar con un número ya que esto generaría un error.
+
+## Constantes
+
+Una constante se diferencia a una variable en que **no cambia durante la ejecución de un programa**. En el apartado anterior se hizo una mención a ellas, en donde se especificó que la primera letra del nombre debe estar en mayúsculas, por ejemplo:
+
+``` ruby
+Pi = 3.14
+Nombre_del_tutor = "Nicolas"
+```
+
+Cabe destacar que utilizar sólo mayúsculas igual funciona, es decir:
+
+``` ruby
+NUM = 1
+NOMBRE = "Nicolas"
+```
+
+También son constantes válidas en Ruby.
