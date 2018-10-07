@@ -14,7 +14,7 @@ Una variable corresponde a un espacio de memoria que, como su nombre lo indica, 
 name = "Nicolas"
 ```
 
-En el ejemplo anterior, `name` es el **nombre** de la variable, `=` corresponde al **operador de asignación**, el cual le indica a la variable que debe guardar lo que se encuentra a la derecha de este operador (en este caso, la cadena "Nicolas") y "Nicolás" es el valor que guarda la variable.
+En el ejemplo anterior, `name` es el **nombre** de la variable, `=` corresponde al **operador de asignación**, el cual le indica a la variable que debe guardar lo que se encuentra a la derecha de este operador (en este caso, una cadena de texto) y "Nicolás" es el valor que guarda la variable.
 
 A diferencia de otros lenguajes como Java, en Ruby no es necesario especificar el tipo de dato de una variable ya que el intérprete deduce cual es el tipo a partir del valor.
 
