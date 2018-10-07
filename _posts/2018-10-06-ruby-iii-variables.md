@@ -62,7 +62,7 @@ Existen algunas restricciones que deberías considerar a la hora de trabajar con
 2. No debes colocar la primera letra del nombre de una variable con mayúsculas porque en ese caso estarías hablando de una **constante**.
 3. El nombre de una variable no puede comenzar con un número ya que esto generaría un error.
 
-## Constantes
+# Constantes
 
 Una constante se diferencia a una variable en que **no cambia durante la ejecución de un programa**. En el apartado anterior se hizo una mención a ellas, en donde se especificó que la primera letra del nombre debe estar en mayúsculas, por ejemplo:
 
