@@ -46,7 +46,7 @@ A la hora de trabajar con variables, puede darse el caso que contengan más de u
 nombre_del_tutor = "Nicolas"
 ```
 
-Esta práctica se conoce como **Snake case** (recibe este nombre ya que todo está en un mismo nivel y separado por guiones).
+Esta práctica se conoce como **Snake case** (Víbora) y recibe este nombre ya que todo se encuentra en un mismo nivel y separado por guiones.
 
 Existe otra práctica que hace uso de las mayúsculas (ignorando el guión bajo) y se conoce como **Camel case**. Si tomamos el ejemplo anterior sería algo como:
 
@@ -55,3 +55,9 @@ nombreDelTutor = "Nicolas"
 ```
 
 El tipo de práctica a utilizar dependerá netamente del programador, aunque por temas de legibilidad conviene utilizar **Snake case**. Lo importante es que los nombres de las variables sean muy expresivas.
+
+Existen algunas restricciones que deberías considerar a la hora de trabajar con variables:
+
+1. A una variable no debes darle nombres de palabras reservadas del lenguaje (tales como `new`, `def`, `if`, etc.). Si eres un principiante en el mundo de la programación, las palabras reservadas por lo general toman un color azul.
+2. No debes colocar la primera letra del nombre de una variable con mayúsculas porque en ese caso estarías hablando de una **constante**.
+3. El nombre de una variable no puede comenzar con un número ya que esto generaría un error.
