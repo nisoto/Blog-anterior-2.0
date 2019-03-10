@@ -80,3 +80,7 @@ $ ruby hola_mundo.rb
 ```
 
 Donde **hola_mundo** corresponde al nombre del programa y `.rb` es la extensión de Ruby (así como `.c` lo es para el lenguaje C y `.py` lo es para Python).
+
+|     |     |
+|:----|----:|
+| [< Introducción](https://nisoto.github.io/ruby-i-introduccion/){: .btn .btn-info} | [Variables >](https://nisoto.github.io/ruby-iii-variables/){: .btn .btn-info} |
