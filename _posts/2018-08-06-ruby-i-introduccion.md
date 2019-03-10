@@ -54,4 +54,4 @@ Cabe destacar que Ruby aparte de ser gratuito, también es libre para usarlo, co
 
 |     |     |
 |:----|----:|
-| [Anterior](https://nisoto.github.io/blog/){: .btn .btn-info} | [Siguiente](https://nisoto.github.io/ruby-ii-instalacion/){: .btn .btn-info} |
+| [Inicio](https://nisoto.github.io/blog/){: .btn .btn-info} | [Instalación](https://nisoto.github.io/ruby-ii-instalacion/){: .btn .btn-info} |
