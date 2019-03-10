@@ -52,6 +52,6 @@ Cabe destacar que Ruby aparte de ser gratuito, también es libre para usarlo, co
 * Si no te gusta repetir código (**Don’t Repeat Yourself**, lo que en español significa **"No te repitas"**; es decir, escribir menos código y que el mantenimiento sea más práctico).
 * Si quieres ser parte de una **comunidad activa** (Ruby tiene documentación, tutoriales y un largo etc. activos, además de poseer una de las mejores comunidades en lenguajes de programación).
 
-|     |     |     |
-|:----|:---:|----:|
-| [<](https://nisoto.github.io/blog/){: .btn .btn-info} | [Volver](https://nisoto.github.io/blog/){: .btn .btn-info} | [2](https://nisoto.github.io/ruby-ii-instalacion/){: .btn .btn-info} |
+|     |     |
+|:----|----:|
+| [Anterior](https://nisoto.github.io/blog/){: .btn .btn-info} | [Siguiente](https://nisoto.github.io/ruby-ii-instalacion/){: .btn .btn-info} |
