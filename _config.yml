@@ -1,10 +1,10 @@
 # Site
-title:          Raudy
+title:          Blog Raudy
 bio:            'Nicolás Soto'
 description:    "La mejor forma de predecir el futuro es implementarlo - D. D. Hansson"
 picture:        'assets/img/profile.png'
 locale:         en_US
-#url:            https://nisoto.github.io
+url:            https://nisoto.github.io
 
 
 # Jekyll
