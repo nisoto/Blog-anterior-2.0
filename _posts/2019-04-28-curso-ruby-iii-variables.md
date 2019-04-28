@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Curso de Ruby III: Variables"
-date: 2018-10-06
+date: 2019-04-28
 excerpt: "Capítulo N°3 del curso de Ruby"
 tags: [ruby]
 ---
