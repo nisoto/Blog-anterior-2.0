@@ -167,3 +167,7 @@ puts b.even?  # FALSE
 c = 2
 puts c.next  # 3
 ```
+
+|     |     |
+|:----|----:|
+| [< Introducción](https://nisoto.github.io/curso-ruby-ii-instalacion/){: .btn .btn-info} | [Variables >](https://nisoto.github.io/blog/){: .btn .btn-info} |
