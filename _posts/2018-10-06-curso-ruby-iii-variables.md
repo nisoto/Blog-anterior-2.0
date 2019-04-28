@@ -151,7 +151,7 @@ puts y.to_i  # 12
 
 El método `to_i` **convierte un número de Punto Flotante en Entero**. Aquí es importante destacar que al momento de realizar la conversión, se toma la parte entera realizando un truncamiento y **no** un redondeo (o aproximación).
 
-Ya que los números son un objeto, aquí tenemos algunos métodos que son bastante utilizados:
+Ya que los números son un objeto, lo siguiente son algunos de los métodos más conocidos:
 
 ``` ruby
 # Determina el valor absoluto de un número
