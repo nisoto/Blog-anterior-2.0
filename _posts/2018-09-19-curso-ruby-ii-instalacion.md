@@ -83,4 +83,4 @@ Donde **hola_mundo** corresponde al nombre del programa y `.rb` es la extensión
 
 |     |     |
 |:----|----:|
-| [< Introducción](https://nisoto.github.io/ruby-i-introduccion/){: .btn .btn-info} | [Variables >](https://nisoto.github.io/ruby-iii-variables/){: .btn .btn-info} |
+| [< Introducción](https://nisoto.github.io/curso-ruby-i-introduccion/){: .btn .btn-info} | [Variables >](https://nisoto.github.io/curso-ruby-iii-variables/){: .btn .btn-info} |
