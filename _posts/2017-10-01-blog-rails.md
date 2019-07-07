@@ -3,7 +3,7 @@ layout: post
 title:  "Blog con Ruby on Rails"
 image: "/assets/img/ruby3.png"
 date:   2017-10-01
-excerpt: "Blog personal desarrollado con Ruby on Rails"
+excerpt: "Desarrollo de un Blog personal utilizando Ruby on Rails"
 project: true
 tag:
 - Rails
