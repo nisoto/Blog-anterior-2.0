@@ -168,6 +168,75 @@ c = 2
 puts c.next  # 3
 ```
 
+# Cadenas
+
+Una cadena o **string** corresponde a un conjunto de caracteres (recuerda que un caracter puede ser una letra, un espacio o incluso un signo). Se inicializan de la siguiente manera:
+
+``` ruby
+cadena = "Hola mundo"
+cadena2 = 'Hola mundo'
+```
+
+Como pudiste notar, puedes utilizar tanto comillas **dobles** como **simples**, aunque generalmente se utilizan las primeras (el porqué lo veremos más adelante).
+
+Por lo general, a la hora de manipular cadenas vas a querer tener variables que incluyan el resultado de una operación y para ello existen 2 formas:
+
+## Concatenación
+
+Veamos el siguiente ejemplo:
+
+``` ruby
+nombre = "Nicolas"
+puts "Hola " + nombre
+```
+
+## Interpolación
+
+Llevando el ejemplo anterior a este método tendríamos lo siguiente:
+
+``` ruby
+nombre = "Nicolas"
+puts "Hola #{nombre}"  # Lo que se encuentra dentro de las llaves se evalúa como código de Ruby
+```
+
+Al igual que los números, las cadenas también son métodos. Veamos algunos de los métodos más utilizados:
+
+``` ruby
+# Determina la cantidad de caracteres de una cadena
+cadena = "Esto es una cadena en Ruby"
+puts cadena.length  # 26
+
+# Convierte los caracteres de una cadena a mayúsculas
+nombre = "nicolas"
+puts nombre.upcase  # "NICOLAS"
+
+# Convierte los caracteres de una cadena a minúsculas
+nombre = "NICOLAS"
+puts nombre.downcase  # "nicolas"
+
+# Convierte la primera letra de una cadena a mayúscula
+nombre = "nicolas"
+puts nombre.capitalize  # "Nicolas"
+```
+
+Tal vez te parezca raro que los métodos descritos hasta el momento (tanto para cadenas como números) no tengan el respectivo paréntesis al final y es porque en Ruby no es obligatorio su uso, ya que solo se recomiendan cuando recibimos parámetros. Por ejemplo:
+
+``` ruby
+cadena = "Mi primera cadena en Ruby"
+puts cadena.slice(3,7)
+```
+
+El método `slice` crea una subcadena, donde el primer parámetro corresponde al inicio de la subcadena (desde donde queremos comenzar) y el segundo parámetro corresponde a la cantidad de caracteres que queremos mostrar desde el inicio de la subcadena.
+
+Debido a que existen muchos métodos para las cadenas y números, una forma de determinar cuales son todos los métodos disponibles es ejecutar la siguiente línea de código:
+
+``` ruby
+"".methods  # Para cadenas
+1.methods   # Para números
+```
+
+Para mayor información, te recomiendo que revises la documentación de Ruby.
+
 |     |     |
 |:----|----:|
 | [< Instalación](https://nisoto.github.io/curso-ruby-ii-instalacion/){: .btn .btn-info} | [Siguiente >](https://nisoto.github.io/blog/){: .btn .btn-info} |
