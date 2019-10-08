@@ -173,7 +173,7 @@ puts c.next  # 3
 Una cadena o **string** corresponde a un conjunto de caracteres (recuerda que un caracter puede ser una letra, un espacio o incluso un signo). Se inicializan de la siguiente manera:
 
 ``` ruby
-cadena = "Hola mundo"
+cadena1 = "Hola mundo"
 cadena2 = 'Hola mundo'
 ```
 
@@ -235,7 +235,13 @@ Debido a que existen muchos métodos para las cadenas y números, una forma de d
 1.methods   # Para números
 ```
 
-Para mayor información, te recomiendo que revises la documentación de Ruby.
+Para mayor información, te recomiendo que revises la documentación de [Ruby](https://www.ruby-lang.org/es/documentation/).
+
+Una cosa importante es que si utilizas tildes, puede que tengas problemas a la hora de ejecutar tus programas, por lo que te recomiendo agregar, al principio de tu código, la siguiente línea:
+
+``` ruby
+# encoding: utf-8
+```
 
 |     |     |
 |:----|----:|
