@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Curso de Ruby I: Introducción"
+title: "Ruby I: Introducción"
 date: 2020-02-17
 excerpt: "Capítulo N°1 del curso de Ruby"
 tags: [ruby]
