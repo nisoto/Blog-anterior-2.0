@@ -6,32 +6,32 @@ excerpt: "Capítulo N°1 del curso de Ruby"
 tags: [ruby]
 ---
 
-# 1 ¿Qué es Ruby?
+# ¿Qué es Ruby?
 
 Ruby es un **lenguaje de programación** creado por el programador japonés Yukihiro “Matz” Matsumoto en 1995, el cual está inspirado en Lisp, Perl, Smalltalk, Eiffel y Ada.
 
-## 1.1 Características
+## Características
 
 * Interpretado
 * No hay puntos y comas
 * Tipado dinámico (no es necesario indicar el tipo de dato)
 * Todo es un **objeto**, lo que permite una mayor flexibilidad
 
-## 1.2 Ventajas
+## Ventajas
 
 * Productividad
 * Puedes reescribir el lenguaje
 * Es muy expresivo ya que prefiere el inglés a la puntuación
 * Inspiró la creación de otros lenguajes
 
-## 1.3 Uso de Ruby
+## Uso de Ruby
 
 * Aplicaciones Web (Ruby on Rails)
 * Utilidades de la terminal
 * Aplicaciones móviles nativas (Rubymotion)
 * Interfaces gráficas
 
-## 1.4 Empresas que utilizan Ruby
+## Empresas que utilizan Ruby
 
 * Basecamp
 * Github
@@ -41,7 +41,7 @@ Ruby es un **lenguaje de programación** creado por el programador japonés Yuki
 
 **Nota:** Ruby tiene un lema **No te repitas** (Don't Repeat Yourself o DRY), el cual consiste en escribir menos código y que el mantenimiento sea más práctico.
 
-# 2. Variables
+# Variables
 
 Una **variable** es un espacio de almacenamiento en la memoria que puede cambiar su contenido a lo largo de la ejecucion de un programa.
 
