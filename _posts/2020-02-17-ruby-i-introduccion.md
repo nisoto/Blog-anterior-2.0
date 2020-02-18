@@ -6,7 +6,7 @@ excerpt: "Capítulo N°1 del curso de Ruby"
 tags: [ruby]
 ---
 
-# Introducción a Ruby
+## ¿Qué es Ruby?
 
 Ruby es un **lenguaje de programación** creado por el programador japonés Yukihiro “Matz” Matsumoto en 1995, el cual está inspirado en Lisp, Perl, Smalltalk, Eiffel y Ada.
 
