@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Curso de Ruby II: Instalación"
-date: 2020-03-19
+date: 2020-03-18
 excerpt: "Capítulo N°2 del curso de Ruby"
 tags: [ruby]
 ---
