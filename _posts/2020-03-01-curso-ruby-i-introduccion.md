@@ -6,7 +6,7 @@ excerpt: "Capítulo N°1 del curso de Ruby"
 tags: [ruby]
 ---
 
-# ¿Qué es Ruby?
+# 1. ¿Qué es Ruby?
 
 Es un **lenguaje de programación**, creado por el programador japonés Yukihiro "Matz" Matsumoto, quien comenzó a trabajar en él en 1993 y lo presentó públicamente en 1995. Este lenguaje está inspirado en Lisp, Perl, Smalltalk, Eiffel y Ada (todos estos lenguajes contribuyeron al diseño con el que está construido Ruby).
 
@@ -16,9 +16,7 @@ Desde su liberación, Ruby ha atraído devotos desarrolladores de todo el mundo.
 
 Cabe destacar que Ruby aparte de ser gratuito, también es libre para usarlo, copiarlo, modificarlo y distribuirlo.
 
----
-
-# Características
+# 2. Características
 
 1. **Es interpretado**, es decir, no existe un compilador ya parte del instalador incluye un intérprete que lee línea por línea las instrucciones del lenguaje de programación y las va ejecutando.
 2. **Sin puntos y coma**, lo que reduce la cantidad de tiempo que uno a veces invierte buscando errores de sintáxis, como ocurre habitualmente en lenguajes como C++ y Java, entre otros.
@@ -27,9 +25,7 @@ Cabe destacar que Ruby aparte de ser gratuito, también es libre para usarlo, co
 5. **Es Muy productivo** ya que puedes terminar proyectos más rápidos que con otros lenguajes.
 6. **Puedes reescribir el lenguaje**, es decir, puedes abrir una clase del lenguaje y agregar tus propios métodos (reescribir el lenguaje), tal como se detalló un poco más arriba.
 
----
-
-# El legado de Ruby
+# 3. El legado de Ruby
 
 * Existen múltiples implementaciones del lenguaje (ya sea con C, C++ y Java, entre otros).
 * Ha inspirado la creación de otros lenguajes como **Elixir** o **CoffeeScript**, lo que quiere decir que este lenguaje está tan bien diseñado que otras tecnologías quieren replicar esas ventajas.
@@ -38,9 +34,7 @@ Cabe destacar que Ruby aparte de ser gratuito, también es libre para usarlo, co
 * Se puede utilizar Ruby para crear aplicaciones móviles nativos con **Rubymotion** (el cual se puede compilar tanto en Android como en iOS).
 * Se pueden crear interfaces gráficas con **QT** o **Swing**.
 
----
-
-# ¿Quiénes usan Ruby?
+# 4. ¿Quiénes usan Ruby?
 
 1. **Basecamp** (principales promotores ya que ellos son los creadores del famoso Framework **Ruby on Rails**)
 2. **Github**
@@ -50,9 +44,7 @@ Cabe destacar que Ruby aparte de ser gratuito, también es libre para usarlo, co
 6. **Twitter** (originalmente)
 7. Y un largo etc.
 
----
-
-# ¿Por qué utilizar Ruby?
+# 5. ¿Por qué utilizar Ruby?
 
 * Si quieres **incrementar tu productividad**.
 * Si te importa la **expresividad**.
