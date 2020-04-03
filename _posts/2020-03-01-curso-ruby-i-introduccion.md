@@ -16,6 +16,8 @@ Desde su liberación, Ruby ha atraído devotos desarrolladores de todo el mundo.
 
 Cabe destacar que Ruby aparte de ser gratuito, también es libre para usarlo, copiarlo, modificarlo y distribuirlo.
 
+---
+
 # Características
 
 1. **Es interpretado**, es decir, no existe un compilador ya parte del instalador incluye un intérprete que lee línea por línea las instrucciones del lenguaje de programación y las va ejecutando.
@@ -24,6 +26,8 @@ Cabe destacar que Ruby aparte de ser gratuito, también es libre para usarlo, co
 4. **Todo es un objeto**, lo que ofrece flexibilidad al lenguaje.
 5. **Es Muy productivo** ya que puedes terminar proyectos más rápidos que con otros lenguajes.
 6. **Puedes reescribir el lenguaje**, es decir, puedes abrir una clase del lenguaje y agregar tus propios métodos (reescribir el lenguaje), tal como se detalló un poco más arriba.
+
+---
 
 # El legado de Ruby
 
@@ -34,6 +38,8 @@ Cabe destacar que Ruby aparte de ser gratuito, también es libre para usarlo, co
 * Se puede utilizar Ruby para crear aplicaciones móviles nativos con **Rubymotion** (el cual se puede compilar tanto en Android como en iOS).
 * Se pueden crear interfaces gráficas con **QT** o **Swing**.
 
+---
+
 # ¿Quiénes usan Ruby?
 
 1. **Basecamp** (principales promotores ya que ellos son los creadores del famoso Framework **Ruby on Rails**)
@@ -43,6 +49,8 @@ Cabe destacar que Ruby aparte de ser gratuito, también es libre para usarlo, co
 5. **Airbnb**
 6. **Twitter** (originalmente)
 7. Y un largo etc.
+
+---
 
 # ¿Por qué utilizar Ruby?
 
