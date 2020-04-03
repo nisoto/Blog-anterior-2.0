@@ -6,7 +6,7 @@ excerpt: "Capítulo N°3 del curso de Ruby"
 tags: [ruby]
 ---
 
-# Variables
+# 1. Variables
 
 Una variable corresponde a un espacio de memoria que, como su nombre lo indica, puede cambiar su contenido a lo largo de la ejecución de un programa. Supongamos que tenemos la siguiente línea de código:
 
@@ -38,7 +38,7 @@ El programa mostraría por pantalla la cadena "Nicolas" y luego el número 25.
 
 **Nota:** en resumidas cuentas, una variable es un **identificador de un dato**.
 
-## Inicialización de variables
+## 1.1. Inicialización de variables
 
 A la hora de trabajar con variables, puede darse el caso que contengan más de una palabra. Por lo general, se suele separar cada palabra con un guión bajo, por ejemplo:
 
@@ -62,7 +62,7 @@ Existen algunas restricciones que deberías considerar a la hora de trabajar con
 2. No debes colocar la primera letra del nombre de una variable con mayúsculas porque en ese caso estarías hablando de una **constante**.
 3. El nombre de una variable no puede comenzar con un número ya que esto generaría un error.
 
-## Constantes
+## 1.2. Constantes
 
 Una constante se diferencia a una variable en que **no cambia durante la ejecución de un programa**. En el apartado anterior se hizo una mención a ellas, en donde se especificó que la primera letra del nombre debe estar en mayúsculas, por ejemplo:
 
@@ -80,7 +80,7 @@ NOMBRE = "Nicolas"
 
 También son constantes válidas en Ruby.
 
-# Números
+# 2. Números
 
 Dentro de lo que son los números tenemos dos importantes tipos o grupos: 
 
@@ -96,7 +96,7 @@ z = 365     # Entero
 w = 3.1415  # Punto flotante
 ```
 
-## Ejecutando operaciones aritméticas
+## 2.1. Ejecutando operaciones aritméticas
 
 Lo primero que vas a querer hacer con los números será ejecutar cálculos matemáticos. Para ello, solo basta con colocar el respectivo operador y listo, es decir:
 
@@ -111,7 +111,7 @@ puts x / y  # 10
 
 Más adelante veremos con detalle estos operadores, donde prima la preferencia que ocupa cada uno.
 
-## Diferencia entre trabajar con Enteros y Punto Flotante
+## 2.2. Diferencia entre trabajar con Enteros y Punto Flotante
 
 Supongamos que queremos ejecutar la siguiente operación:
 
@@ -133,7 +133,7 @@ puts x / y  # 3.3333333333333335
 
 Esta vez tenemos el resultado esperado.
 
-## Casting o Conversión de Números
+## 2.3. Casting o Conversión de Números
 
 En el primer capítulo se mencionó que en Ruby **todo es un objeto**, esto significa que los números son un objeto, y todo objeto tiene sus respectivos métodos:
 
@@ -168,7 +168,7 @@ c = 2
 puts c.next  # 3
 ```
 
-# Cadenas
+# 3. Cadenas
 
 Una cadena o **string** corresponde a un conjunto de caracteres (recuerda que un caracter puede ser una letra, un espacio o incluso un signo). Se inicializan de la siguiente manera:
 
@@ -181,7 +181,7 @@ Como pudiste notar, puedes utilizar tanto comillas **dobles** como **simples**, 
 
 Por lo general, a la hora de manipular cadenas vas a querer tener variables que incluyan el resultado de una operación y para ello existen 2 formas:
 
-## Concatenación
+## 3.1. Concatenación
 
 Veamos el siguiente ejemplo:
 
@@ -190,7 +190,7 @@ nombre = "Nicolas"
 puts "Hola " + nombre
 ```
 
-## Interpolación
+## 3.2. Interpolación
 
 Llevando el ejemplo anterior a este método tendríamos lo siguiente:
 
