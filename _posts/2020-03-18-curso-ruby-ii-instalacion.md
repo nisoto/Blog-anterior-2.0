@@ -6,13 +6,13 @@ excerpt: "Capítulo N°2 del curso de Ruby"
 tags: [ruby]
 ---
 
-# Instalación
+# 1. Instalación
 
-## Linux y Mac OS
+## 1.1. Linux y Mac OS
 
 Sistemas Operativos como Linux y Mac OS ya poseen una versión de Ruby preconfigurada, por lo que no será necesario instalar este lenguaje a menos que tengas una versión antigua (inferior a 2.0) ya que en ese caso conviene actualizar:
 
-### Ubuntu
+### 1.1.1. Ubuntu
 
 Para el caso de Ubuntu (Linux), lo recomendable es instalar Ruby por medio de **rvm**, lo cual nos permitirá definir qué versión de Ruby queremos utilizar:
 
@@ -26,7 +26,7 @@ rvm use 2.7.0 --default
 ruby -v
 ```
 
-### Mac OS
+### 1.1.2. Mac OS
 
 ```
 brew install rbenv ruby-build
@@ -43,7 +43,7 @@ ruby -v
 
 Cabe destacar que los comandos de instalación de Ruby en Ubuntu y Mac OS han sido extraídos de **GoRails**, tomando en cuenta las últimas versiones de estos Sistemas Operativos (18.04 y 10.15 respectivamente), por lo que si posees alguna versión más antigua de éstos, te recomiendo visitar esta [página](https://gorails.com/setup/ubuntu/18.04).
 
-## Windows
+## 1.2. Windows
 
 Si utilizas Windows (cualquiera sea su versión) podrás intalar este lenguaje desde [RubyInstaller](https://rubyinstaller.org/) o [RailsInstaller](http://railsinstaller.org/en), la opción que elijas dependerá de tus necesitades personales (por ejemplo, si estás interesado en aprender Ruby on Rails conviene instalar RailsInstaller).
 
@@ -54,11 +54,7 @@ $ ruby -v
 ruby 2.7.0p0 (2019-12-25 revision 647ee6f091) [x86_64-linux]
 ```
 
-
----
-
-
-# Consola Interactiva de Ruby (IRB)
+# 2. Consola Interactiva de Ruby (IRB)
 
 Una vez instalado Ruby, sólo debes escribir **irb** en la terminal para ingresar a la **"Consola interactiva"** que incluye este lenguaje:
 
