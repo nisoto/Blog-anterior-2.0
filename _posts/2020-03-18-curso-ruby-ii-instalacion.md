@@ -54,6 +54,8 @@ $ ruby -v
 ruby 2.7.0p0 (2019-12-25 revision 647ee6f091) [x86_64-linux]
 ```
 
+---
+
 # Consola Interactiva de Ruby (IRB)
 
 Una vez instalado Ruby, sólo debes escribir **irb** en la terminal para ingresar a la **"Consola interactiva"** que incluye este lenguaje:
