@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Blog con Ruby on Rails"
+title:  "Blog Personal"
 image: "/assets/img/ruby3.png"
 date:   2017-10-01
-excerpt: "Implementación de un Blog Personal utilizando Ruby on Rails"
+excerpt: "Implementación de un Blog personal utilizando Ruby on Rails"
 project: true
 tag:
 - Rails
@@ -11,9 +11,10 @@ tag:
 
 # Descripción
 
-Hola amigos.
+Implementación de un Blog personal utilizando Ruby on Rails.
 
 # Requisitos
 
-* Ruby (descárgalo [aquí](https://www.ruby-lang.org/es/downloads/))
+* Ruby
+* Ruby on Rails
 * Cualquier editor de código (opcional)
