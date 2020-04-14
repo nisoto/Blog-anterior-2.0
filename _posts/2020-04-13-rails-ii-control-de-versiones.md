@@ -56,3 +56,11 @@ Los Sistemas de Control de Versiones Distribuidos (DVCS por sus siglas en inglé
 ![VCS-Distribuido]({{ site.baseurl }}/assets/img/VCS-Distribuido.png)
 
 Además, muchos de estos sistemas se encargan de manejar numerosos repositorios remotos con los cuales pueden trabajar, de tal forma que puedes colaborar simultáneamente con diferentes grupos de personas en distintas maneras dentro del mismo proyecto. Esto permite establecer varios flujos de trabajo que no son posibles en sistemas centralizados, como pueden ser los modelos jerárquicos.
+
+## 2. Github
+
+Github corresponde a un Sistema de Control de Versiones que nos permite trabajar en colaboración con otras personas de todo el mundo, planificar proyectos y realizar un seguimiento del trabajo. Todo esto es almacenado en la nube.
+
+Github es también uno de los repositorios online más grandes de trabajo colaborativo en todo el mundo.
+
+Seguramente te preguntarás qué tiene que ver Github con Git y la respuesta es muy simple: **Git es el corazón de Github** y **Github el alma de Git**, es decir, Github corresponde a la parte centralizada de Git (recuerda que Git es un Sistema de Control de Versiones Distribuido).
