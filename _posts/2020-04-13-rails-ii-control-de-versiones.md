@@ -78,7 +78,6 @@ Crear una cuenta en Github es bastante sencillo, solo debemos ir a la [página](
 En Sistemas Operativos como **Ubuntu** o **Mac OS** Git ya viene instalado, por lo que solo debemos configurarlo. Para ello abrimos la terminal y tecleamos lo siguiente:
 
 ```
-git config --global color.ui true
 git config --global user.name "YOUR NAME"
 git config --global user.email "YOUR@EMAIL.com"
 ```
@@ -120,3 +119,15 @@ Para crear un repositorio en Github, debemos ir a la pestaña **"+"** ubicada en
 ![CrearRepositorio]({{ site.baseurl }}/assets/img/CrearRepositorio.jpg)
 
 Como puedes ver, el único campo obligatorio corresponde al **nombre** del repositorio. Una vez completados los datos, hacemos clic en **Create repository** y listo.
+
+## 4. Primeros pasos en Git
+
+En este apartado veremos algunos de los comandos básicos de Git que nos serán útiles a lo largo de este curso:
+
+* `git init`: Se utiliza para inicializar un repositorio.
+* `git clone`: Nos permite clonar un repositorio.
+* `git add`: Nos permite subir el trabajo realizado a un estado intermedio de git.
+* `git commit -m "comentario"`: Se utiliza para especificar un comentario del trabajo realizado.
+* `git pull`: Nos permite descargar la última versión del proyecto (ideal cuando estamos trabajando en equipo).
+* `git push`: Nos permite subir al repositorio de Github los cambios realizados (ubicados en ese estado intermedio).
+* `git status`: Nos muertra el estado del directorio de trabajo y el área de preparación (qué cambios se han organizado, cuáles no y qué archivos no están siendo rastreados por Git).
