@@ -99,7 +99,7 @@ Solo nos queda copiar la llave generada en nuestra cuenta de Github, para ello e
 cat ~/.ssh/id_rsa.pub
 ```
 
-Esto nos mostrará a través de la terminal la llave generada, que debemos copiar en la ruta **Settings -> SSH and GPG keys -> New SSH key**. Para verificar la correcta vinculación, basta con ejecutar en la terminal lo siguiente:
+Esto nos mostrará a través de la terminal la llave generada, que debemos copiar en la ruta **Settings > SSH and GPG keys > New SSH key**. Para verificar la correcta vinculación, basta con ejecutar en la terminal lo siguiente:
 
 ```
 ssh -T git@github.com
@@ -119,4 +119,4 @@ Para crear un repositorio en Github, debemos ir a la pestaña **"+"** ubicada en
 
 ![CrearRepositorio]({{ site.baseurl }}/assets/img/CrearRepositorio.jpg)
 
-Como puedes ver, el único campo obligatorio corresponde al **nombre** del repositorio. Una vez completados los campos, hacemos clic en **Create repository** y listo.
+Como puedes ver, el único campo obligatorio corresponde al **nombre** del repositorio. Una vez completados los datos, hacemos clic en **Create repository** y listo.
