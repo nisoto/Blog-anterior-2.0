@@ -76,3 +76,21 @@ Un claro ejemplo sería que normalmente en una aplicación de Rails definimos la
 Significa que está construido sobre **convenciones en lugar de configuraciones**, es decir, hacer lo que nosotros podríamos pensar que hace.
 
 Para que quede más claro lo que dije en el punto anterior, un ejemplo sería que Rails cuenta con ActiveRecord, el cual nos permite comunicarnos con la base de datos utilizando objetos en lugar de sentencias SQL, es decir, **¡Nada de SQL!**.
+
+### 3.3. Arquitectura
+
+Ruby on Rails hace uso de la arquitectura (o patrón) **MVC** (**Model View Controller**, que en español significa **Modelo Vista Controlador**), la cual simplifica la implementación de la aplicación dividiéndola en varias capas, donde cada una de ellas es responsable de realizar una tarea determinada.
+
+MVC consta de 3 capas:
+
+1. **Model**: se encarga de encapsular los datos y la lógica de negocios de la aplicación (tiene una constante comunicación con la base de datos).
+2. **View**: nos ayuda a construir las vistas (o interfaces), las cuales estarán en constante interacción con el cliente.
+3. **Controller**: se encarga de interpretar las entradas o peticiones de los clientes y también de responderlas (comunicándose ya sea con la capa Model o la capa View, dependiendo de lo que solicite el usuario).
+
+La imagen que verás a continuación explica de una manera sencilla todo lo anteriormente explicado:
+
+![MVC]({{ site.baseurl }}/assets/img/MVC.jpg)
+
+### 3.4. Preguntas frecuentes
+
+Hola.
