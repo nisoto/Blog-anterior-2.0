@@ -110,3 +110,13 @@ Lo cual debería desplegar un mensaje como el siguiente:
 ```
 Hi excid3! You've successfully authenticated, but GitHub does not provide shell access.
 ```
+
+### 3.4. Primer repositorio
+
+Primero que todo, un **repositorio** o "repo" es un directorio donde se almacenan los archivos de un proyecto. Puede estar ubicado en el almacenamiento de Github o localmente en tu computadora. En esta carpeta podemos almacenar archivos de código, imágenes, audios o todo lo relacionado con el proyecto.
+
+Para crear un repositorio en Github, debemos ir a la pestaña **"+"** ubicada en la barra superior de la aplcación y hacer clic en **New repository**, lo cual nos desplegará un formulario con algunos datos a completar:
+
+![CrearRepositorio]({{ site.baseurl }}/assets/img/CrearRepositorio.jpg)
+
+Como puedes ver, el único campo obligatorio corresponde al **nombre** del repositorio. Una vez completados los campos, hacemos clic en **Create repository** y listo.
