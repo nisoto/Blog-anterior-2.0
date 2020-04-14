@@ -93,4 +93,21 @@ La imagen que verás a continuación explica de una manera sencilla todo lo ante
 
 ### 3.4. Preguntas frecuentes
 
-Hola.
+1. **¿Necesito saber Ruby?** Más que Ruby, HTML es esencial.
+2. **¿Qué tengo que instalar?** Ruby, Ruby on Rails y Git.
+3. **¿Qué voy a aprender?** Trabajar con bases de datos, vistas, configurar permisos y un largo etc.
+
+### 3.5. ¡No olvidar!
+
+Un **Framework** suele ser confundido con un **IDE**, lo cual es totalmente erróneo:
+
+* **IDE**: Es solamente un editor de texto, posiblemente integrado con un compilador determinado, ofreciendo mayores facilidades para trabajar.
+* **Framework**: Es un conjunto de utilidades para desarrollar aplicaciones, normalmente un conjunto de clases que facilitan el trabajo y las tareas más pesadas.
+
+## 4. Git
+
+Git es un **Sistema de Control de Versiones** diseñado por Linus Torvalds.
+
+Por Control de Versiones me refiero a la gestión de los diversos cambios que se realizan sobre los elementos de algún producto o una configuración del mismo, es decir, es lo que hacemos al momento de desarrollar un software o una página web (subes tu código a la nube, le añades alguna parte o simplemente editas algo que no funciona correctamente, entre otros).
+
+A partir de lo anterior, un Sistema de Control de Versiones serían todas las herramientas que nos permiten hacer esas modificaciones antes mencionadas sobre nuestro código y hacen que sea más fácil la administración de las distintas versiones, es decir, **Git**.
