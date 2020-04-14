@@ -93,13 +93,13 @@ Para crear nuestra llave SSH, la cual nos permitirá vincular nuestro equipo a G
 ssh-keygen -t rsa -b 4096 -C "YOUR@EMAIL.com"
 ```
 
-Solo nos queda copiar la llave generada en nuestra cuenta de Github, para ello ejecutamos el siguiente comando:
+Solo nos queda copiar la llave generada en nuestra cuenta de Github, para ello ejecutamos el comando:
 
 ```
 cat ~/.ssh/id_rsa.pub
 ```
 
-Esto nos mostrará a través de la terminal la llave generada, que debemos copiar en la ruta **Settings > SSH and GPG keys > New SSH key**. Para verificar la correcta vinculación, basta con ejecutar en la terminal lo siguiente:
+Que nos mostrará a través de la terminal la llave generada, que debemos copiar en la ruta **Settings > SSH and GPG keys > New SSH key**. Para verificar la correcta vinculación, basta con ejecutar en la terminal:
 
 ```
 ssh -T git@github.com
