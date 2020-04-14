@@ -69,4 +69,44 @@ Seguramente te preguntarás qué tiene que ver Github con Git y la respuesta es 
 
 ## 3. Configurando nuestro VCS
 
-Hola.
+### 3.1. Registrarse en Github
+
+Crear una cuenta en Github es bastante sencillo, solo debemos ir a la [página](https://github.com/) y hacer clic en **Sign up**, donde se nos pedirá un usuario, correo y contraseña.
+
+### 3.2. Configuración de Git
+
+En Sistemas Operativos como **Ubuntu** o **Mac OS** Git ya viene instalado, por lo que solo debemos configurarlo. Para ello abrimos la terminal y tecleamos lo siguiente:
+
+```
+git config --global color.ui true
+git config --global user.name "YOUR NAME"
+git config --global user.email "YOUR@EMAIL.com"
+```
+
+En **YOUR NAME** debemos colocar nuestro nombre y en **YOUR@EMAIL.COM** el correo que utilizamos para nuestra cuenta de Github.
+
+### 3.3. Habilitación de la llave SSH
+
+Para crear nuestra llave SSH, la cual nos permitirá vincular nuestro equipo a Github, debemos ir a la terminal y ejecutar lo siguiente:
+
+```
+ssh-keygen -t rsa -b 4096 -C "YOUR@EMAIL.com"
+```
+
+Solo nos queda copiar la llave generada en nuestra cuenta de Github, para ello ejecutamos el siguiente comando:
+
+```
+cat ~/.ssh/id_rsa.pub
+```
+
+Esto nos mostrará a través de la terminal la llave generada, que debemos copiar en la ruta **Settings -> SSH and GPG keys -> New SSH key**. Para verificar la correcta vinculación, basta con ejecutar en la terminal lo siguiente:
+
+```
+ssh -T git@github.com
+```
+
+Lo cual debería desplegar un mensaje como el siguiente:
+
+```
+Hi excid3! You've successfully authenticated, but GitHub does not provide shell access.
+```
