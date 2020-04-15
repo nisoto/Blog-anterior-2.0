@@ -32,7 +32,7 @@ rvm use 2.7.1 --default
 ruby -v
 ```
 
-* **Referencia**: [gorails.com](https://gorails.com/setup/ubuntu/18.04), apartado **Installing Ruby**.
+**Referencia**: [gorails.com](https://gorails.com/setup/ubuntu/18.04), apartado **Installing Ruby**.
 
 ## 2. Instalación de Rails
 
@@ -43,7 +43,7 @@ gem install rails -v 6.0.2.2
 rails -v
 ```
 
-* **Referencia**: [gorails.com](https://gorails.com/setup/ubuntu/18.04), apartado **Installing Rails**.
+**Referencia**: [gorails.com](https://gorails.com/setup/ubuntu/18.04), apartado **Installing Rails**.
 
 ## 3. Primeros pasos en Ruby on Rails
 
