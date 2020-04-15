@@ -32,7 +32,33 @@ Para visualizar todas las carpetas y ficheros que éste contiene.
 
 Si ejecutamos el comando `ls` dentro de la carpeta de nuestro proyecto podremos visualizar todas las carpetas y ficheros que éste contiene, los cuales poseen una estructura como la siguiente:
 
-![EstructuraRails]({{ site.baseurl }}/assets/img/EstructuraRails.png)
+```
+> .git
+> app
+> bin
+> config
+> db
+> lib
+> log
+> node_modules
+> public
+> storage
+> test
+> tmp
+> vendor
+  .browserlistrc
+  .gitignore
+  .ruby-version
+  babel.config.js
+  config.ru
+  Gemfile
+  Gemfile.lock
+  package.json
+  postcss.config.js
+  Rakefile
+  README.md
+  yarn.lock
+```
 
 No es necesario profundizar en todos y cada uno de los directorios y ficheros que se encuentran aquí, así que solo veremos los que estaremos utilizando a lo largo del desarrollo de nuestra aplicación:
 
