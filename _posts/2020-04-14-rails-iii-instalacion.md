@@ -32,7 +32,7 @@ rvm use 2.7.1 --default
 ruby -v
 ```
 
-**Referencia:** [gorails.com](https://gorails.com/setup/ubuntu/18.04)
+**Referencia**: [gorails.com](https://gorails.com/setup/ubuntu/18.04), apartado **Installing Ruby**.
 
 ## 2. Instalación de Rails
 
@@ -43,7 +43,7 @@ gem install rails -v 6.0.2.2
 rails -v
 ```
 
-**Referencia:** [gorails.com](https://gorails.com/setup/ubuntu/18.04)
+**Referencia**: [gorails.com](https://gorails.com/setup/ubuntu/18.04), apartado **Installing Rails**.
 
 ## 3. Primeros pasos en Ruby on Rails
 
@@ -108,31 +108,31 @@ En el capítulo anterior creamos nuestra cuenta de Github y nuestro primer repos
 
 Para subir dicho proyecto a la plataforma, debemos seguir los siguientes pasos (de manera ordenada):
 
-1. Primero, debemos inicializar nuestro repositorio:
+**Primero**, debemos inicializar nuestro repositorio:
 
 ```
 git init
 ```
 
-2. Luego, subir al estado intermedio de Git el proyecto:
+**Luego**, subir al estado intermedio de Git el proyecto:
 
 ```
 git add -A
 ```
 
-**Nota 1:** El comando `-A` subirá todas las carpetas y ficheros que se encuentran dentro la carpeta de nuestro proyectode Rails.
+**__Nota 1__**: El comando `-A` subirá todas las carpetas y ficheros que se encuentran dentro la carpeta de nuestro proyecto de Rails.
 
-3. No olvidemos añadir un comentario a lo que estamos subiendo:
+**No olvidemos** añadir un comentario a lo que estamos subiendo:
 
 ```
 git commit -m "first commit"
 ```
 
-4. Finalmente, realizamos la vinculación con el repositorio de Git y subimos los cambios con `git push`
+**Finalmente**, realizamos la vinculación con el repositorio de Github (para eso la llave SSH) y subimos los cambios con `git push`:
 
 ```
 git remote add origin git@github.com:nisoto/Prueba.git
 git push -u origin master
 ```
 
-**Nota 2:** Para las siguientes ocasiones, solo basta con ejecutar `git push` para subir los cambios.
+**__Nota 2__**: Para las siguientes ocasiones, solo basta con ejecutar `git push` para subir los cambios.
