@@ -73,6 +73,8 @@ No es necesario profundizar en todos y cada uno de los directorios y ficheros qu
 
 ## 3. Primera página en Rails
 
+### 3.1. Generación del Controlador
+
 Cuando accedemos a cualquier aplicación, ya sea de escritorio o web, por lo general lo primero que vemos es algún mensaje de bienvenida. Para hacer lo mismo en nuestra aplicación debemos crear como mínimo un controlador y una vista.
 
 Para crear un controlador, debemos ejecutar el **generador de controladores** y especificar el nombre de este y luego una acción. Por ejemplo, si queremos que nuestro controlador se llame `dashboard` y la acción `index`, debemos ejecutar (dentro de la carpeta de nuestro proyecto) lo siguiente:
@@ -84,7 +86,33 @@ rails generate controller dashboard index
 O también:
 
 ```
-rails g controller welcome index
+rails g controller dashboard index
 ```
 
-Con esto, Rails creará una serie de archivos y añadirá una ruta por ti, donde los archivos más importantes serán el **Controlador**, que se encuentra en `app/controllers` y la **vista**, ubicada en `app/views`.
+Con esto, Rails creará una serie de archivos y añadirá una ruta por ti, donde los archivos más importantes serán el **Controlador** de nombre `dashboard_controller.rb` (alojado en la ruta `app/controllers`) y la **Vista** de nombre `index.html.erb` (alojada en `app/views/dashboard`).
+
+Para acceder a la **Vista** que acabamos de crear, debemos arrancar el servidor con el comando `rails server` y acceder a la ruta [http://localhost:3000/dashboard/index](http://localhost:3000/dashboard/index).
+
+No olvidar:
+* `dashboard`: Corresponde al **Controlador**.
+* `index`: Corresponde a la **acción** o **método**.
+
+### 3.2. Estableciendo nuestra página principal
+
+El propósito de la **Vista** que acabamos de generar es que podamos visualizarla en nuestra página de inicio, es decir, en la URL [http://localhost:3000](http://localhost:3000). Para lograr esta hazaña, lo primero que debemos hacer es dirigirnos a la carpeta `routes` de nuestro proyecto y acceder al fichero `routes.rb`, donde encontraremos algo como lo siguiente:
+
+``` rb
+Rails.application.routes.draw do
+  get 'dashboard/index'
+end
+```
+
+Aquí debemos cambiar lo que se encuentra en la segunda línea por:
+
+``` rb
+root 'dashboard#index'
+```
+
+Lo que le permitirá a Rails asociar las peticiones de la raíz de la aplicación a la acción `index` del **Controlador** `dashboard`.
+
+Si ahora accedemos a la dirección [http://localhost:3000](http://localhost:3000) veremos la misma **Vista** que antes podíamos ver en [http://localhost:3000/dashboard/index](http://localhost:3000/dashboard/index).
