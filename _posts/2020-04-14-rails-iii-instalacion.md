@@ -32,7 +32,7 @@ rvm use 2.7.1 --default
 ruby -v
 ```
 
-**Referencia**: [gorails.com](https://gorails.com/setup/ubuntu/18.04), apartado **Installing Ruby**.
+* **Referencia**: [gorails.com](https://gorails.com/setup/ubuntu/18.04), apartado **Installing Ruby**.
 
 ## 2. Instalación de Rails
 
@@ -43,7 +43,7 @@ gem install rails -v 6.0.2.2
 rails -v
 ```
 
-**Referencia**: [gorails.com](https://gorails.com/setup/ubuntu/18.04), apartado **Installing Rails**.
+* **Referencia**: [gorails.com](https://gorails.com/setup/ubuntu/18.04), apartado **Installing Rails**.
 
 ## 3. Primeros pasos en Ruby on Rails
 
@@ -120,7 +120,7 @@ git init
 git add -A
 ```
 
-**Nota 1**: El comando `-A` subirá todas las carpetas y ficheros que se encuentran dentro la carpeta de nuestro proyecto de Rails.
+* **Nota 1**: El comando `-A` subirá todas las carpetas y ficheros que se encuentran dentro la carpeta de nuestro proyecto de Rails.
 
 **No olvidemos** añadir un comentario a lo que estamos subiendo:
 
@@ -135,4 +135,4 @@ git remote add origin git@github.com:nisoto/Prueba.git
 git push -u origin master
 ```
 
-**Nota 2**: Para las siguientes ocasiones, solo basta con ejecutar `git push` para subir los cambios.
+* **Nota 2**: Para las siguientes ocasiones, solo basta con ejecutar `git push` para subir los cambios.
