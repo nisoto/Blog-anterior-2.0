@@ -34,7 +34,7 @@ Si ejecutamos el comando `ls` dentro de la carpeta de nuestro proyecto podremos 
 
 ![EstructuraRails]({{ site.baseurl }}/assets/img/EstructuraRails.png)
 
-No es necesario profundizar en todos y cada uno de los directorios y ficheros que se encuentran aquí así que solo veremos los que estaremos utilizando a lo largo del desarrollo de nuestra aplicación:
+No es necesario profundizar en todos y cada uno de los directorios y ficheros que se encuentran aquí, así que solo veremos los que estaremos utilizando a lo largo del desarrollo de nuestra aplicación:
 
 * `app`: Dentro de este directorio tenemos varios subdirectorios, donde podemos destacar el **Modelo** (Models), la **Vista** (Views) y el **Controlador** (Controllers), es decir, el **Patrón MVC**.
 * `config`: Este directorio contiene los principales ficheros que nos permiten configurar la aplicación, es decir, la configuración de la **Base de Datos** (`database.yml`), la estructura de su entorno (`environment.rb`) y las **Rutas** (`routes.rb`), entre otros.
