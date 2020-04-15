@@ -32,6 +32,8 @@ rvm use 2.7.1 --default
 ruby -v
 ```
 
+**Referencia:** [gorails.com](https://gorails.com/setup/ubuntu/18.04)
+
 ## 2. Instalación de Rails
 
 Una vez instalado Ruby, ejecutamos lo siguiente para instalar Rails:
@@ -40,6 +42,8 @@ Una vez instalado Ruby, ejecutamos lo siguiente para instalar Rails:
 gem install rails -v 6.0.2.2
 rails -v
 ```
+
+**Referencia:** [gorails.com](https://gorails.com/setup/ubuntu/18.04)
 
 ## 3. Primeros pasos en Ruby on Rails
 
@@ -86,3 +90,49 @@ Para iniciar el servidor.
 Para ver tu aplicación en acción, abre tu navegador preferido y accede a [http://localhost:3000](http://localhost:3000), donde deberías ver algo como lo siguiente:
 
 ![HolaRails]({{ site.baseurl }}/assets/img/hirails!.png)
+
+### 3.3. Principales comandos de Rails
+
+Rails cuenta con una serie de comandos que serán de gran utilidad a lo largo de la construcción de nuestra aplicación. A continuación algunos:
+
+* `rails generate` o `rails g`: Genera ficheros tales como assets, model, controller, helper, migration y scaffold, entre otros.
+* `rails console` o `rails c`: Llama a la consola de ruby para manipular las clases del proyecto.
+* `rails server` o `rails s`: Inicia el servidor de rails que, por defecto, corre en el **puerto 3000**.
+* `rails dbconsole` o `rails db`: Se conecta a la base de datos con la que estamos trabajando.
+
+### 3.4. Subiendo nuestro proyecto a Github
+
+En el capítulo anterior creamos nuestra cuenta de Github y nuestro primer repositorio, en el cual subiremos el proyecto de Rails que acabamos de generar.
+
+![PrimerRepo]({{ site.baseurl }}/assets/img/PrimerRepo.jpg)
+
+Para subir dicho proyecto a la plataforma, debemos seguir los siguientes pasos (de manera ordenada):
+
+1. Primero, debemos inicializar nuestro repositorio:
+
+```
+git init
+```
+
+2. Luego, subir al estado intermedio de Git el proyecto:
+
+```
+git add -A
+```
+
+**Nota 1:** El comando `-A` subirá todas las carpetas y ficheros que se encuentran dentro la carpeta de nuestro proyectode Rails.
+
+3. No olvidemos añadir un comentario a lo que estamos subiendo:
+
+```
+git commit -m "first commit"
+```
+
+4. Finalmente, realizamos la vinculación con el repositorio de Git y subimos los cambios con `git push`
+
+```
+git remote add origin git@github.com:nisoto/Prueba.git
+git push -u origin master
+```
+
+**Nota 2:** Para las siguientes ocasiones, solo basta con ejecutar `git push` para subir los cambios.
