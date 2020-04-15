@@ -70,3 +70,21 @@ No es necesario profundizar en todos y cada uno de los directorios y ficheros qu
 * `test`: Dentro de este directorio se encuentran todos los ficheros que nos ayudarán a realizar pruebas de testeo a la aplicación.
 * `vendor`: Este directorio contiene la tercera parte del código, tales como plugins y gemas.
 * `Gemfile`: Junto al fichero `Gemfile.lock`, nos permiten especificar qué gemas son necesarias para nuestra aplicación.
+
+## 3. Primera página en Rails
+
+Cuando accedemos a cualquier aplicación, ya sea de escritorio o web, por lo general lo primero que vemos es algún mensaje de bienvenida. Para hacer lo mismo en nuestra aplicación debemos crear como mínimo un controlador y una vista.
+
+Para crear un controlador, debemos ejecutar el **generador de controladores** y especificar el nombre de este y luego una acción. Por ejemplo, si queremos que nuestro controlador se llame `dashboard` y la acción `index`, debemos ejecutar (dentro de la carpeta de nuestro proyecto) lo siguiente:
+
+```
+rails generate controller dashboard index
+```
+
+O también:
+
+```
+rails g controller welcome index
+```
+
+Con esto, Rails creará una serie de archivos y añadirá una ruta por ti, donde los archivos más importantes serán el **Controlador**, que se encuentra en `app/controllers` y la **vista**, ubicada en `app/views`.
