@@ -120,7 +120,7 @@ git init
 git add -A
 ```
 
-**__Nota 1__**: El comando `-A` subirá todas las carpetas y ficheros que se encuentran dentro la carpeta de nuestro proyecto de Rails.
+**Nota 1**: El comando `-A` subirá todas las carpetas y ficheros que se encuentran dentro la carpeta de nuestro proyecto de Rails.
 
 **No olvidemos** añadir un comentario a lo que estamos subiendo:
 
@@ -135,4 +135,4 @@ git remote add origin git@github.com:nisoto/Prueba.git
 git push -u origin master
 ```
 
-**__Nota 2__**: Para las siguientes ocasiones, solo basta con ejecutar `git push` para subir los cambios.
+**Nota 2**: Para las siguientes ocasiones, solo basta con ejecutar `git push` para subir los cambios.
