@@ -9,11 +9,11 @@ tag:
 - Rails
 ---
 
-# Descripción
+## Descripción
 
 Implementación de un Blog personal utilizando Ruby on Rails.
 
-# Requisitos
+## Requisitos
 
 * Ruby
 * Ruby on Rails
