@@ -131,3 +131,7 @@ En este apartado veremos algunos de los comandos básicos de Git que nos serán 
 * `git pull`: Nos permite descargar la última versión del proyecto (ideal cuando estamos trabajando en equipo).
 * `git push`: Nos permite subir al repositorio de Github los cambios realizados (ubicados en ese estado intermedio).
 * `git status`: Nos muertra el estado del directorio de trabajo y el área de preparación (qué cambios se han organizado, cuáles no y qué archivos no están siendo rastreados por Git).
+
+|     |     |
+|:----|----:|
+| [< Lección N°1](https://nisoto.github.io/rails-i-introduccion/){: .btn .btn-info} | [Lección N°3 >](https://nisoto.github.io/rails-iii-instalacion/){: .btn .btn-info} |
