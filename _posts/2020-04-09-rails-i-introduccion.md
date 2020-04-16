@@ -26,7 +26,7 @@ Es totalmente gratuito y no solo eso, también es libre para usarlo, copiarlo, m
 
 ### 2.2. Características
 
-1. **Es interpretado**, es decir, no existe un compilador ya parte del instalador incluye un intérprete que lee línea por línea las instrucciones del lenguaje de programación y las va ejecutando.
+1. **Es interpretado**, es decir, no existe un compilador ya que parte del instalador incluye un intérprete que lee línea por línea las instrucciones del lenguaje de programación y las va ejecutando.
 2. **Sin puntos y coma**, lo que reduce la cantidad de tiempo que uno a veces invierte buscando errores de sintáxis, como ocurre habitualmente en lenguajes como C++ y Java, entre otros.
 3. Es de **tipado dinámico**, por lo que no necesitas definir cual es el tipo de una variable.
 4. **Todo es un objeto**, lo que ofrece flexibilidad al lenguaje.
