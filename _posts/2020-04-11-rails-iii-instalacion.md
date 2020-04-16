@@ -45,9 +45,23 @@ rails -v
 
 **Referencia**: [gorails.com](https://gorails.com/setup/ubuntu/18.04), apartado **Installing Rails**.
 
-## 3. Primeros pasos en Ruby on Rails
+## 3. Instalación de un editor de código (IDE)
 
-### 3.1. Creación de nuestro proyecto
+Un editor de texto o código nos será de gran utilidad para trabajar en nuestro proyecto. En este caso utilizaremos **Atom**:
+
+```
+sudo apt update
+sudo apt install software-properties-common apt-transport-https wget
+wget -q https://packagecloud.io/AtomEditor/atom/gpgkey -O- | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main"
+sudo apt install atom
+```
+
+**Referencia**: [Atom en Ubuntu 18.04](https://linuxize.com/post/how-to-install-atom-text-editor-on-ubuntu-18-04/)
+
+## 4. Primeros pasos en Ruby on Rails
+
+### 4.1. Creación de nuestro proyecto
 
 Una vez instalado Ruby y Ruby on Rails en nuestra computadora crearemos un nuevo proyecto, para lo cual ejecutaremos el siguiente comando en la terminal:
 
@@ -71,7 +85,7 @@ O, si queremos utilizar PostgreSQL:
 rails new myapp -d postgresql
 ```
 
-### 3.2. Ejecución de nuestra aplicación
+### 4.2. Ejecución de nuestra aplicación
 
 Una vez creado nuestro proyecto, para ingresar a su directorio ejecutamos el siguiente comando:
 
@@ -91,7 +105,7 @@ Para ver tu aplicación en acción, abre tu navegador preferido y accede a [http
 
 ![HolaRails]({{ site.baseurl }}/assets/img/hirails!.png)
 
-### 3.3. Principales comandos de Rails
+### 4.3. Principales comandos de Rails
 
 Rails cuenta con una serie de comandos que serán de gran utilidad a lo largo de la construcción de nuestra aplicación. A continuación algunos:
 
@@ -100,7 +114,7 @@ Rails cuenta con una serie de comandos que serán de gran utilidad a lo largo de
 * `rails server` o `rails s`: Inicia el servidor de rails que, por defecto, corre en el **puerto 3000**.
 * `rails dbconsole` o `rails db`: Se conecta a la base de datos con la que estamos trabajando.
 
-### 3.4. Subiendo nuestro proyecto a Github
+### 4.4. Subiendo nuestro proyecto a Github
 
 En el capítulo anterior creamos nuestra cuenta de Github y nuestro primer repositorio, en el cual subiremos el proyecto de Rails que acabamos de generar.
 
