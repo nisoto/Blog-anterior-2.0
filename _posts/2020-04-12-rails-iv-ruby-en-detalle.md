@@ -133,6 +133,8 @@ e = 12.53
 puts e.to_i  # 12 (retorna la parte entera)
 ```
 
+Existen muchos métodos que podemos utilizar para trabajar con los números, los cuales podremos ver en detalle si añadimos `.methods()` a una variable que almacene un número (cualquiera sea su tipo).
+
 ### 3.2. Cadenas
 
 Hola.
