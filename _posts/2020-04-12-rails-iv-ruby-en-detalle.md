@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Ruby on Rails IV: Ruby en detalle"
-date: 2020-04-13
+date: 2020-04-12
 excerpt: "Capítulo N°4 del curso de Ruby on Rails"
 tags: [rails]
 ---
