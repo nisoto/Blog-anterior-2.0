@@ -111,3 +111,7 @@ Git es un **Sistema de Control de Versiones** diseñado por Linus Torvalds.
 Por Control de Versiones me refiero a la gestión de los diversos cambios que se realizan sobre los elementos de algún producto o una configuración del mismo, es decir, es lo que hacemos al momento de desarrollar un software o una página web (subes tu código a la nube, le añades alguna parte o simplemente editas algo que no funciona correctamente, entre otros).
 
 A partir de lo anterior, un Sistema de Control de Versiones serían todas las herramientas que nos permiten hacer esas modificaciones antes mencionadas sobre nuestro código y hacen que sea más fácil la administración de las distintas versiones, es decir, **Git**.
+
+|     |     |
+|:----|----:|
+| [< Inicio](https://nisoto.github.io/blog/){: .btn .btn-info} | [Control de versiones >](https://nisoto.github.io/rails-ii-control-de-versiones/){: .btn .btn-info} |
