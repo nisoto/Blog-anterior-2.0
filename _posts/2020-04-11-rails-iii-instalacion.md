@@ -32,7 +32,7 @@ rvm use 2.7.1 --default
 ruby -v
 ```
 
-**Referencia**: [gorails.com](https://gorails.com/setup/ubuntu/18.04), Ubuntu 18.04, apartado **Installing Ruby**.
+**Referencia**: [gorails.com](https://gorails.com/setup/ubuntu/18.04). Ubuntu 18.04, apartado **Installing Ruby**.
 
 ## 2. Instalación de Rails
 
@@ -43,7 +43,7 @@ gem install rails -v 6.0.2.2
 rails -v
 ```
 
-**Referencia**: [gorails.com](https://gorails.com/setup/ubuntu/18.04), Ubuntu 18.04, apartado **Installing Rails**.
+**Referencia**: [gorails.com](https://gorails.com/setup/ubuntu/18.04). Ubuntu 18.04, apartado **Installing Rails**.
 
 ## 3. Instalación de un editor de código (IDE)
 
@@ -57,7 +57,7 @@ sudo add-apt-repository "deb [arch=amd64] https://packagecloud.io/AtomEditor/ato
 sudo apt install atom
 ```
 
-**Referencia**: [Atom](https://linuxize.com/post/how-to-install-atom-text-editor-on-ubuntu-18-04/), Ubuntu 18.04.
+**Referencia**: [Atom](https://linuxize.com/post/how-to-install-atom-text-editor-on-ubuntu-18-04/). Ubuntu 18.04.
 
 ## 4. Primeros pasos en Ruby on Rails
 
