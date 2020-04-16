@@ -9,3 +9,7 @@ tags: [rails]
 ## 1. Hola
 
 Hola amigos.
+
+|     |     |
+|:----|----:|
+| [< Lección N°4](https://nisoto.github.io/rails-iv-ruby-en-detalle/){: .btn .btn-info} | [Lección N°6 >](https://nisoto.github.io/rails-vi-desarrollo-web/){: .btn .btn-info} |
