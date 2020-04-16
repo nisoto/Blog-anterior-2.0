@@ -116,3 +116,7 @@ root 'dashboard#index'
 Lo que le permitirá a Rails asociar las peticiones de la raíz de la aplicación a la acción `index` del **Controlador** `dashboard`.
 
 Si ahora ejecutamos el servidor (`rails server`) y accedemos a la dirección [http://localhost:3000](http://localhost:3000) veremos la misma **Vista** que antes podíamos ver en [http://localhost:3000/dashboard/index](http://localhost:3000/dashboard/index).
+
+|     |     |
+|:----|----:|
+| [< Lección N°6](https://nisoto.github.io/rails-vi-desarrollo-web/){: .btn .btn-info} | [Inicio >](https://nisoto.github.io/blog/){: .btn .btn-info} |
