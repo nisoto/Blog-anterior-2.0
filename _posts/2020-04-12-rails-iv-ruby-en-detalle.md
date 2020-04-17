@@ -301,6 +301,48 @@ líneas
 puts "Hola Mundo"
 ```
 
+## 5. Operadores
+
+### 5.1. Atirméticos
+
+``` rb
+a = 10
+b = 5
+
+# Suma
+puts a + b  # 15
+
+# Resta
+puts a - b  # 5
+
+# Multiplicación
+puts a * b  # 50
+
+# División
+puts a / b  # 2
+
+# Módulo
+puts a % b  # 0
+
+# Potencia
+puts a ** b  # 100000
+```
+
+Tener en cuenta que el **orden de precedencia** para estos operadores es el siguiente:
+1. Potencia
+2. Multiplicación, División y Módulo
+3. Suma y Resta
+
+Si tuvieramos operadores en el mismo nivel (una multiplicación con una división por ejemplo), Ruby en ese caso realiza la evaluación de izquierda a derecha. Una forma de **alterar** la precedencia es utilizar **paréntesis**.
+
+### 5.2. Comparación
+
+Hola.
+
+### 5.3. Lógicos
+
+Hola.
+
 ## 10. Bibliografía
 
 1. [Ruby](https://www.ruby-lang.org/es/documentation/quickstart/) en 20 minutos.
