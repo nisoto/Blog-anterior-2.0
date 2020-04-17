@@ -505,7 +505,44 @@ puts num % 2 == 0 ? "El número ingresado es par" : "El número ingresado es imp
 
 ### 6.3. Sentencia `case`
 
-Hola.
+``` rb
+# encoding: utf-8
+
+# Leeremos una calificación por teclado y determinaremos si el alumno aprueba o reprueba
+print "Ingresa tu calificación: "
+calificacion = gets.chomp.to_i
+
+# Utilizando if-elsif-else
+if calificacion == 7
+  puts "¡Excelente!"
+elsif calificacion == 6
+  puts "¡Muy bien! Vas por buen camino"
+elsif calificacion == 5
+  puts "Bien, pero aún puedes mejorar"
+elsif calificacion == 4
+  puts "Sabemos que lo puedes hacer mejor"
+else
+  puts "Estás reprobado"
+end
+
+# Utilizando case
+case calificacion
+when 7
+  puts "¡Excelente!"
+when 6
+  puts "¡Muy bien! Vas por buen camino"
+when 5
+  puts "Bien, pero aún puedes mejorar"
+when 4
+  puts "Sabemos que lo puedes hacer mejor"
+else
+  puts "Estás reprobado"
+end
+```
+
+## 7. Arreglos
+
+Hola amigos.
 
 ## 10. Bibliografía
 
