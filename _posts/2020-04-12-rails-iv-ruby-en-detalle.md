@@ -328,20 +328,62 @@ puts a % b  # 0
 puts a ** b  # 100000
 ```
 
-Tener en cuenta que el **orden de precedencia** para estos operadores es el siguiente:
+### 5.2. Comparación
+
+``` rb
+a =10
+b = 5
+c = 5
+
+# Mayor que
+puts a > b  # TRUE
+
+# Menor que
+puts a < b  # FALSE
+
+# Mayor o igual que
+puts b >= c  # TRUE
+
+# Menor o igual que
+puts b <= c  # TRUE
+
+# Es igual que
+puts b == c  # TRUE
+
+# Es distinto que
+puts a != b  # TRUE
+
+# Comparador Combinado
+puts a <=> b  # 1 (el valor de la izquierda es mayor que el de la derecha)
+puts b <=> a  # -1 (el valor de la derecha es mayor que el de la izquierda)
+puts b <=> c  # 0 (tanto el valor de la izquierda como el de la derecha son iguales)
+
+# Comparador del tipo de dato
+d = 1
+e = 1.0
+puts d.eql?(e)  # FALSE (verifica que tengan el mismo valor y además el mismo tipo de dato)
+
+# Comparador del identificador único (object_id)
+f = "Hola"
+g = "Hola"
+puts f.equal?(g)  # FALSE (cada variable posee un identificador único en Ruby)
+puts f.object_id  # 45289900
+puts g.object_id  # 44136620
+```
+
+### 5.3. Lógicos
+
+Hola.
+
+### 5.4. Orden de precedencia
+
+Tener en cuenta que el **orden de precedencia** para todos los operadores es el siguiente:
+
 1. Potencia
 2. Multiplicación, División y Módulo
 3. Suma y Resta
 
 Si tuvieramos operadores en el mismo nivel (una multiplicación con una división por ejemplo), Ruby en ese caso realiza la evaluación de izquierda a derecha. Una forma de **alterar** la precedencia es utilizar **paréntesis**.
-
-### 5.2. Comparación
-
-Hola.
-
-### 5.3. Lógicos
-
-Hola.
 
 ## 10. Bibliografía
 
