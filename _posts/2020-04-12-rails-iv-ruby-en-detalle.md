@@ -117,8 +117,7 @@ puts a.abs  # 10
 
 # Determina si un número es par o impar
 b = 3
-puts b.even?  # FALSE
-# Imprimirá por pantalla TRUE si se trata de un número par o FALSE en caso contrario
+puts b.even?  # FALSE (ya que se trata de un número impar)
 
 # Determina el sucesor de un número
 c = 2
@@ -130,14 +129,119 @@ puts d.to_f  # 10.0
 
 # Convierte un número de punto flotante a entero
 e = 12.53
-puts e.to_i  # 12 (retorna la parte entera)
+puts e.to_i  # 12 (retorna la parte entera mediante truncamiento)
 ```
 
 Existen muchos métodos que podemos utilizar para trabajar con los números, los cuales podremos ver en detalle si añadimos `.methods()` a una variable que almacene un número (cualquiera sea su tipo).
 
 ### 3.2. Cadenas
 
-Hola.
+Una cadena o `string` corresponde a un conjunto de caracteres:
+
+``` rb
+cadena = "Hola mundo"
+nombre = 'Nicolas'
+```
+
+Podemos utilizar tanto las comillas dobles como las simples, aunque generalmente se utilizan las primeras (el porqué se especifica más adelante).
+
+Por lo general, a la hora de trabajar con cadenas vamos a querer tener variables que incluyan el resultado de una operación, para ello existen 2 formas:
+
+#### 1. Concatenación
+
+``` rb
+nombre = "Nicolas"
+puts "Hola " + nombre
+```
+
+#### 2. Interpolación
+
+``` rb
+nombre = "Nicolas"
+puts "Hola #{nombre}"  # Lo que se encuentra dentro de las llaves se evalúa como código de Ruby
+```
+
+Al igual que los números, las cadenas también poseen métodos ya que son objetos. Algunos de los más utilizados son los siguientes:
+
+``` rb
+# Determina la cantidad de caracteres de una cadena
+cadena = "Esto es una cadena en Ruby"
+puts cadena.length  # 26
+
+# Convierte los caracteres de una cadena a mayúsculas
+nombre = "nicolas"
+puts nombre.upcase  # "NICOLAS"
+
+# Convierte los caracteres de una cadena a minúsculas
+nombre = "NICOLAS"
+puts nombre.downcase  # "nicolas"
+
+# Convierte la primera letra de una cadena a mayúscula
+nombre = "nicolas"
+puts nombre.capitalize  # "Nicolas"
+
+# Convierte una cadena a número entero
+numero = "2"
+puts numero.to_i  # 2
+
+# Convierte una cadena a número de punto flotante
+num = "3"
+puts num.to_f  # 3.0
+
+# Convierte un número (entero o de punto flotante) a cadena
+a = 1
+b = 2.0
+puts a.to_s  # "1"
+puts b.to_s  # "2.0"
+
+# Determina si una cadena contiene a la subcadena "Ruby"
+cadena = "Esto es una cadena en Ruby"
+puts cadena.include? "Ruby"  # TRUE
+
+# Invierte una cadena
+nombre = "nicolas"
+puts nombre.reverse  # "salocin"
+```
+
+Al igual que con los números, para las cadenas también tenemos un sin fín de métodos a utilizar los cuales podremos ver en detalle si añadimos `.methods()` a una variable que almacene un `string`.
+
+Si utilizamos tildes lo más probable es que tengamos problemas a la hora de ejecutar un programa, por lo que para solucionar este inconveniente debemos agregar al principio del código lo siguiente:
+
+``` rb
+# encoding: utf-8
+```
+
+#### 3.2.1. Caracteres no imprimibles
+
+``` rb
+\n # Salto de línea
+\t # Tabulación
+```
+
+Es importante mencionar que para los caracteres no imprimibles debemos utilizar doble comilla, ya que de esta forma se interpretan, mientras que las comillas simples se conservan. Con el ejemplo a continuación podemos notar la diferencia:
+
+``` rb
+irb(main):001:0> puts "Hola\n\n\n"
+Hola
+
+
+=> nil
+irb(main):002:0> puts 'Hola\n\n\n'
+Hola\n\n\n
+=> nil
+```
+
+#### 3.2.2. Métodos peligrosos
+
+Un método es peligroso cuando **modifica** al objeto sobre el que se está trabajando, por ejemplo:
+
+```
+cadena = "nicolas"
+cadena.upcase!  # El signo de exclamación modifica al objeto
+puts cadena
+```
+
+Al imprimir la variable `cadena`, nos daremos cuenta que el texto se ha modificado.
 
 ## 10. Bibliografía
 
