@@ -214,8 +214,8 @@ Si utilizamos tildes lo más probable es que tengamos problemas a la hora de eje
 #### 3.2.1. Caracteres no imprimibles
 
 ``` rb
-\n # Salto de línea
-\t # Tabulación
+\n  # Salto de línea
+\t  # Tabulación
 ```
 
 Es importante mencionar que para los caracteres no imprimibles debemos utilizar doble comilla, ya que de esta forma se interpretan, mientras que las comillas simples se conservan. Con el ejemplo a continuación podemos notar la diferencia:
@@ -235,13 +235,13 @@ Hola\n\n\n
 
 Un método es peligroso cuando **modifica** al objeto sobre el que se está trabajando, por ejemplo:
 
-```
+``` rb
 cadena = "nicolas"
 cadena.upcase!  # El signo de exclamación modifica al objeto
 puts cadena
 ```
 
-Al imprimir la variable `cadena`, nos daremos cuenta que el texto se ha modificado.
+Al imprimir la variable `cadena`, nos daremos cuenta que el texto ha sido modificado.
 
 ## 10. Bibliografía
 
