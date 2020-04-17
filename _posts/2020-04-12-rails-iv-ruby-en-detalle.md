@@ -373,17 +373,45 @@ puts g.object_id  # 44136620
 
 ### 5.3. Lógicos
 
-Hola.
+``` rb
+a = 10
+b = 5
+c = 8
+
+# Y (and)
+puts (a > b) && (b < c)  # TRUE
+puts (a > b) && (b > c)  # FALSE
+
+# O (or)
+puts (a > b) || (b < c)  # TRUE
+puts (a > b) || (b > c)  # TRUE
+
+# Negación (not)
+puts !true  # FALSE
+puts !false  # TRUE
+```
 
 ### 5.4. Orden de precedencia
 
 El **orden de precedencia** de todos los operadores (aritméticos, de comparación y lógicos) es el siguiente:
 
-1. Potencia
-2. Multiplicación, División y Módulo
-3. Suma y Resta
+1. Potencia (`**`)
+2. Negación (`!`)
+3. Multiplicación (`*`), División (`/`), Módulo (`%`)
+4. Suma (`+`), Resta (`-`)
+5. Mayor que (`>`), Menor que (`<`), Mayor o igual que (`>=`), Menor o igual que (`<=`)
+6. Igual que (`==`), Combinado (`<=>`), Distinto que (`!=`)
+7. Y (`&&`)
+8. O (`||`)
+9. Asignación (`=`)
+10. Negación (`not`)
+11. Y (`and`), O (`or`)
 
 Si tuvieramos operadores en el mismo nivel (una multiplicación con una división por ejemplo), Ruby en ese caso realiza la evaluación de izquierda a derecha. Una forma de **alterar** la precedencia es utilizar **paréntesis**.
+
+## 6. Condiciones
+
+Hola.
 
 ## 10. Bibliografía
 
