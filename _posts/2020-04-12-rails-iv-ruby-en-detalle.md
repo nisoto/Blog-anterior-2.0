@@ -257,7 +257,7 @@ Para recibir un texto desde el teclado, existe el método `gets`:
 nombre = gets
 ```
 
-## 5. Primer programa
+### 4.1. Primer programa
 
 Con lo aprendido hasta ahora, crearemos un programa que pregunta nuestro nombre y luego nos saluda:
 
@@ -278,6 +278,27 @@ Si agregamos el método `chomp` al ejemplo anterior, quedaría algo como lo sigu
 puts "Hola, ¿Cómo te llamas?"
 name = gets.chomp
 puts "Mucho gusto #{name}, ¿Cómo estás?"  # Mucho gusto Nicolas, ¿Cómo estás?
+```
+
+### 4.2. Uso de comentarios
+
+Escribir comentarios a nuestro programa es una buena práctica, cualquiera sea el lenguaje de programación que estemos utilizando. En Ruby podemos realizar comentarios de una sola línea:
+
+``` rb
+# Esto es un comentario en Ruby
+puts " Estoy aprendiendo Ruby"
+```
+
+O de varias líneas (también llamados de multilínea o de bloque):
+
+``` rb
+=begin
+Esto es un
+comentario
+de varias
+líneas
+=end
+puts "Hola Mundo"
 ```
 
 ## 10. Bibliografía
