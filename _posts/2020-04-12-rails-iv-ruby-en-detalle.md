@@ -331,7 +331,7 @@ puts a ** b  # 100000
 ### 5.2. Comparación
 
 ``` rb
-a =10
+a = 10
 b = 5
 c = 5
 
