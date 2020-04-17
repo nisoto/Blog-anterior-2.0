@@ -411,6 +411,100 @@ Si tuvieramos operadores en el mismo nivel (una multiplicación con una divisió
 
 ## 6. Condiciones
 
+### 6.1. Condición `if`
+
+#### 1. `if`
+
+``` rb
+a = 10
+b = 5
+if a > b
+  puts "#{a} es mayor que #{b}"
+end
+```
+
+Lo anterior también puede ser escrito de la siguiente manera:
+
+``` rb
+a = 10
+b = 5
+puts "#{a} es mayor que #{b}" if a > b
+```
+
+Esto funcionará correctamente si la sentencia dentro del `if` es de **una sola línea**.
+
+#### 2. `if-else`
+
+Tal como en el ejemplo anterior, imaginemos que leemos 2 números enteros desde teclado y queremos compararlos:
+
+``` rb
+a = gets.chomp.to_i
+b = gets.chomp.to_i
+if a > b
+  puts "#{a} es mayor que #{b}"
+else
+  puts "#{a} es menor que #{b}"
+end
+```
+
+Si la condición dentro del `if` es **falsa**, entonces se ejecutará lo que hay en `else`.
+
+#### 3. `if-elsif-else`
+
+Tomando nuevamente el primer ejemplo de este apartado ¿Qué pasaría si los números leídos desde teclado son iguales? La palabra reservada `elsif` nos ayuda en este caso:
+
+``` rb
+a = gets.chomp.to_i
+b = gets.chomp.to_i
+if a > b
+  puts "#{a} es mayor que #{b}"
+elsif a == b
+  puts "#{a} es igual que #{b}"
+else
+  puts "#{a} es menor que #{b}"
+end
+```
+
+#### 4. `unless`
+
+Funciona como el inverso de `if` ya que ejecutará la(s) sentencia(s) siempre y cuando la condición sea **falsa**.
+
+``` rb
+a = 10
+b = 5
+unless a < b
+  puts "Hola Mundo"
+end
+# Hola Mundo
+```
+
+Que también puede se puede escribir como:
+
+``` rb
+a = 10
+b = 5
+puts "Hola Mundo" unless a < b
+```
+
+### 6.2. Operador ternario
+
+El operador ternario no es nada más que otra forma de utilizar `if-else` de manera más expresiva:
+
+``` rb
+# encoding: utf-8
+
+# Leeremos un número desde teclado y determinaremos si es par o impar
+num = gets.chomp.to_i
+
+# if-else en una sola línea
+puts (if num % 2 == 0 then "El número ingresado es par" else "El número ingresado es impar" end)
+
+# if-else utilizando el operador ternario
+puts num % 2 == 0 ? "El número ingresado es par" : "El número ingresado es impar"
+```
+
+### 6.3. Sentencia `case`
+
 Hola.
 
 ## 10. Bibliografía
