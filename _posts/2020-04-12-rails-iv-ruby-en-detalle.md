@@ -243,6 +243,43 @@ puts cadena
 
 Al imprimir la variable `cadena`, nos daremos cuenta que el texto ha sido modificado.
 
+## 4. Entrada y Salida de datos
+
+Ya hemos visto en más de una ocasión la palabra reservada o método `puts`, la cual hace referencia a imprimir o desplegar texto por pantalla:
+
+``` rb
+puts "Hola, esto es una cadena de caracteres"
+```
+
+Para recibir un texto desde el teclado, existe el método `gets`:
+
+``` rb
+nombre = gets
+```
+
+## 5. Primer programa
+
+Con lo aprendido hasta ahora, crearemos un programa que pregunta nuestro nombre y luego nos saluda:
+
+``` rb
+# encoding: utf-8
+puts "Hola, ¿Cómo te llamas?
+name = gets
+puts "Mucho gusto #{name}, ¿Cómo estás?"  # Mucho gusto Nicolas
+                                          # , ¿Cómo estás?
+```
+
+Si ejecutamos este código, nos daremos cuenta que en la última línea (saludo) habrá un salto de línea después de nuestro nombre. Esto se debe a que cuando ingresamos el texto, el método `gets` también guarda el salto de línea (cuando presionamos la tecla `ENTER` o `INTRO` del teclado). Solucionar este inconveniente es bastante sencillo si utilizamos el método `chomp`, el cual elimina el último caracter de la cadena que estamos ingresando desde teclado.
+
+Si agregamos el método `chomp` al ejemplo anterior, quedaría algo como lo siguiente:
+
+``` rb
+# encoding: utf-8
+puts "Hola, ¿Cómo te llamas?
+name = gets.chomp
+puts "Mucho gusto #{name}, ¿Cómo estás?"  # Mucho gusto Nicolas, ¿Cómo estás?
+```
+
 ## 10. Bibliografía
 
 1. [Ruby](https://www.ruby-lang.org/es/documentation/quickstart/) en 20 minutos.
