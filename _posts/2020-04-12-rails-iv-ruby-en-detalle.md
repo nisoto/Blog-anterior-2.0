@@ -263,7 +263,7 @@ Con lo aprendido hasta ahora, crearemos un programa que pregunta nuestro nombre 
 
 ``` rb
 # encoding: utf-8
-puts "Hola, ¿Cómo te llamas?
+puts "Hola, ¿Cómo te llamas?"
 name = gets
 puts "Mucho gusto #{name}, ¿Cómo estás?"  # Mucho gusto Nicolas
                                           # , ¿Cómo estás?
@@ -275,7 +275,7 @@ Si agregamos el método `chomp` al ejemplo anterior, quedaría algo como lo sigu
 
 ``` rb
 # encoding: utf-8
-puts "Hola, ¿Cómo te llamas?
+puts "Hola, ¿Cómo te llamas?"
 name = gets.chomp
 puts "Mucho gusto #{name}, ¿Cómo estás?"  # Mucho gusto Nicolas, ¿Cómo estás?
 ```
