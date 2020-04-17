@@ -377,7 +377,7 @@ Hola.
 
 ### 5.4. Orden de precedencia
 
-El **orden de precedencia** de todos los operadores es el siguiente:
+El **orden de precedencia** de todos los operadores (aritméticos, de comparación y lógicos) es el siguiente:
 
 1. Potencia
 2. Multiplicación, División y Módulo
