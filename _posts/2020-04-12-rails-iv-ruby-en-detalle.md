@@ -569,7 +569,7 @@ arreglo << 'Hola'  # Otra forma de agregar un elemento
 puts arreglo  # [3,'Perro',true,3.14,'Hola']
 ```
 
-## 7.1. Iterando un arreglo
+### 7.1. Iterando un arreglo
 
 ``` rb
 # encoding: utf-8
@@ -599,7 +599,7 @@ end
 puts "La mayor calificación es #{mayor}, ubicada en la posición #{pos} del arreglo"
 ```
 
-## 7.2. Operaciones en arreglos
+### 7.2. Operaciones en arreglos
 
 ``` rb
 # encoding: utf-8
