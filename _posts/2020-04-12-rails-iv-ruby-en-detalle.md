@@ -611,7 +611,7 @@ puts arreglo * 3  # [1,1,2,2,3,4,5,6,7,1,1,2,2,3,4,5,6,7,1,1,2,2,3,4,5,6,7]
 puts arreglo * " - "  # 1 - 1 - 2 - 2 - 3 - 4 - 5 - 6 - 7
 puts arreglo * ", "  # 1, 1, 2, 2, 3, 4, 5, 6, 7
 puts arreglo.join(", ")  # 1, 1, 2, 2, 3, 4, 5, 6, 7
-# Este operador convierte un arreglo en una cadena
+# Este operador convierte el arreglo en una cadena
 
 # Ordenamiento
 puts arreglo.sort  # [1,1,2,2,3,4,5,6,7]
