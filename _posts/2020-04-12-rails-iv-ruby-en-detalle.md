@@ -632,6 +632,45 @@ puts arreglo.uniq  # [1,2,3,4,5,6,7]
 puts arreglo.sample  # 3
 ```
 
+### 7.3. Rangos
+
+``` rb
+# encoding: utf-8
+# Imprimir los primeros 10 números naturales
+
+# utilizando un arreglo
+numeros = [1,2,3,4,5,6,7,8,9,10]
+numeros.each do |numero|
+  puts numero
+end
+
+# Utilizando rangos
+(1..10).each do |numero|
+  puts numero
+end
+```
+
+Para los rangos tenemos varios métodos útiles:
+
+``` rb
+# encoding: utf-8
+
+# Imprime los primeros 20 números naturales de dos en dos
+(1..20).step(2).each do |numero|
+  puts numero
+end
+# 1 3 5 7 9 11 13 15 17 19
+
+# Determina el valor mínimo de un rango
+puts (0..20).min  # 0
+
+# Determina el valor máximo de un rango
+puts (0..20).max  # 20
+
+# Convierte un rango en un arreglo
+puts (0..20).to_a  # [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+```
+
 ## 10. Bibliografía
 
 1. [Ruby](https://www.ruby-lang.org/es/documentation/quickstart/) en 20 minutos.
