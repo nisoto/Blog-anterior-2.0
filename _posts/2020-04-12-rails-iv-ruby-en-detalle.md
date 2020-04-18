@@ -676,59 +676,59 @@ puts (0..20).to_a  # [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
 ``` rb
 # encoding: utf-8
 
-# Crearemos un reproductor de música básico
-playlist = ["Beast and the harlot", "Bat Country", "The wickend", "Afterlife"]
-playing = true
-index_song = 0
-
-# Sentencia while (mientras que)
-while (index_song < playlist.length) && (playing == true)
-  puts "Reproduciendo #{playlist[index_song]}"
-  index_song += 1
-  print "Continuar (1) o detener (0) la reproducción: "
-  respuesta = gets.chomp.to_i
-  playing = false if respuesta == 0
-end
-```
-
-Así como la sentencia `if` tiene su inverso (`unless`), `until` lo es para `while`:
-
-``` rb
-# encoding: utf-8
-
-# Adivinaremos el número mágico desde el teclado
 num_magico = 20
-print "Adivina el número mágico: "
-num_usuario = gets.chomp.to_i
+# Adivinaremos el número mágico utilizando distintos iteradores
 
 # Utilizando while (mientras que)
+print "Adivina el número mágico: "
+num_usuario = gets.chomp.to_i
 while num_usuario != num_magico
   print "Incorrecto, adivina otra vez: "
   num_usuario = gets.chomp.to_i
 end
 puts "Adivinaste, felicidades"
 
-# Utilizando until (hasta que)
+# Utilizando until (inverso de while)
+print "Adivina el número mágico: "
+num_usuario = gets.chomp.to_i
 until num_usuario == num_magico
   print "Incorrecto, adivina otra vez: "
   num_usuario = gets.chomp.to_i
 end
 puts "Adivinaste, felicidades"
+
+# Utilizando do-while
+begin
+  print "Adivina el número mágico: "
+  num_usuario = gets.chomp.to_i
+end while num_usuario != num_magico
+# Esta sentencia se ejecuta al menos una vez ya que evalúa la condición al final
+puts "Adivinaste, felicidades"
 ```
 
-Por último, tenemos la sentencia `do-while`:
+Otros iteradores menos utilizados:
 
 ``` rb
-# encoding: utf-8
-num = 2
+# time
+10.times do |i|
+  puts i
+end
+# 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
 
-begin
-  num = gets.chomp.to_i
-end while num < 0
-# Esta sentencia se ejecutará al menos una vez ya que evalúa la condición al final
+# upto
+1.upto(10) do |i|
+  puts i
+end
+# 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+
+# downto
+10.downto(1) do |i|
+  puts i
+end
+# 10, 9, 8, 7, 6, 5, 4, 3, 2, 1
 ```
 
-## 8. Por confirmar
+## 8. Matrices
 
 Hola amigos.
 
