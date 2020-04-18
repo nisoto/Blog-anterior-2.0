@@ -706,7 +706,7 @@ end while num_usuario != num_magico
 puts "Adivinaste, felicidades"
 ```
 
-Otros iteradores menos utilizados:
+Iteradores menos utilizados:
 
 ``` rb
 # time
