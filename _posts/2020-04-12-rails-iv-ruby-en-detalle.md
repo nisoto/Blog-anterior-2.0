@@ -542,7 +542,95 @@ end
 
 ## 7. Arreglos
 
-Hola amigos.
+Un **arreglo** (array en inglés) corresponde a una **estructura de datos** en la que podemos almacenar elementos cualquiera sea su tipo de dato.
+
+``` rb
+arreglo = [3,'Perro',true]  # Inicializamos un array con 3 casillas, donde cada una posee un elemento de distinto tipo
+arreglo_dos = Array.new(5)  # Inicializamos un array con 5 casillas vacias (nil)
+arreglo_tres = %w[1 40 'cadena']  # Inicializamos un array de 3 casillas (con %w evitamos el uso de comas)
+```
+
+Acceder a las **casillas** de un arreglo es bastante sencillo:
+
+``` rb
+arreglo = [3,'Perro',true]
+puts arreglo[0]  # 3
+puts arreglo[2]  # TRUE
+puts arreglo[5]  # nil (no existe esa posición)
+```
+
+También es importante destacar que en Ruby, los arreglos no tienen una dimensión (tamaño) definida, por lo que en cualquier momento podemos agregar uno o más elementos:
+
+``` rb
+arreglo = [3,'Perro',true]
+arreglo[3] = 3.14
+puts arreglo  # [3,'Perro',true,3.14]
+arreglo << 'Hola'  # Otra forma de agregar un elemento
+puts arreglo  # [3,'Perro',true,3.14,'Hola']
+```
+
+## 7.1. Iterando un arreglo
+
+``` rb
+# encoding: utf-8
+
+# Determinaremos el promedio de todas las calificaciones de un curso y además, cuál es la mayor nota y en qué posición se encuentra
+calificaciones = %w[7 4 5 6 3 6 2]
+
+# Promedio
+suma = 0
+total = calificacion.length
+calificaciones.each do |calificacion|
+  suma += calificacion.to_f  # Convertimos las calificaciones a float ya que %w almacena todos los elementos del arreglo como string
+end
+puts "El promedio de las calificaciones del curso es #{suma / total}"  # 4.714285714285714
+
+# Mayor nota
+mayor = -1
+pos = -1
+aux = 0
+calificaciones.each_with_index do |calificacion,posicion|
+  aux = calificacion.to_i
+  if aux > mayor
+    mayor = aux
+    pos = posicion
+  end
+end
+puts "La mayor calificación es #{mayor}, ubicada en la posición #{pos} del arreglo"
+```
+
+## 7.2. Operaciones en arreglos
+
+``` rb
+# encoding: utf-8
+arreglo = [1,1,2,2,3,4,5,6,7]
+
+# Multiplicación (join)
+puts arreglo * 2  # [1,1,2,2,3,4,5,6,7,1,1,2,2,3,4,5,6,7]
+puts arreglo * 3  # [1,1,2,2,3,4,5,6,7,1,1,2,2,3,4,5,6,7,1,1,2,2,3,4,5,6,7]
+puts arreglo * " - "  # 1 - 1 - 2 - 2 - 3 - 4 - 5 - 6 - 7
+puts arreglo * ", "  # 1, 1, 2, 2, 3, 4, 5, 6, 7
+puts arreglo.join(", ")  # 1, 1, 2, 2, 3, 4, 5, 6, 7
+# Este operador convierte un arreglo en una cadena
+
+# Ordenamiento
+puts arreglo.sort  # [1,1,2,2,3,4,5,6,7]
+puts arreglo.sort.reverse  # [7,6,5,4,3,2,2,1,1]
+
+# Búsqueda de un elemento
+puts arreglo.include?(6)  # TRUE
+puts arreglo.include?(9)  # FALSE
+
+# Otras operaciones:
+# Retorna el primer elemento
+puts arreglo.first  # 1
+# Retorna el último elemento
+puts arreglo.last  # 7
+# Retorna el arreglo eliminando los valores repetidos
+puts arreglo.uniq  # [1,2,3,4,5,6,7]
+# Rtorna un elemento del arreglo de manera aleatoria
+puts arreglo.sample  # 3
+```
 
 ## 10. Bibliografía
 
