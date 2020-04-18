@@ -650,7 +650,7 @@ end
 end
 ```
 
-Para los rangos tenemos varios métodos útiles:
+Algunos de los métodos más utilizados en los rangos son los siguientes:
 
 ``` rb
 # encoding: utf-8
@@ -677,7 +677,7 @@ puts (0..20).to_a  # [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
 # encoding: utf-8
 
 # Crearemos un reproductor de música básico
-playlist = ["Beast and the harlot", "Bat Country", "The wickend", "Afterlife", "Critical acclaim", "Dear god"]
+playlist = ["Beast and the harlot", "Bat Country", "The wickend", "Afterlife"]
 playing = true
 index_song = 0
 
