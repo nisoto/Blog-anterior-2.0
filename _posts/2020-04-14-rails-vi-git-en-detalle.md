@@ -12,4 +12,4 @@ Hola amigos.
 
 |     |     |
 |:----|----:|
-| [< Lección N°4](https://nisoto.github.io/rails-iv-ruby-en-detalle/){: .btn .btn-info} | [Lección N°6 >](https://nisoto.github.io/rails-vi-desarrollo-web/){: .btn .btn-info} |
+| [< Lección N°5](https://nisoto.github.io/rails-v-ruby-avanzado/){: .btn .btn-info} | [Lección N°7 >](https://nisoto.github.io/rails-vii-desarrollo-web/){: .btn .btn-info} |
