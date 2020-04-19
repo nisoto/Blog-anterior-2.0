@@ -238,7 +238,7 @@ Un método es peligroso cuando **modifica** al objeto sobre el que se está trab
 ``` rb
 cadena = "nicolas"
 cadena.upcase!  # El signo de exclamación modifica al objeto
-puts cadena
+puts cadena  # "NICOLAS"
 ```
 
 Al imprimir la variable `cadena`, nos daremos cuenta que el texto ha sido modificado.
@@ -483,7 +483,7 @@ Que también puede se puede escribir como:
 ``` rb
 a = 10
 b = 5
-puts "Hola Mundo" unless a < b
+puts "Hola Mundo" unless a < b  # Hola Mundo
 ```
 
 ### 6.2. Operador ternario
@@ -504,6 +504,8 @@ puts num % 2 == 0 ? "El número ingresado es par" : "El número ingresado es imp
 ```
 
 ### 6.3. Sentencia `case`
+
+Esta sentencia funciona de la misma forma que `elsif`:
 
 ``` rb
 # encoding: utf-8
@@ -571,17 +573,22 @@ puts arreglo  # [3,'Perro',true,3.14,'Hola']
 
 ### 7.1. Iterando un arreglo
 
+Podemos recorrer los elementos de un arreglo de muchas maneras. Uno de los métodos más utilizados es `each`:
+
 ``` rb
 # encoding: utf-8
 
-# Determinaremos el promedio de todas las calificaciones de un curso y además, cuál es la mayor nota y en qué posición se encuentra
+# Determinaremos
+# El promedio de todas las calificaciones de un curso
+# Cuál es la mayor nota y en qué posición se encuentra
 calificaciones = %w[7 4 5 6 3 6 2]
+# Tener en cuenta que %w almacena todos los elementos de un arreglo como string
 
 # Promedio
 suma = 0
 total = calificacion.length
 calificaciones.each do |calificacion|
-  suma += calificacion.to_f  # Convertimos las calificaciones a float ya que %w almacena todos los elementos del arreglo como string
+  suma += calificacion.to_f  # Convertimos las calificaciones a float
 end
 puts "El promedio de las calificaciones del curso es #{suma / total}"  # 4.714285714285714
 
@@ -600,6 +607,8 @@ puts "La mayor calificación es #{mayor}, ubicada en la posición #{pos} del arr
 ```
 
 ### 7.2. Operaciones en arreglos
+
+Existen varios métodos que nos permitirán trabajar los arreglos, algunos de los más conocidos son:
 
 ``` rb
 # encoding: utf-8
@@ -633,6 +642,8 @@ puts arreglo.sample  # 3
 ```
 
 ### 7.3. Rangos
+
+Los **Rangos** nos sirven para expresar una secuencia, ya sea de números, caracteres, etc.
 
 ``` rb
 # encoding: utf-8
@@ -673,6 +684,8 @@ puts (0..20).to_a  # [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
 
 ### 7.4. Otros iteradores
 
+Además de `each`, existen más iteradores tales como `while`, `until` y `do-while`.
+
 ``` rb
 # encoding: utf-8
 
@@ -706,10 +719,10 @@ end while num_usuario != num_magico
 puts "Adivinaste, felicidades"
 ```
 
-Iteradores menos utilizados:
+Otros menos utilizados:
 
 ``` rb
-# time
+# times
 10.times do |i|
   puts i
 end
@@ -728,7 +741,56 @@ end
 # 10, 9, 8, 7, 6, 5, 4, 3, 2, 1
 ```
 
-## 8. Matrices
+### 7.5. Matrices
+
+Una matriz corresponde a un arreglo de **dos dimensiones** cuya principal característica radica en que sus arreglos internos deben tener la misma cantidad de elementos.
+
+``` rb
+require 'matrix'
+
+arreglo = [[1,2,3],[1,2,3]]  # Matriz
+arreglo_dos = [[1,2,3],[1,2]]  # Arreglo de dos dimensiones
+matriz = Matrix[[1,2,3],[1,2,3]]  # Matriz inicializada de otra forma
+```
+
+Adicionalmente, todos sus elementos deben ser de tipo numérico.
+
+Al igual que con los arreglos unidimensionales, tenemos una gran variedad de métodos para las matrices. Algunos de ellos son:
+
+``` rb
+# Recorrer una matriz (primero abarca la fila y luego la columna)
+matriz = [[1,2,3],[4,5,6]]
+matriz.each do |i|
+  puts i
+end
+# 1 2 3
+# 4 5 6
+
+matriz_dos = [[1,2,3],[4,5,6],[7,8,9]]  # Matriz cuadrada
+# 1 2 3
+# 4 5 6
+# 7 8 9
+
+# Diagonal de una matriz
+matriz_dos.each(:diagonal) do |i|
+  puts i
+end
+# 1 5 9
+
+# Elementos que se encuentran por debajo de la diagonal de una matriz
+matriz_dos.each(:strict_lower) do |i|
+  puts i
+end
+# 4 7 8
+
+# Elementos que se encuentran por encima de la diagonal de una matriz
+matriz_dos.each(:strict_upper) do |i|
+  puts i
+end
+# 2 3 6
+```
+
+## 8. Por confirmar
 
 Hola amigos.
 
