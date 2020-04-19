@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Ruby on Rails VII: ¡Por fin Rails!"
+title: "Ruby on Rails VIII: ¡Por fin Rails!"
 date: 2020-04-16
-excerpt: "Capítulo N°7 del curso de Ruby on Rails"
+excerpt: "Capítulo N°8 del curso de Ruby on Rails"
 tags: [rails]
 ---
 
