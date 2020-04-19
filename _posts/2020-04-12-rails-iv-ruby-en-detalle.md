@@ -796,7 +796,7 @@ También conocidos como **arreglos asociativos** o **diccionarios**, su principa
 
 ``` rb
 tutor = { "nombre" => "Nicolas", "edad" => 27, 20 => "Numero", [] => "Arreglo" }
-tutor_dos = { :nombre => "Nicolas", :edad => 27, :cursos => 10 }  # Otra forma de inicializar un Hash con simbolos (recomendada)
+tutor_dos = { :nombre => "Nicolas", :edad => 27, :cursos => 10 }  # Hash con simbolos (recomendado)
 tutor_tres = { nombre: "Nicolas", edad: 27, cursos: 10 }
 puts tutor  # {"nombre" => "Nicolas", "edad" => 27, 20 => "Numero", [] => "Arreglo"}
 puts tutor_dos  # {:nombre => "Nicolas", :edad => 27, :cursos => 10}
