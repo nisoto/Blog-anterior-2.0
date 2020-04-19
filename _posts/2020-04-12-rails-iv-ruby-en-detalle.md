@@ -790,9 +790,59 @@ end
 # 2 3 6
 ```
 
-## 8. Por confirmar
+## 8. Hashes
 
-Hola amigos.
+También conocidos como **arreglos asociativos** o **diccionarios**, su principal diferencia radica en cómo podemos acceder a los elementos que almacena. Es decir, mientras en los arreglos normales accedemos a sus elementos por medio de un **índice**, en un **Hash** lo hacemos a través de una **clave** (que puede ser cualquier tipo de objeto).
+
+``` rb
+tutor = { "nombre" => "Nicolas", "edad" => 27, 20 => "Numero", [] => "Arreglo" }
+tutor_dos = { :nombre => "Nicolas", :edad => 27, :cursos => 10 }  # Otra forma de inicializar un Hash con simbolos (recomendada)
+tutor_tres = { nombre: "Nicolas", edad: 27, cursos: 10 }
+puts tutor  # {"nombre" => "Nicolas", "edad" => 27, 20 => "Numero", [] => "Arreglo"}
+puts tutor_dos  # {:nombre => "Nicolas", :edad => 27, :cursos => 10}
+puts tutor_tres  # {:nombre => "Nicolas", :edad => 27, :cursos => 10}
+```
+
+La ventaja de un Hash es que podemos acceder a su información de manera más rápida por medio de su clave:
+
+``` rb
+tutor = { "nombre" => "Nicolas", "edad" => 27, 20 => "Numero", [] => "Arreglo" }
+tutor_dos = { :nombre => "Nicolas", :edad => 27, :cursos => 10 }
+puts tutor["nombre"]  # "Nicolas"
+puts tutor[[]]  # "Arreglo"
+puts tutor_dos[:nombre]  # "Nicolas"
+```
+
+Al igual que los arreglos, agregar elementos es bastante sencillo:
+
+``` rb
+tutor = { "nombre" => "Nicolas", "edad" => 27, 20 => "Numero", [] => "Arreglo" }
+tutor["cursos"] = 10
+puts tutor["cursos"]  # 10
+```
+
+En caso de que intentáramos acceder a un Hash con una clave inexistente (no válida) Ruby nos retornará nulo (nil):
+
+``` rb
+tutor = { "nombre" => "Nicolas", "edad" => 27, 20 => "Numero", [] => "Arreglo" }
+puts tutor[5]  # nil
+
+# Podemos agregar un mensaje por default si accedemos a una clave no válida
+tutor.default = "No existe esa clave"
+puts tutor[5]  # "No existe esa clave"
+```
+
+El método `each` también nos será útil si queremos recorrer un Hash:
+
+``` rb
+tutor = { :nombre => "Nicolas", :edad => 27, :cursos => 10 }
+tutor.each do |clave,valor|  # Recibe 2 parámetros
+  puts "En #{clave} tenemos #{valor}"
+end
+# En nombre tenemos Nicolas
+# En edad tenemos 27
+# En cursos tenemos 10
+```
 
 ## 10. Bibliografía
 
