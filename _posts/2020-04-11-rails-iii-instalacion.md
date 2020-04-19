@@ -153,4 +153,4 @@ git push -u origin master
 
 |     |     |
 |:----|----:|
-| [< Lección N°2](https://nisoto.github.io/rails-ii-control-de-versiones/){: .btn .btn-info} | [Lección N°4 >](https://nisoto.github.io/rails-iv-ruby-en-detalle/){: .btn .btn-info} |
+| [< Lección N°2](https://nisoto.github.io/rails-ii-control-de-versiones/){: .btn .btn-info} | [Lección N°4 >](https://nisoto.github.io/rails-iv-ruby-basico/){: .btn .btn-info} |
