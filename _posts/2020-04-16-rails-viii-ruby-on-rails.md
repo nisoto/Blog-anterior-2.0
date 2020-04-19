@@ -119,4 +119,4 @@ Si ahora ejecutamos el servidor (`rails server`) y accedemos a la dirección [ht
 
 |     |     |
 |:----|----:|
-| [< Lección N°6](https://nisoto.github.io/rails-vi-desarrollo-web/){: .btn .btn-info} | [Inicio >](https://nisoto.github.io/blog/){: .btn .btn-info} |
+| [< Lección N°7](https://nisoto.github.io/rails-vii-desarrollo-web/){: .btn .btn-info} | [Inicio >](https://nisoto.github.io/blog/){: .btn .btn-info} |
