@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Ruby on Rails V: Git"
+title: "Ruby on Rails VI: Git"
 date: 2020-04-14
-excerpt: "Capítulo N°5 del curso de Ruby on Rails"
+excerpt: "Capítulo N°6 del curso de Ruby on Rails"
 tags: [rails]
 ---
 
