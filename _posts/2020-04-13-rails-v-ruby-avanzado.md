@@ -147,7 +147,123 @@ Seguramente te estarás preguntando cuándo conviene utilizar símbolos y para e
 
 ## 3. Métodos
 
-Hola.
+Un método no es nada más que una forma de manipular un objeto.
+
+``` rb
+def square(x)
+  # Retorna el cuadrado de un numero
+  return 0 unless x.is_a? Integer
+  return x * x
+end
+=begin
+La palabra reservada return se puede ignorar,
+en ese caso el método retornará la última línea
+=end
+
+def saludar
+  puts "Hola Nicolas"
+end
+
+puts square(2)  # 4
+puts square(3)  # 9
+puts square("3")  # 0
+
+saludar()  # "Hola Nicolas"
+```
+
+### 3.1. Operador `splat`
+
+Este operador nos será de gran utilidad si queremos definir una cantidad variable de parámetros a un método. Veamos el ejemplo a continuación:
+
+``` rb
+# Método que recibe un arreglo de personas y las saluda
+def hola_gente(personas)
+  personas.each {|persona| puts "Hola #{persona}"}
+end
+
+hola_gente(["Nicolas","Franco","Fabian"])
+# Hola Nicolas
+# Hola Franco
+# Hola Fabian
+hola_gente("Nicolas")  # ERROR
+hola_gente(23)  # ERROR
+
+# Los inconvenientes anteriores se solucionan con el operador splat
+def hola_gente(*personas)
+  personas.each {|persona| puts "Hola #{persona}"}
+end
+
+hola_gente "Nicolas", "Franco"
+# Hola Nicolas
+# Hola Franco
+
+hola_gente 23
+# Hola 23
+
+# Con este operador podemos pasar varios argumentos y él los recibirá como un arreglo
+
+nombres = ["Nicolas", "Franco", "Fabian"]
+hola_gente nombres
+# Hola ["Nicolas", "Franco", "Fabian"]
+hola_gente *nombres  # El asterisco convierte el array a una lista de parámetros
+# Hola Nicolas
+# Hola Franco
+# Hola Fabian
+```
+
+### 3.2. Keyword arguments
+
+Los **keyword arguments** son una forma de asignar valores por default a los parámetros de un método.
+
+``` rb
+def hola(nombre:"",edad:0)
+  if edad > 30
+    puts "Hola señor #{nombre}"
+  else
+    puts "Hola joven #{nombre}"
+  end
+end
+
+hola(nombre:"Nicolas",edad:27)  # Hola joven Nicolas
+hola(nombre:"Nicolas",edad:35)  # Hola señor Nicolas
+hola(nombre:"Nicolas")  # Hola joven Nicolas (edad por default es 0)
+hola()  # Hola joven
+hola(edad:27,nombre:"Nicolas)  # Hola joven Nicolas (no importa el orden)
+
+# Utilizando el operador splat
+def hola(nombre:"",edad:0,**options)  # Doble asterisco
+  if edad > 30
+    puts "Hola señor #{nombre}"
+  else
+    puts "Hola joven #{nombre}"
+  end
+  puts options
+end
+
+hola(edad:27,nombre:"Nicolas,color:"Azul",animal:"Perro")
+# Hola joven Nicolas
+# {:color => "Azul", :animal => "Perro"}
+# Las opciones adicionales son recibidas en un Hash
+```
+
+Así como podemos asignar valores por defecto, también podemos decidir si alguno de los parámetros de un método debe ser obligatorio:
+
+``` rb
+def hola(nombre:"",edad:0,apellido:,**options)  # El parámetro apellido es obligatorio
+  if edad > 30
+    puts "Hola señor #{nombre}"
+  else
+    puts "Hola joven #{nombre}"
+  end
+  puts options
+end
+
+hola(edad:27,nombre:"Nicolas,color:"Azul",animal:"Perro")  # ERROR
+```
+
+## 4. Clases
+
+Pendiente.
 
 ## X. Bibliografía
 
