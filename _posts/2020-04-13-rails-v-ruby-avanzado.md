@@ -228,7 +228,7 @@ hola(nombre:"Nicolas",edad:27)  # Hola joven Nicolas
 hola(nombre:"Nicolas",edad:35)  # Hola señor Nicolas
 hola(nombre:"Nicolas")  # Hola joven Nicolas (edad por default es 0)
 hola()  # Hola joven
-hola(edad:27,nombre:"Nicolas)  # Hola joven Nicolas (no importa el orden)
+hola(edad:27,nombre:"Nicolas")  # Hola joven Nicolas (no importa el orden)
 
 # Utilizando el operador splat
 def hola(nombre:"",edad:0,**options)  # Doble asterisco
