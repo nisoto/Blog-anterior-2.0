@@ -240,7 +240,7 @@ def hola(nombre:"",edad:0,**options)  # Doble asterisco
   puts options
 end
 
-hola(edad:27,nombre:"Nicolas,color:"Azul",animal:"Perro")
+hola(edad:27,nombre:"Nicolas",color:"Azul",animal:"Perro")
 # Hola joven Nicolas
 # {:color => "Azul", :animal => "Perro"}
 # Las opciones adicionales son recibidas en un Hash
@@ -258,7 +258,7 @@ def hola(nombre:"",edad:0,apellido:,**options)  # El parámetro apellido es obli
   puts options
 end
 
-hola(edad:27,nombre:"Nicolas,color:"Azul",animal:"Perro")  # ERROR
+hola(edad:27,nombre:"Nicolas",color:"Azul",animal:"Perro")  # ERROR
 ```
 
 ## 4. Clases
