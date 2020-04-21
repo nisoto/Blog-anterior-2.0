@@ -263,7 +263,204 @@ hola(edad:27,nombre:"Nicolas",color:"Azul",animal:"Perro")  # ERROR
 
 ## 4. Clases
 
-Pendiente.
+No olvidemos que en Ruby **todo es un objeto**, ya que es un lenguaje de programación totalmente **orientado a objetos** (POO por sus siglas en inglés). El comportamiento de los objetos es definido por una **clase**.
+
+``` rb
+class Video  # La primera letra debe ser mayúscula
+  # Atributos
+  attr_accessor :minutes, :tittle
+  
+  # Métodos
+  def play
+  end
+  
+  def pause
+  end
+  
+  def stop
+  end
+end
+```
+
+Una clase se encarga de definir los **atributos**, **métodos**, **campos** y hasta los **eventos** que un objeto va a tener.
+
+``` rb
+class Video
+  attr_accessor :minutes, :tittle
+  
+  def play
+  end
+  
+  def pause
+  end
+  
+  def stop
+  end
+end
+
+# Inicializando un objeto de la clase Video
+video_ruby_30 = Video.new  # También se dice que es una instancia de la clase
+video_ruby_30.tittle = "Clases y objetos"
+
+# Inicializamos otra clase
+video_ruby_31 = Video.new
+video_ruby_31.tittle = "Métodos y atributos"
+
+puts video_ruby_30.tittle  # "Clases y objetos"
+puts video_ruby_31.tittle  # "Métodos y atributos"
+```
+
+### 4.1. Constructor Initialize
+
+Este constructor o método se ejecuta cuando creamos un objeto de una clase y se suele utilizar para inicializar valores que el objeto tendrá (algo así como un método por default).
+
+``` rb
+class Video
+  attr_accessor :minutes, :tittle
+  
+  def initialize(tittle)
+    self.tittle = tittle
+  end
+  
+  def play
+  end
+  
+  def pause
+  end
+  
+  def stop
+  end
+end
+
+video_ruby_30 = Video.new("Clases y objetos")  # Con new mandamos a llamar el método initialize
+puts video_ruby_30.tittle  # "Clases y objetos"
+```
+
+### 4.2. Variables de instancia y métodos accesores
+
+Las propiedades en una Clase se identifican por **variables de instancia**, es decir, identificadores que le pertenecen a un objeto y no a la clase (un objeto puede tener valores distintos en cada una de sus propiedades o variables).
+
+``` rb
+class Tutor
+  def initialize(name)
+    @nombre = name  # Variable de instancia (propiedad de un objeto)
+  end
+end
+
+nicolas = Tutor.new("Nicolas")
+franco = Tutor.new("Franco")
+# Tenemos dos objetos que son instancia de la misma clase,
+# Cada uno con un valor distinto para la propiedad @nombre
+
+puts nicolas.nombre  # ERROR
+puts franco.nombre  # ERROR
+```
+
+El error al tratar de imprimir por pantalla los nombres de los objetos creados radica en que las variables de instancia **no pueden ser modificadas u observadas desde fuera del objeto**, es decir, no podemos leerlas o acceder a su valor a menos que sea desde dentro del objeto (dentro de la descripción de la clase).
+
+``` rb
+class Tutor
+  def initialize(name)
+    @nombre = name
+    puts @nombre
+  end
+end
+
+nicolas = Tutor.new("Nicolas")
+franco = Tutor.new("Franco")
+# Nicolas
+# Franco
+```
+
+La ventaja de estas variables es que podemos acceder a ellas desde cualquier parte del objeto, no importando si la declaramos dentro de un método y luego la leemos en otro.
+
+``` rb
+class Tutor
+  def initialize(name)
+    @nombre = name
+  end
+  
+  def say_my_name
+    puts @nombre
+  end
+end
+
+nicolas = Tutor.new("Nicolas")
+franco = Tutor.new("Franco")
+
+nicolas.say_my_name  # "Nicolas"
+franco.say_my_name  # "Franco"
+```
+
+Seguramente te estarás preguntando como podríamos entonces modificar y/o leer la(s) propiedad(es) de un objeto si las variables de instancia no lo permiten. Los **métodos accesores** solucionan este inconveniente ya que definen como podemos cambiar, asignar o modificar una propiedad y al mismo tiempo como leerla desde el objeto.
+
+``` rb
+class Tutor
+  def initialize(name)
+    @nombre = name
+  end
+  
+  # Obtener una propiedad
+  def get_nombre
+    @nombre
+  end
+  
+  # Asignar o modificar una propiedad
+  def set_nombre(nombre)
+    @nombre = nombre
+  end
+end
+
+nicolas = Tutor.new("Nicolas")
+franco = Tutor.new("Franco")
+
+puts nicolas.get_nombre  # "Nicolas"
+
+nicolas.set_nombre("Alex")
+puts nicolas.get_nombre  # "Alex"
+```
+
+Los métodos accesores `getter` y `setter` también se pueden escribir de la siguiente manera:
+
+``` rb
+class Tutor
+  def initialize(name)
+    @nombre = name
+  end
+  
+  def nombre  # Mismo nombre de la propiedad
+    @nombre
+  end
+  
+  def nombre=(nombre)  # Mismo nombre de la propiedad y el operador =
+    @nombre = nombre
+  end
+end
+
+nicolas = Tutor.new("Nicolas")
+franco = Tutor.new("Franco")
+
+# Método get
+puts nicolas.nombre  # "Nicolas"
+
+# Método set
+nicolas.nombre = "Alex"
+puts nicolas.nombre  # "Alex"
+```
+
+Ruby posee algunos métodos que nos permitirán de cierta manera **ahorrar** líneas de código:
+
+``` rb
+class Tutor
+  attr_accessor :nombre  # Define los métodos get y set
+  attr_reader :nombre  # Solo define el método get
+  attr_writer :nombre  # Solo define el método set
+end
+```
+
+## 5. Herencia
+
+Hola amigos.
 
 ## X. Bibliografía
 
