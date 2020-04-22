@@ -615,6 +615,71 @@ end
 Video.new.i_have_superpowers  # "Soy Dios"
 ```
 
+### 5.4. Alcance de los métodos
+
+Los métodos de un objeto en Ruby se pueden clasificar en:
+
+1. Públicos (`public`): Se pueden mandar a llamar desde cualquier lugar (por defecto todos los métodos que uno crea son públicos).
+2. Privados (`private`): Se pueden llamar únicamente desde dentro de la clase. Una diferencia de otros lenguajes, en Ruby una clase hija **si hereda** los métodos privados de su padre.
+3. Protegidos (`protected`): Se pueden llamar desde otras clases siempre y cuando sean del mismo tipo.
+
+El alcanse de una variable o método hace referencia a desde donde puedo mandarlo a llamar.
+
+``` rb
+class Humano
+  def initialize
+    self.publico
+  end
+  
+  def publico
+    puts "Soy público"
+  end
+  
+  private
+  # Todos los métodos que agreguemos por debajo de esta palabra serán privados
+    def privado
+      puts "Soy privado"
+    end
+  
+  protected
+  # Todos los métodos que agreguemos por debajo de esta palabra serán protegidos
+    def protegido
+      puts "Soy protegido"
+    end
+end
+
+clas Tutor < Humano
+  def initialize
+    @inner = Humano.new
+  end
+  
+  def llamar_protegido
+    @inner.protegido
+  end
+end
+
+class Alien
+  def initialize
+    @inner = Humano.new
+  end
+  
+  def llamar_protegido
+    @inner.protegido
+  end
+end
+
+puts Humano.new  # "Soy público"
+puts Humano.new.privado  # ERROR
+
+tutor = Tutor.new
+alien = Alien.new
+
+puts tutor.is_a?(Humano)  # TRUE (podemos llamar al método protegido)
+puts alien.is_a?(Humano)  # FALSE
+```
+
+Métodos de clase.
+
 ## X. Bibliografía
 
 1. [Ruby](https://www.ruby-lang.org/es/documentation/quickstart/) en 20 minutos.
