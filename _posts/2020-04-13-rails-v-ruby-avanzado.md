@@ -623,7 +623,7 @@ Los métodos de un objeto en Ruby se pueden clasificar en:
 2. Privados (`private`): Se pueden llamar únicamente desde dentro de la clase. Una diferencia de otros lenguajes, en Ruby una clase hija **si hereda** los métodos privados de su padre.
 3. Protegidos (`protected`): Se pueden llamar desde otras clases siempre y cuando sean del mismo tipo.
 
-El alcanse de una variable o método hace referencia a desde donde puedo mandarlo a llamar.
+El alcance de una variable o método hace referencia a desde donde puedo mandarlo a llamar.
 
 ``` rb
 class Humano
@@ -668,8 +668,8 @@ class Alien
   end
 end
 
-puts Humano.new  # "Soy público"
-puts Humano.new.privado  # ERROR
+Humano.new  # "Soy público"
+Humano.new.privado  # ERROR
 
 tutor = Tutor.new
 alien = Alien.new
@@ -685,7 +685,7 @@ Uno de los secretos de Ruby es que **las clases también son ojetos**. Veamos un
 ``` rb
 class SoyObjetoLoJuro
   # Variable de instancia
-  @nombre_clase = "SoyObjetoLoJuro"
+  @nombre_clase = "Soy objeto lo juro"
   
   # Método de clase (o estático)
   def self.nombre_clase
@@ -734,6 +734,89 @@ class SoyObjetoLoJuro
   end
 end
 ```
+
+### 6.1. Variables de clase
+
+Al igual qué los métodos tenemos las variables de clase, las cuales se identifican por el doble `@`:
+
+``` rb
+class Video
+  @@type = "video/mp4"
+  
+  # Método de clase
+  def self.type_desde_clase
+    puts @@type
+  end
+  
+  # Método a nivel del objeto
+  def type_desde_objeto
+    puts @@type
+  end
+end
+
+Video.type_desde_clase  # "video/mp4"
+Video.new.type_desde_objeto  # "video/mp4"
+```
+
+Su principal característica es que se pueden utilizar desde un método de la clase o un método del objeto.
+
+Una segunda característica de estas variables es su comportamiento cuando hay Herencia:
+
+``` rb
+class Video
+  @@de_clase = "Clase woo"
+  @de_instancia = "Instancia yeei"
+end
+
+class Youtube < Video
+  def self.test
+    puts @@de_clase
+    puts @de_instancia
+  end
+end
+
+Youtube.test
+# "Clase woo" (la variable de clase se herada)
+# nil (la variable de instancia solo le pertenece a Video)
+```
+
+Una cosa importante a considerar es que si modificamos la variable de clase, ya sea en el padre o en una de sus clases hijas, dichos cambios se verán reflejados en todas las clases (ya que guardan la misma referencia).
+
+``` rb
+class Video
+  @@de_clase = "Clase woo"
+  @de_instancia = "Instancia yeei"
+  
+  def self.test
+    puts @@de_clase
+    puts @de_instancia
+  end
+end
+
+class Youtube < Video
+  def self.test
+    @@de_clase = "Clase cambiada"
+    puts @@de_clase
+    puts @de_instancia
+  end
+end
+
+Youtube.test
+# "Clase cambiada"
+# nil
+Video.test
+# "Clase cambiada"
+# "Instancia yeei"
+```
+
+A partir del ejemplo anterior, lo más probable es que te estés preguntando cuándo utilizar variables de instancia y cuándo variables de clase:
+
+* Las **variables de instancia** conviene utilizarlas si no queremos que se hereden a las clases hijas (únicamente le pertenecerá a esa clase).
+* Si queremos tener el beneficio de la herencia y acceder desde métodos del objeto o métodos de la clase, es conveniente utilizar **variables de clase**.
+
+## 7. Polimorfismo
+
+Hola amigos.
 
 ## X. Bibliografía
 
