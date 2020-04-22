@@ -460,7 +460,160 @@ end
 
 ## 5. Herencia
 
-Hola amigos.
+El concepto de **Herencia** hace referencia a crear una o más clases a partir de otra. En este proceso encontraremos dos conceptos claves:
+
+1. Clase **Padre** o también llamada clase **Base**.
+2. Clase **Hija** o **Subclase**, que viene siendo una clase basada en la **Clase Padre**.
+
+``` rb
+# Clase Padre
+class Video
+  attr_accessor :title, :duration
+end
+
+# Subclase
+class YoutubeVideo < Video
+  attr_accessor :youtube_id
+end
+# Esta clase hereda todas las propiedades y métodos de su padre
+
+yt = YoutubeVideo.new
+yt.title = "Herencia en Ruby"
+yt.youtube_id = "asdf123"
+puts yt.title  # "Herencia en Ruby"
+puts yt.youtube_id  # "asdf123"
+```
+
+### 5.1. Sobrescribir métodos
+
+Esta característica nos permite que una subclase o clase hija tenga una implementación específica (o algo distinta) de un método que ya nos proporciona su clase padre.
+
+``` rb
+class Video
+  attr_accessor :title
+  attr_accessor :duration
+  attr_accessor :description
+  
+  def embed_video_code
+    "<video></video>"
+  end
+  
+  def setup(title)
+    @title = title
+  end
+end
+
+class FacebookVideo < Video
+  attr_accessor :facebook_id
+end
+
+class YoutubeVideo < Video
+  attr_accessor :youtube_id
+  
+  def embed_video_code
+    "<iframe />"
+  end
+end
+
+puts FacebookVideo.new().embed_video_code  # "<video></video>"
+puts YoutubeVideo.new().embed_video_code  # "<iframe />"
+```
+
+Esta implementación **anula** (o reemplaza) al método de la superclase.
+
+### 5.2. `super`
+
+Si quisiéramos sobrescribir un método en una subclase **sin perder** lo que el padre hace, utilizamos la palabra reservada `super`.
+
+``` rb
+class Video
+  attr_accessor :title
+  attr_accessor :duration
+  attr_accessor :description
+  
+  def embed_video_code
+    "<video></video>"
+  end
+  
+  def setup(title)
+    @title = title
+  end
+end
+
+class YoutubeVideo < Video
+  attr_accessor :youtube_id
+  
+  def embed_video_code
+    "<iframe />"
+  end
+  
+  def setup(title)
+    super  # Llama al método del mismo nombre en la clase padre
+    # Podemos agregar más funcionalidades si así lo queremos
+  end
+end
+
+yt = YoutubeVideo.new
+yt.setup("Herencia en Ruby")
+puts yt.title  # "Herencia en Ruby"
+```
+
+### 5.3. Clase Object
+
+En Ruby, todas las clases heredan de la **Clase Object**, la cual vendría siendo una especie de **Super Clase** o **Primera Clase**. Esto significa que todos los métodos y propiedades definidas en esta clase estarán disponibles en todos los objetos que hay en el lenguaje.
+
+``` rb
+class Video
+  attr_accessor :title
+  attr_accessor :duration
+  attr_accessor :description
+  
+  def embed_video_code
+    "<video></video>"
+  end
+  
+  def setup(title)
+    @title = title
+  end
+end
+
+class YoutubeVideo < Video
+  attr_accessor :youtube_id
+  
+  def embed_video_code
+    "<iframe />"
+  end
+  
+  def setup(title)
+    super
+  end
+end
+
+puts YoutubeVideo.new.object_id  # 46267240
+
+puts 1.object_id  # 3
+```
+
+Con esta clase podríamos, por ejemplo, crear propiedades o métodos para todos los objetos de un programa:
+
+``` rb
+class Object
+  def i_have_superpowers
+    puts "Soy Dios"
+  end
+end
+
+class Video
+  attr_accessor :title
+  attr_accessor :duration
+  attr_accessor :description
+end
+
+[].i_have_superpowers  # "Soy Dios"
+1.i_have_superpowers  # "Soy Dios"
+"Hola".i_have_superpowers  # "Soy Dios"
+Video.new.i_have_superpowers  # "Soy Dios"
+```
 
 ## X. Bibliografía
 
