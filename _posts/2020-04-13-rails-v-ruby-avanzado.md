@@ -678,7 +678,62 @@ puts tutor.is_a?(Humano)  # TRUE (podemos llamar al método protegido)
 puts alien.is_a?(Humano)  # FALSE
 ```
 
-Métodos de clase.
+## 6. Métodos de clase
+
+Uno de los secretos de Ruby es que **las clases también son ojetos**. Veamos un ejemplo:
+
+``` rb
+class SoyObjetoLoJuro
+  # Variable de instancia
+  @nombre_clase = "SoyObjetoLoJuro"
+  
+  # Método de clase (o estático)
+  def self.nombre_clase
+    @nombre_clase
+  end
+end
+```
+
+La particularidad de los métodos de clase es que se mandan a llamar sobre la clase y no sobre una instancia o un objeto de dicha clase.
+
+``` rb
+class SoyObjetoLoJuro
+  @nombre_clase = "Soy objeto lo juro"
+  
+  def self.nombre_clase
+    @nombre_clase
+  end
+  
+  def self.nombre_clase=(nombre_clase)
+    @nombre_clase = nombre_clase
+  end
+end
+
+puts SoyObjetoLoJuro.nombre_clase  # "Soy objeto lo juro"
+
+SoyObjetoLoJuro.nombre_clase = "Otra cosa"
+puts SoyObjetoLoJuro.nombre_clase  # "Otra cosa"
+```
+
+Los métodos de clase anteriores también se pueden escribir de la siguiente manera:
+
+``` rb
+class SoyObjetoLoJuro
+  @nombre_clase = "Soy objeto lo juro"
+  
+  class << self
+  
+    def nombre_clase
+      @nombre_clase
+    end
+  
+    def nombre_clase=(nombre_clase)
+      @nombre_clase = nombre_clase
+    end
+  
+  end
+end
+```
 
 ## X. Bibliografía
 
