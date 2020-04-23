@@ -678,7 +678,7 @@ puts tutor.is_a?(Humano)  # TRUE (podemos llamar al método protegido)
 puts alien.is_a?(Humano)  # FALSE
 ```
 
-## 6. Métodos de clase
+## 5.5. Métodos de clase
 
 Uno de los secretos de Ruby es que **las clases también son ojetos**. Veamos un ejemplo:
 
@@ -735,7 +735,7 @@ class SoyObjetoLoJuro
 end
 ```
 
-### 6.1. Variables de clase
+### 5.6. Variables de clase
 
 Al igual qué los métodos tenemos las variables de clase, las cuales se identifican por el doble `@`:
 
@@ -814,7 +814,7 @@ A partir del ejemplo anterior, lo más probable es que te estés preguntando cu�
 * Las **variables de instancia** conviene utilizarlas si no queremos que se hereden a las clases hijas (únicamente le pertenecerá a esa clase).
 * Si queremos tener el beneficio de la herencia y acceder desde métodos del objeto o métodos de la clase, es conveniente utilizar **variables de clase**.
 
-## 7. Polimorfismo
+## 6. Polimorfismo
 
 Hola amigos.
 
