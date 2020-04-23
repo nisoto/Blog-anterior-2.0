@@ -816,6 +816,253 @@ A partir del ejemplo anterior, lo más probable es que te estés preguntando cu�
 
 ## 6. Polimorfismo
 
+El **Polimorfismo** es un concepto en la programación orientada a objetos que describe la **habilidad** de que múltiples objetos respondan de maneras distintas a un mismo mensaje.
+
+Las ventajas de aplicar este concepto es que podemos tratar a los objetos como si fueran genéricos, sin preocuparnos por el contenido o instrucciones internas, sino por el hecho de que todos están respondiendo al mismo mensaje o las mismas instrucciones.
+
+Dos conceptos que están estrechamente relacionados con el Polimorfismo son la **herencia** y las **interfaces**.
+
+``` rb
+class Video
+  def play
+  end
+end
+
+class Vimeo < Video
+  def play
+    puts "Inserta el reproductor de Vimeo"
+  end
+end
+
+class Youtube < Video
+  def play
+    puts "Inserta el reproductor de Youtube"
+  end
+end
+
+videos = [Youtube.new, Vimeo.new, Vimeo.new, Youtube.new, Youtube.new]
+
+# Polimorfismo en acción
+videos.each do |video|
+  videos.play
+end
+# "Inserta el reproductor de Youtube"
+# "Inserta el reproductor de Vimeo"
+# "Inserta el reproductor de Vimeo"
+# "Inserta el reproductor de Youtube"
+# "Inserta el reproductor de Youtube"
+```
+
+El ejemplo anterior podríamos escribirlo sin utilizar herencia y funcionaría de igual forma:
+
+``` rb
+class Vimeo
+  def play
+    puts "Inserta el reproductor de Vimeo"
+  end
+end
+
+class Youtube
+  def play
+    puts "Inserta el reproductor de Youtube"
+  end
+end
+
+videos = [Youtube.new, Vimeo.new, Vimeo.new, Youtube.new, Youtube.new]
+
+# Polimorfismo en acción
+videos.each do |video|
+  videos.play
+end
+# "Inserta el reproductor de Youtube"
+# "Inserta el reproductor de Vimeo"
+# "Inserta el reproductor de Vimeo"
+# "Inserta el reproductor de Youtube"
+# "Inserta el reproductor de Youtube"
+```
+
+## 7. Bloques
+
+Este apartado abarca todas las utilizaciones que podemos darle a los bloques de código en Ruby.
+
+### 7.1. Métodos que reciben bloques
+
+Nuesros métodos también pueden recibir bloques de código. Veamos el siguiente ejemplo:
+
+``` rb
+def hola
+  yield
+  # Esta palabra reservada ejecuta el bloque de código recibido
+end
+
+# Llamamos al método pasándole un bloque
+hola { puts "Hola Nicolas" }  # "Hola Nicolas"
+
+hola()  # ERROR
+```
+
+El problema con nuestro código es que si no pasamos un bloque se generará un error. Para solucionar este inconveniente, podemos recurrir al método `block_given`:
+
+``` rb
+def hola
+  yield if block_given?
+end
+
+hola { puts "Hola Nicolas" }  # "Hola Nicolas"
+hola()  # nil
+```
+
+Existe otra manera de recibir un bloque en nuestros métodos, el cual consiste en pasar un argumento que inicie con un `&`.
+
+``` rb
+def hola &bloque
+  bloque.call if block_given?
+end
+
+hola { puts "Hola Nicolas" }  # "Hola Nicolas"
+
+# Para estos casos también podemos utilizar yield
+def hola &bloque
+  yield if block_given?
+end
+
+hola { puts "Hola Nicolas" }  # "Hola Nicolas"
+```
+
+Una cosa importante a considerar es que el argumento que recibe el bloque debe ser el último dentro de la lista de argumentos del método, es decir:
+
+``` rb
+def hola nombre, &bloque
+  bloque.call if block_given?
+end
+
+hola("Nicolas") { puts "Hola Nicolas" }  # "Hola Nicolas"
+```
+
+En resumen, tanto la primera como la segunda forma de recibir bloques en nuestros métodos se comportan de la misma manera, con la excepción de que para esta última tendremos el bloque almacenado dentro de una variable, por lo que podremos manipularlo a nuestro antojo.
+
+``` rb
+def hola &bloque
+  otro_hola(&bloque)
+end
+
+def otro_hola &block
+  puts "Mandando a llamar desde otro_hola"
+  block.call
+end
+
+hola { puts "Hola Nicolas" }
+# "Mandando a llamar desde otro_hola"
+# "Hola Nicolas"
+```
+
+### 7.2. Argumentos y valor retornado en bloque
+
+Veamos el ejemplo a continuación:
+
+``` rb
+class Usuario
+  attr_accessor :nombre
+  
+  def saludar
+    yield(@nombre)
+  end
+end
+
+nicolas = Usuario.new
+nicolas.nombre = "Nicolas"
+nicolas.saludar { |nombre| puts "Hola #{nombre}" }  # "Hola Nicolas"
+# Si tenemos más argumentos, estos van separados por comas
+```
+
+Un bloque puede retornar un valor, si tomamos el ejemplo anterior tendríamos algo como lo siguiente:
+
+``` rb
+class Usuario
+  attr_accessor :nombre
+  
+  def saludar_with
+    saludo = yield(@nombre)
+    puts saludo
+  end
+end
+
+nicolas = Usuario.new
+nicolas.nombre = "Nicolas"
+nicolas.saludar_with { |nombre| "Hola #{nombre}" }  # "Hola Nicolas"
+```
+
+### 7.3. Alcance de variables en un bloque
+
+Un bloque hereda el contexto en el que es ejecutado. Veamos el siguiente ejemplo:
+
+``` rb
+def hola
+  yield
+end
+
+nombre = "Nicolas"
+
+hola { puts "Hola #{nombre}" }  # "Hola Nicolas"
+```
+
+Nota como el programa funciona a pesar de que la variable no fue declarada dentro del bloque ni tampoco enviada como argumento. Esto se debe a que el bloque tiene acceso a dicha variable ya que recibe las variables locales de donde se está ejecutando.
+
+``` rb
+def hola
+  yield
+end
+
+nombre = "Nicolas"
+
+hola do
+  nombre = "Marcos"
+  puts "Hola #{nombre}"
+end
+# "Hola Marcos"
+
+puts nombre  # "Marcos"
+# El valor se modificó en el bloque
+```
+
+A su vez los bloques también pueden definir variables locales que solo podrán ser utilizadas dentro del bloque mismo:
+
+``` rb
+def hola
+  yield("Nicolas")
+end
+
+hola do |nombre|  # Variable local
+  puts "Hola #{nombre}"
+end
+# "Hola Nicolas"
+
+puts nombre  # ERROR
+```
+
+La ejecución del bloque funcionará perfectamente bien. Sin embargo, si tratamos de imprimir la variable `nombre` tendremos un error ya que es exclusiva del bloque y desaparecerá cuando su ejecución termine.
+
+Para las últimas versiones de Ruby, podemos definir variables locales en los bloques que **no** sean argumentos, mediante la siguiente sintaxis:
+
+``` rb
+def hola
+  yield
+end
+
+nombre = "Nicolas"
+
+hola do |; nombre|  # Variable local del bloque
+  nombre = "Marcos"
+  puts "Hola #{nombre}"
+end
+# "Hola Marcos"
+# El ";" separa los argumentos (izq) de las variables (der)
+
+puts nombre  # "Nicolas"
+```
+
+## 8. Hola
+
 Hola amigos.
 
 ## X. Bibliografía
