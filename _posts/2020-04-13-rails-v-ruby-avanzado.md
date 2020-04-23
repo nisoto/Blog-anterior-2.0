@@ -678,7 +678,7 @@ puts tutor.is_a?(Humano)  # TRUE (podemos llamar al método protegido)
 puts alien.is_a?(Humano)  # FALSE
 ```
 
-## 5.5. Métodos de clase
+### 5.5. Métodos de clase
 
 Uno de los secretos de Ruby es que **las clases también son ojetos**. Veamos un ejemplo:
 
