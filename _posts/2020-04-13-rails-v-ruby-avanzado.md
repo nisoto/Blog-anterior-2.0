@@ -1061,11 +1061,49 @@ end
 puts nombre  # "Nicolas"
 ```
 
-## 8. Hola
+### 7.4. `proc`
 
-Hola amigos.
+Desde un principio dijimos que en Ruby **casi todo** es un objeto. Sin embargo, dentro de los pocos elementos que **no son objetos** tenemos a los **bloques**.
 
-## X. Bibliografía
+``` rb
+bloque = { puts "No soy objeto" }  # ERROR
+```
+
+El error se debe a que un bloque sólo puede ser definido cuando se envía a un método, ya que esa es principalmente su función.
+
+``` rb
+def hola &block
+  block.call
+end
+
+hola { puts "Yeeeii" }  # "Yeeeii"
+```
+
+Aquí es donde aparece el concepto `proc`, ya que cuando recibimos un argumento con el `&`, en realidad no estamos recibiendo un bloque sino un `proc`. Es por eso que en el ejemplo anterior podemos ejecutar el método `call` sin inconvenientes. 
+
+A partir de esta aclaración, debemos tener en cuenta lo siguiente:
+* Un `proc` **si** es un objeto, mientras que un bloque **no** lo es.
+* Los `proc` pueden ser almacenados en variables y pasados como argumentos.
+* Un método puede recibir solo un bloque. Sin embargo, puede recibir múltiples `proc`.
+
+``` rb
+def hola proc1, proc2
+  proc1.call
+  proc2.call
+end
+
+# Creamos 2 objetos de la clase proc y le pasamos bloques
+proc1 = Proc.new { puts "Hola proc1" }
+proc2 = Proc.new { puts "Hola proc2" }
+
+hola(proc1,proc2)
+# Hola proc1"
+# Hola proc2"
+```
+
+La pregunta del millón ahora es ¿Cuándo utilizar un bloque y cuándo un `proc`? Y la respuesta es simple: trata siempre de utilizar **Bloques**. Esto se debe básicamente a que los bloques son más rápidos que los `proc` (recuerda que un `proc` al ser objeto se debe crear, a diferencia de los bloques). Los `proc` serán útiles cuando necesitemos realizar tareas un poco más complejas como reenviar bloques a otros objetos, almacenar un bloque en una variable o simplemente si necesitamos más de un bloque por método, entre otros.
+
+## 8. Bibliografía
 
 1. [Ruby](https://www.ruby-lang.org/es/documentation/quickstart/) en 20 minutos.
 2. [CódigoFacilito](https://codigofacilito.com/articulos/por-que-aprender-ruby), curso gratuito de Ruby.
