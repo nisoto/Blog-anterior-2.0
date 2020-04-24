@@ -975,7 +975,7 @@ nicolas.saludar { |nombre| puts "Hola #{nombre}" }  # "Hola Nicolas"
 # Si tenemos más argumentos, estos van separados por comas
 ```
 
-Un bloque puede retornar un valor, si tomamos el ejemplo anterior tendríamos algo como lo siguiente:
+Un bloque también puede retornar un valor. Si tomamos el ejemplo anterior tendríamos algo como lo siguiente:
 
 ``` rb
 class Usuario
