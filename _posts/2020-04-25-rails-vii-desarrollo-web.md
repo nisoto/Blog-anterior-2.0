@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Ruby on Rails VII: Desarrollo Web"
-date: 2020-04-15
+date: 2020-04-25
 excerpt: "Capítulo N°7 del curso de Ruby on Rails"
 tags: [rails]
 ---
