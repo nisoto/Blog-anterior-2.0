@@ -57,15 +57,15 @@ En **YOUR NAME** debemos colocar nuestro nombre y en **YOUR@EMAIL.COM** el corre
 
 ## 5. Flujo de trabajo
 
-Git está compuesto por tres **estados** o **árboles** en los que se pueden encontrar los archivos de nuestro proyecto.
+Git está compuesto por tres **estados** o **árboles** en los que se pueden encontrar los archivos de nuestro proyecto:
 
 1. **Working directory**: O directorio de trabajo en español, contiene nuestro archivo o conjunto de archivos del proyecto.
 2. **Staging area**: O área de preparación en español, también es conocida como **index** y actúa como una zona intermedia en donde escogeremos qué archivos están listos para pasar al siguiente estado y/o cuales no lo están por el momento.
 3. **Git directory**: O directorio de Git en español, también se le conoce como **head** y corresponde al repositorio donde se encuentra el registro de todo nuestro proyecto (commits).
 
-Aquí es donde aparece una nueva palabra: **commit**. Un commit corresponde a la acción de guardar o subir un archivo o un conjunto de archivos al **Directorio de Git** (head).
-
 ![EstadosGit]({{ site.baseurl }}/assets/img/EstadosGit.jpg)
+
+Aquí es donde aparece una nueva palabra: **commit**. Un commit corresponde a la acción de guardar o subir un archivo o un conjunto de archivos al **Directorio de Git** (head).
 
 ## 6. Comandos Git
 
