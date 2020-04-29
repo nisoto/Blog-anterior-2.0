@@ -280,6 +280,38 @@ Para crear un repositorio en Github, debemos ir a la pestaña **"+"** ubicada en
 
 Como puedes ver, el único campo obligatorio corresponde al **nombre** del repositorio. Una vez hayamos completado los datos, hacemos clic en **Create repository** y listo.
 
+### 8.3. Clonar un repositorio
+
+No olvidemos que Github hoy en día es como una red social para los programadores, ya que podemos compartir nuestro trabajo y/o trabajar junto a más personas. Existe un comando que nos permite **clonar** un repositorio en nuestra computadora, lo cual es bastante efectivo si queremos trabajar en equipo o simplemente para revisar el proyecto de manera local:
+
+![ClonarRepo]({{ site.baseurl }}/assets/img/ClonarRepo.jpg)
+
+Tal como se puede apreciar en la imagen, basta con hacer clic en **clone or download** en la parte superior de nuestro repositorio y copiar la URL via SSH, para luego ejecutar el comando `git clone` en la terminal:
+
+```
+$ git clone git@github.com:nisoto/Prueba.git
+```
+
+### 8.4. Subir nuestro proyecto a Github
+
+Ya aprendimos a crear un repositorio en Github, ahora veremos cómo subir un proyecto a este directorio. Para ello, debemos seguir los siguientes pasos de manera ordenada:
+
+1. Inicializamos nuestro repositorio.
+2. Subimos el proyecto al área de preparación o index.
+3. Subimos al repositorio de Git el proyecto (agregando un comentario).
+4. Realizamos la vinculación entre Git y el repositorio de Github (para eso nos sirve la llave SSH)
+5. Subimos el proyecto a Github.
+
+```
+$ git init
+$ git add -A
+$ git commit -m "Primer commit"
+$ git remote add origin git@github.com:nisoto/Prueba.git
+$ git push -u origin master
+```
+
+Para las siguientes ocasiones, solo basta con ejecutar `git push` para subir los cambios a Github.
+
 |     |     |
 |:----|----:|
 | [< Lección N°5](https://nisoto.github.io/rails-v-ruby-avanzado/){: .btn .btn-info} | [Lección N°7 >](https://nisoto.github.io/rails-vii-desarrollo-web/){: .btn .btn-info} |
