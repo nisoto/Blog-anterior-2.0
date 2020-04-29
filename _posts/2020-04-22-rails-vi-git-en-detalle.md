@@ -38,13 +38,7 @@ Incluso el software que nos ayuda a crear más software utiliza Git:
 
 Y no cabe duda de que hay muchos otros ejemplos de equipos de trabajo que utilizan Git no solo en el desarrollo de software, sino también de contenido y productos profesionales.
 
-## 3. Github
-
-Github corresponde a un sitio que nos permite contar con las virtudes de Git como sistema de control de versiones pero en Internet, dándonos ciertas ventajas como compartir nuestro trabajo y/o trabajar con más personas.
-
-Tanto Github como otros sitios que cumplen la misma función (Gitlab o Bitbucket, por ejemplo) se han convertido hoy en día en **redes sociales** para los programadores ya que como se especificó anteriormente, nos permiten compartir nuestro trabajo (muchas empresas revisan nuestros perfiles de Github para tener conocimiento de nuestros trabajos realizados) y trabajar con más personas (por ejemplo, un equipo de desarrolladores de software).
-
-## 4. Instalación y configuración de Git
+## 3. Instalación y configuración de Git
 
 En Sistemas Operativos como Ubuntu o Mac OS Git ya viene instalado, por lo que solo debemos configurarlo. Para ello abrimos la terminal y tecleamos lo siguiente:
 
@@ -55,7 +49,7 @@ $ git config --global user.email "YOUR@EMAIL.com"
 
 En **YOUR NAME** debemos colocar nuestro nombre y en **YOUR@EMAIL.COM** el correo que utilizamos para nuestra cuenta de Github.
 
-## 5. Flujo de trabajo
+## 4. Flujo de trabajo
 
 Git está compuesto por tres **estados** o **árboles** en los que se pueden encontrar los archivos de nuestro proyecto:
 
@@ -67,9 +61,9 @@ Git está compuesto por tres **estados** o **árboles** en los que se pueden enc
 
 Aquí es donde aparece una nueva palabra: **commit**. Un commit corresponde a la acción de guardar o subir un archivo o conjunto de archivos al **Directorio de Git** (head).
 
-## 6. Primeros commits y viajes en el tiempo
+## 5. Primeros commits y viajes en el tiempo
 
-### 6.1. `git init`
+### 5.1. `git init`
 
 Se utiliza para inicializar un repositorio local.
 
@@ -77,7 +71,7 @@ Se utiliza para inicializar un repositorio local.
 $ git init
 ```
 
-### 6.2. `git add`
+### 5.2. `git add`
 
 Nos permite subir un archivo desde el **directorio de trabajo** al **área de preparación** (index).
 
@@ -97,7 +91,7 @@ Para devolver al directorio de trabajo un archivo que se encuentra en el área i
 $ git rm --cached index.html
 ```
 
-### 6.3. `git commit -m "mensaje"`
+### 5.3. `git commit -m "mensaje"`
 
 Subirá al **directorio de Git** (head) los archivos que se encuentran en el **área de preparación** (index), agregando un comentario para poder indentificarlo.
 
@@ -105,7 +99,7 @@ Subirá al **directorio de Git** (head) los archivos que se encuentran en el **�
 $ git commit -m "Primer commit"
 ```
 
-### 6.4. `git status`
+### 5.4. `git status`
 
 Nos muestra el estado del **directorio de trabajo** y el **área de preparación** (qué cambios se han organizado, cuáles no y qué archivos están siendo rastreados por Git).
 
@@ -113,7 +107,7 @@ Nos muestra el estado del **directorio de trabajo** y el **área de preparación
 $ git status
 ```
 
-### 6.5. `git log`
+### 5.5. `git log`
 
 Nos muestra una lista con todos los commits realizados con su respectiva información (mensaje).
 
@@ -132,7 +126,7 @@ Date:   Mon Apr 20 18:58:58 2020 -0400
     Primer commit
 ```
 
-### 6.6. `git checkout`
+### 5.6. `git checkout`
 
 Con este comando podemos **viajar** a través de nuestros commits o ramas (más adelante veremos en detalle lo que son las **ramas**).
 
@@ -148,11 +142,11 @@ $ git checkout master
 
 **Importante**: `master` siempre corresponderá al último commit que nosotros hayamos generado, mientras que el `head` podrá variar dependiendo de lo que le indiquemos por medio del comando `checkout`.
 
-## 7. Reset
+## 6. Reset
 
 El comando `reset` funciona de manera similar a `checkout`, con la diferencia de que este **elimina** los commits a su paso. Existen 3 niveles o tipos de borrado:
 
-### 7.1. Reset soft
+### 6.1. Reset soft
 
 Este tipo de `reset` nos permite viajar a un commit en específico, borrando los posteriores a este. Sin embargo, mantiene nuestro directorio de trabajo intacto.
 
@@ -160,7 +154,7 @@ Este tipo de `reset` nos permite viajar a un commit en específico, borrando los
 $ git reset --soft 7827ceb120fbc23a8bc18e1e9c680ce1f731fed2
 ```
 
-### 7.2. Reset mixed
+### 6.2. Reset mixed
 
 Funciona de manera similar al anterior (soft), borrando también los archivos que se encuentren en el área de preparación (index). Tampoco se mete con nuestro directorio de trabajo.
 
@@ -168,7 +162,7 @@ Funciona de manera similar al anterior (soft), borrando también los archivos qu
 $ git reset --mixed 7827ceb120fbc23a8bc18e1e9c680ce1f731fed2
 ```
 
-### 7.3. Reset hard
+### 6.3. Reset hard
 
 Como su nombre lo indica, borra absolutamente todo lo que hay después del commit al que queremos viajar, afectando incluso nuestro directorio de trabajo.
 
@@ -176,7 +170,7 @@ Como su nombre lo indica, borra absolutamente todo lo que hay después del commi
 $ git reset --hard 7827ceb120fbc23a8bc18e1e9c680ce1f731fed2
 ```
 
-## 8. Ramas y fusiones
+## 7. Ramas y fusiones
 
 Una **rama** en Git vendría siendo una especie de **línea de tiempo** de un proyecto, la cual se construye mediante nuestros commits.
 
@@ -184,7 +178,7 @@ Cuando nosotros inicializamos nuestro repositorio local con el comando `git init
 
 Las ramas son utilizadas por lo general para desarrollar funcionalidades aisladas unas de otras (como el testing, por ejemplo).
 
-### 8.1. Ramas
+### 7.1. Ramas
 
 Crear una nueva rama en Git es bastante sencillo:
 
@@ -222,7 +216,7 @@ Si por alguna razón queremos **borrar** la rama que hemos creado (porque ya no 
 $ git branch -D testing
 ```
 
-### 8.2. Fusiones
+### 7.2. Fusiones
 
 Una **fusión** en Git consiste en la unión de dos ramas, proceso que consta de 2 pasos muy importantes:
 
@@ -237,6 +231,12 @@ $ git merge testing
 ```
 
 Al hacer un `git log` nos podremos dar cuenta que la rama master también cuenta con los commits de la rama que acabamos de absorver.
+
+## 8. Github
+
+Github corresponde a un sitio que nos permite contar con las virtudes de Git como sistema de control de versiones pero en Internet, dándonos ciertas ventajas como compartir nuestro trabajo y/o trabajar con más personas.
+
+Tanto Github como otros sitios que cumplen la misma función (Gitlab o Bitbucket, por ejemplo) se han convertido hoy en día en **redes sociales** para los programadores ya que como se especificó anteriormente, nos permiten compartir nuestro trabajo (muchas empresas revisan nuestros perfiles de Github para tener conocimiento de nuestros trabajos realizados) y trabajar con más personas (por ejemplo, un equipo de desarrolladores de software).
 
 |     |     |
 |:----|----:|
