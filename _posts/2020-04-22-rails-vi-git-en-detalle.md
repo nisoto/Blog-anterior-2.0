@@ -65,9 +65,9 @@ Git está compuesto por tres **estados** o **árboles** en los que se pueden enc
 
 ![EstadosGit]({{ site.baseurl }}/assets/img/EstadosGit.jpg)
 
-Aquí es donde aparece una nueva palabra: **commit**. Un commit corresponde a la acción de guardar o subir un archivo o un conjunto de archivos al **Directorio de Git** (head).
+Aquí es donde aparece una nueva palabra: **commit**. Un commit corresponde a la acción de guardar o subir un archivo o conjunto de archivos al **Directorio de Git** (head).
 
-## 6. Comandos Git
+## 6. Primeros commits y viajes en el tiempo
 
 ### 6.1. `git init`
 
@@ -99,10 +99,10 @@ $ git rm --cached index.html
 
 ### 6.3. `git commit -m "mensaje"`
 
-Subirá al **directorio de Git** (head) los archivos que se encuentran en el área intermedia o de preparación (index), agregando un comentario para poder indentificarlo.
+Subirá al **directorio de Git** (head) los archivos que se encuentran en el **área de preparación** (index), agregando un comentario para poder indentificarlo.
 
 ```
-$ git commit -m "primer commit"
+$ git commit -m "Primer commit"
 ```
 
 ### 6.4. `git status`
@@ -119,26 +119,124 @@ Nos muestra una lista con todos los commits realizados con su respectiva informa
 
 ```
 $ git log
-commit 7fd525835c8c0359ea13fd982a04251d61832ab6
+commit 7fd525835c8c0359ea13fd982a04251d61832ab6 (HEAD -> master)
 Author: YOUR NAME <YOUR@EMAIL.COM>
 Date:   Sat Apr 25 21:22:20 2020 -0400
+
+    Segundo commit
+    
+commit 7827ceb120fbc23a8bc18e1e9c680ce1f731fed2
+Author: YOUR NAME <YOUR@EMAIL.COM>
+Date:   Mon Apr 20 18:58:58 2020 -0400
 
     Primer commit
 ```
 
 ### 6.6. `git checkout`
 
-Con este comando podemos **viajar** a través de nuestros commits o ramas (más adelante veremos lo que es una **rama**).
+Con este comando podemos **viajar** a través de nuestros commits o ramas (más adelante veremos en detalle lo que son las **ramas**).
 
 ```
 $ git checkout 7fd525835c8c0359ea13fd982a04251d61832ab6
 ```
 
-Si queremos volver al último commit, utilizamos `master`:
+Si queremos regresar al último commit, utilizamos `master`:
 
 ```
-git checkout master
+$ git checkout master
 ```
+
+**Importante**: `master` siempre corresponderá al último commit que nosotros hayamos generado, mientras que el `head` podrá variar dependiendo de lo que le indiquemos por medio del comando `checkout`.
+
+## 7. Reset
+
+El comando `reset` funciona de manera similar a `checkout`, con la diferencia de que este **elimina** los commits a su paso. Existen 3 niveles o tipos de borrado:
+
+### 7.1. Reset soft
+
+Este tipo de `reset` nos permite viajar a un commit en específico, borrando los posteriores a este. Sin embargo, mantiene nuestro directorio de trabajo intacto.
+
+```
+$ git reset --soft 7827ceb120fbc23a8bc18e1e9c680ce1f731fed2
+```
+
+### 7.2. Reset mixed
+
+Funciona de manera similar al anterior (soft), borrando también los archivos que se encuentren en el área de preparación (index). Tampoco se mete con nuestro directorio de trabajo.
+
+```
+$ git reset --mixed 7827ceb120fbc23a8bc18e1e9c680ce1f731fed2
+```
+
+### 7.3. Reset hard
+
+Como su nombre lo indica, borra absolutamente todo lo que hay después del commit al que queremos viajar, afectando incluso nuestro directorio de trabajo.
+
+```
+$ git reset --hard 7827ceb120fbc23a8bc18e1e9c680ce1f731fed2
+```
+
+## 8. Ramas y fusiones
+
+Una **rama** en Git vendría siendo una especie de **línea de tiempo** de un proyecto, la cual se construye mediante nuestros commits.
+
+Cuando nosotros inicializamos nuestro repositorio local con el comando `git init`, Git internamente genera la rama principal o **rama master**, es decir, la línea de tiempo por defecto en la que estaremos trabajando.
+
+Las ramas son utilizadas por lo general para desarrollar funcionalidades aisladas unas de otras (como el testing, por ejemplo).
+
+### 8.1. Ramas
+
+Crear una nueva rama en Git es bastante sencillo:
+
+```
+$ git branch testing
+```
+
+Ten en cuenta que al momento de crear una nueva rama, ésta contará con **los mismos commits** que la rama **master**.
+
+El comando `git branch` a secas nos permite listar todas las ramas existentes, marcando con un **asterisco** en la que estemos actualmente:
+
+```
+$ git branch
+* master
+  testing
+```
+
+Si tienes buena memoria, recordarás que `checkout` nos permite viajar entre commits y **ramas**, por lo que si queremos cambiarnos a la rama **testing**, debemos hacer lo siguiente:
+
+```
+$ git checkout testing
+```
+
+Por lo tanto, si ejecutamos el comando `git branch`, el asterisco debería estar sobre esta nueva rama:
+
+```
+$ git branch
+  master
+* testing
+```
+
+Si por alguna razón queremos **borrar** la rama que hemos creado (porque ya no nos sirve o simplemente porque los cambios en esta línea de tiempo contienen muchos errores), debemos posicionarnos primeramente en la rama principal y ejecutar lo siguiente:
+
+```
+$ git branch -D testing
+```
+
+### 8.2. Fusiones
+
+Una **fusión** en Git corresponde a la unión de dos ramas, la cual genera un nuevo commit. Este proceso consta de 2 pasos muy importantes:
+
+1. Situarnos en la rama que va a absorver a la otra.
+2. Ejecutar la fusión.
+
+Si tomamos el ejemplo anterior, fusionaremos la rama **master** con **testing**, siguiendo los pasos respectivos:
+
+```
+$ git checkout master
+$ git merge testing
+```
+
+Al hacer un `git log` nos podremos dar cuenta que la rama master también cuenta con los commits de la rama que acabamos de absorver.
 
 |     |     |
 |:----|----:|
