@@ -49,8 +49,8 @@ Tanto Github como otros sitios que cumplen la misma función (Gitlab o Bitbucket
 En Sistemas Operativos como Ubuntu o Mac OS Git ya viene instalado, por lo que solo debemos configurarlo. Para ello abrimos la terminal y tecleamos lo siguiente:
 
 ```
-git config --global user.name "YOUR NAME"
-git config --global user.email "YOUR@EMAIL.com"
+$ git config --global user.name "YOUR NAME"
+$ git config --global user.email "YOUR@EMAIL.com"
 ```
 
 En **YOUR NAME** debemos colocar nuestro nombre y en **YOUR@EMAIL.COM** el correo que utilizamos para nuestra cuenta de Github.
@@ -224,7 +224,7 @@ $ git branch -D testing
 
 ### 8.2. Fusiones
 
-Una **fusión** en Git corresponde a la unión de dos ramas, la cual genera un nuevo commit. Este proceso consta de 2 pasos muy importantes:
+Una **fusión** en Git consiste en la unión de dos ramas, proceso que consta de 2 pasos muy importantes:
 
 1. Situarnos en la rama que va a absorver a la otra.
 2. Ejecutar la fusión.
