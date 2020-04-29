@@ -270,6 +270,16 @@ Y se debería desplegar un mensaje como el siguiente:
 Hi excid3! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
+### 8.2. Primer repositorio
+
+Tal como lo hemos venido diciendo en los apartados anteriores, un **repositorio** o "repo" es un directorio donde se almacenan los archivos de un proyecto, el cual puede estar ubicado en el almacenamiento de Github o localmente en nuestra computadora (Git). En este directorio podemos almacenar archivos de código, imágenes, audios o todo lo relacionado a un proyecto de cualquier tipo.
+
+Para crear un repositorio en Github, debemos ir a la pestaña **"+"** ubicada en la barra superior de la aplcación y hacer clic en **New repository**, lo cual nos desplegará un formulario con algunos datos a completar:
+
+![CrearRepositorio]({{ site.baseurl }}/assets/img/CrearRepositorio.jpg)
+
+Como puedes ver, el único campo obligatorio corresponde al **nombre** del repositorio. Una vez hayamos completado los datos, hacemos clic en **Create repository** y listo.
+
 |     |     |
 |:----|----:|
 | [< Lección N°5](https://nisoto.github.io/rails-v-ruby-avanzado/){: .btn .btn-info} | [Lección N°7 >](https://nisoto.github.io/rails-vii-desarrollo-web/){: .btn .btn-info} |
