@@ -238,6 +238,38 @@ Github corresponde a un sitio que nos permite contar con las virtudes de Git com
 
 Tanto Github como otros sitios que cumplen la misma función (Gitlab o Bitbucket, por ejemplo) se han convertido hoy en día en **redes sociales** para los programadores ya que como se especificó anteriormente, nos permiten compartir nuestro trabajo (muchas empresas revisan nuestros perfiles de Github para tener conocimiento de nuestros trabajos realizados) y trabajar con más personas (por ejemplo, un equipo de desarrolladores de software).
 
+Es importante considerar que Github se sumaría al **flujo de trabajo** de Git como un **cuarto estado** o árbol:
+
+![EstadosGit2]({{ site.baseurl }}/assets/img/EstadosGit2.jpg)
+
+### 8.1. Registro y configuración de la llave SSH
+
+Crear una cuenta en Github es bastante sencillo, solo debemos ir a la [página](https://github.com/) y hacer clic en **Sign up**, donde se nos pedirá un usuario, correo y contraseña.
+
+Una vez creada nuestra cuenta, el siguiente paso es enlazarla con Git y para ello será necesario crear una llave SSH. Nos dirigimos a la terminal y ejecutamos lo siguiente:
+
+```
+$ ssh-keygen -t rsa -b 4096 -C "YOUR@EMAIL.com"
+```
+
+Este comando generará dicha llave, la cual debemos copiar dentro de nuestra cuenta de Github. Para visualizarla ejecutamos:
+
+```
+$ cat ~/.ssh/id_rsa.pub
+```
+
+Comando que nos mostrará a través de la terminal la llave, que debemos copiar en la ruta **Settings > SSH and GPG keys > New SSH key**. Para verificar la correcta vinculación, basta con ejecutar en la terminal:
+
+```
+$ ssh -T git@github.com
+```
+
+Y se debería desplegar un mensaje como el siguiente:
+
+```
+Hi excid3! You've successfully authenticated, but GitHub does not provide shell access.
+```
+
 |     |     |
 |:----|----:|
 | [< Lección N°5](https://nisoto.github.io/rails-v-ruby-avanzado/){: .btn .btn-info} | [Lección N°7 >](https://nisoto.github.io/rails-vii-desarrollo-web/){: .btn .btn-info} |
