@@ -329,6 +329,14 @@ git push origin testing
 
 ![RamasGithub]({{ site.baseurl }}/assets/img/RamasGithub.jpg)
 
+### 8.6. Issues
+
+Por confirmar.
+
+### 8.7. Pull Request
+
+Por confirmar.
+
 |     |     |
 |:----|----:|
 | [< Lección N°5](https://nisoto.github.io/rails-v-ruby-avanzado/){: .btn .btn-info} | [Lección N°7 >](https://nisoto.github.io/rails-vii-desarrollo-web/){: .btn .btn-info} |
