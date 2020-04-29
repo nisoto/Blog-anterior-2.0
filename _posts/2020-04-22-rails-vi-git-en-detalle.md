@@ -238,7 +238,7 @@ Github corresponde a un sitio que nos permite contar con las virtudes de Git com
 
 Tanto Github como otros sitios que cumplen la misma función (Gitlab o Bitbucket, por ejemplo) se han convertido hoy en día en **redes sociales** para los programadores ya que como se especificó anteriormente, nos permiten compartir nuestro trabajo (muchas empresas revisan nuestros perfiles de Github para tener conocimiento de nuestros trabajos realizados) y trabajar con más personas (por ejemplo, un equipo de desarrolladores de software).
 
-Es importante considerar que Github se sumaría al **flujo de trabajo** de Git como un **cuarto estado** o árbol:
+Es importante considerar que Github se suma al **flujo de trabajo** de Git como un **cuarto estado** o árbol:
 
 ![EstadosGit2]({{ site.baseurl }}/assets/img/EstadosGit2.jpg)
 
@@ -329,13 +329,12 @@ git push origin testing
 
 ![RamasGithub]({{ site.baseurl }}/assets/img/RamasGithub.jpg)
 
-### 8.6. Issues
+### 8.6. Otras funcionalidades
 
-Por confirmar.
+Existen otras funcionalidades en Github que son bastante útiles sobre todo si estamos trabajando en equipo:
 
-### 8.7. Pull Request
-
-Por confirmar.
+1. **Issues**: Nos sirven para reportar nuevas ideas, mejoras, tareas o errores en nuestro proyecto.
+2. **Pull Request**: Nos permite subir al repositorio nuevos cambios (como la corrección de algunos errores y/o mejoras al proyecto), lo cual debe ser previamente revisado por todos los colaboradores del equipo para confirmar o rechazar estas nuevas mejoras.
 
 |     |     |
 |:----|----:|
