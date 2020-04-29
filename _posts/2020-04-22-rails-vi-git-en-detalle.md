@@ -292,6 +292,10 @@ Tal como se puede apreciar en la imagen, basta con hacer clic en **clone or down
 $ git clone git@github.com:nisoto/Prueba.git
 ```
 
+Existe otra forma de copiar un repositorio en Github conocida como **Fork**, cuya diferencia radica en que esta opción copiará el repositorio directamente a nuestra cuenta de Github y **no** en nuestra computadora.
+
+![GithubFork]({{ site.baseurl }}/assets/img/GithubFork.jpg)
+
 ### 8.4. Subir nuestro proyecto a Github
 
 Ya aprendimos a crear un repositorio en Github, ahora veremos cómo subir un proyecto a este directorio. Para ello, debemos seguir los siguientes pasos de manera ordenada:
@@ -311,6 +315,19 @@ $ git push -u origin master
 ```
 
 Para las siguientes ocasiones, solo basta con ejecutar `git push` para subir los cambios a Github.
+
+### 8.5. Ramas en Github
+
+Las ramas o líneas de tiempo de nuestro proyecto también podemos subirlas a Github, solo debemos especificarlo al momento de ejecutar el comando `git push`:
+
+```
+git checkout testing
+git add -A
+git commit -m "Nuevos cambios en rama testing"
+git push origin testing
+```
+
+![RamasGithub]({{ site.baseurl }}/assets/img/RamasGithub.jpg)
 
 |     |     |
 |:----|----:|
