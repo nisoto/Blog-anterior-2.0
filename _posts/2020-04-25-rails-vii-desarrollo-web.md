@@ -44,11 +44,11 @@ Este tipo de modelos permite repartir la capacidad de procesamiento ya que el se
 
 Elementos de este modelo:
 
-### 1. HTTP
+#### 1. HTTP
 
 Cuyas siglas significan Hypertext Transfer Protocol (Protocolo de transferencia de hipertexto), es un protocolo de comunicación que permite las transferencias de información en la World Wide Web, utilizando para ello el modelo Cliente-Servidor.
 
-### 2. Mensajes
+#### 2. Mensajes
 
 Los mensajes en este modelo son en texto plano, convirtiéndolo así en algo más legible y fácil de depurar.
 
@@ -56,7 +56,7 @@ Estructura:
 * Petición: Método de petición + URL del recurso + Versión HTTP.
 * Respuesta: Versión HTTP + Código de respuesta + Frase asociada al retorno.
 
-### 3. URI
+#### 3. URI
 
 Son las siglas de Uniform Resource Identifier (Identificador Uniforme de Recursos) y sirve para identificar recursos en Internet, el cual tiene un formato estándar definido y su propósito es permitir interacción entre recursos disponibles en Internet, o en alguna red de cómputo. Los recursos a los que se refiere son páginas, servicios, imágenes, videos, etc.
 
@@ -65,11 +65,11 @@ Algunos ejemplos:
 * http://joyas.com/aros
 * http://joyas.com/aros/6/verdes
 
-### 4. URL
+#### 4. URL
 
 Son las siglas de Uniform Resource Locator (Localizador de Recursos Uniforme) y es un Identificador de Recursos Uniforme (URI) cuyos recursos referidos pueden cambiar, esto es, la dirección puede apuntar a recursos variables en el tiempo. Están formados por una secuencia de caracteres de acuerdo con un formato y estándar que designa recursos en una red como por ejemplo el Internet.
 
-### 5. URN
+#### 5. URN
 
 Son las siglas de Uniform Resource Name (Nombre de Recurso Uniforme) e identifican recursos en la web, pero a diferencia de los URL, no indican exactamente dónde se encuentra ese objeto.
 
