@@ -6,7 +6,7 @@ excerpt: "Capítulo N°7 del curso de Ruby on Rails"
 tags: [rails]
 ---
 
-## 1. Hola
+## 1. ¿Qué es el desarrollo web?
 
 Hola amigos.
 
