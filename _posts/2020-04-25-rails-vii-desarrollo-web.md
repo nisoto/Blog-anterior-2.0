@@ -83,20 +83,31 @@ Para realizar solicitudes a un servidor por medio del protocolo HTTP, es obligat
 
 Dichos métodos son los siguientes:
 
-1. **GET**: Este método se utiliza cuando se necesita adquirir un archivo o recurso que se encuentran en un servidor web. Devuelve tanto las cabeceras que contienen los metadatos del recurso solicitado como el recurso en si (por ejemplo, `GET /images/logo.png`).
-2. **HEAD**: Este método realiza una acción similar al método GET solo que a diferencia de este, solicita los metadatos de un recurso o archivo y no todo elemento como tal.
-3. **POST**: Este método se usa cuando se necesita enviar información o un elemento al servidor y que lo enviado sea almacenado como un "hijo" o subelemento de un elemento o recurso ya existente en el servidor. Este método se usa para enviar información a un recurso web del servidor  mas no para cargar/crear un elemento nuevo como tal. Se usa principalmente en el envío de formularios que se encuentran en las páginas web.
-4. **OPTIONS**: Sirve para averiguar que métodos HTTP soporta el servidor web con respecto a un recurso en concreto o en caso de que haya un * en la URI se devuelven todos los métodos soportados por el servidor.
-5. **PUT**: Crea o carga un nuevo recurso al servidor, o en caso de que el objeto ya exista reemplaza el recurso existente con el recurso que se carga.
-6. **DELETE**: Este método le solicita al servidor web que se borre un recurso en específico.
-7. **TRACE**: Este método permite monitorear los mensajes que hay entre el cliente y el servidor web. Principalmente se usa con propósitos de diagnósticos de fallas o para revisar si existen servidores intermediarios en la conexión.
-8. **CONNECT**: Este método se utiliza para solicitar una conexión de tipo túnel TCP/IP. Principalmente se utiliza cuando se necesita utilizar un proxy para una conexión segura cifrada HTTPS o para comunicaciones vía SSL.
+1. **GET**: Solicita una representación de un recurso específico. Las peticiones que usan este método sólo deben recuperar datos (por ejemplo, `GET /images/logo.png`).
+2. **HEAD**: Pide una respuesta idéntica a la de una petición GET, pero sin el cuerpo de la respuesta.
+3. **POST**: Se utiliza para enviar una entidad a un recurso en específico, causando a menudo un cambio en el estado o efectos secundarios en el servidor.
+4. **PUT**: Reemplaza todas las representaciones actuales del recurso de destino con la carga útil de la petición.
+5. **DELETE**: Borra un recurso en específico.
+6. **CONNECT**: Establece un túnel hacia el servidor identificado por el recurso.
+7. **OPTIONS**: Es utilizado para describir las opciones de comunicación para el recurso de destino.
+8. **TRACE**: Realiza una prueba de bucle de retorno de mensaje a lo largo de la ruta al recurso de destino.
+9. **PATCH**: Es utilizado para aplicar modificaciones parciales a un recurso.
 
 En resumen, los principales métodos a utilizar son los siguientes:
 * **PUT** que sirve para **crear**.
 * **GET** que sirve para **leer**.
 * **POST** que sirve para **actualizar**.
 * **DELETE** que sirve para **borrar**.
+
+## 4. Modelo Vista Controlador (MVC)
+
+El **Modelo Vista Controlador** o **MVC** (abreviado) es un **patrón de arquitectura** de software que separa los datos de una aplicación, la interfaz de usuario y la lógica de control en 3 componentes distintos.
+
+Es una arquitectura muy importante ya que se utiliza tanto en componentes gráficos básicos como sistenas empresariales. La mayoría de los Frameworks modernos utilizan MVC (o alguna adaptación) para la arquitectura, donde podemos destacar **Ruby on Rails**, **Django** y **AngularJS**, entre otros.
+
+![MVC2]({{ site.baseurl }}/assets/img/MVC2.jpg)
+
+Hola amigos.
 
 |     |     |
 |:----|----:|
