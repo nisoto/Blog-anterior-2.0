@@ -99,7 +99,7 @@ No olvidar:
 
 ### 3.2. Estableciendo nuestra página principal
 
-El propósito de la **Vista** que acabamos de generar es que podamos visualizarla en nuestra página de inicio, es decir, en la URL [http://localhost:3000](http://localhost:3000). Para lograr esta hazaña, lo primero que debemos hacer es dirigirnos a la carpeta `routes` de nuestro proyecto y acceder al fichero `routes.rb`, donde encontraremos algo como lo siguiente:
+El propósito de la **Vista** que acabamos de generar es que podamos visualizarla en nuestra página de inicio, es decir, en la URL [http://localhost:3000](http://localhost:3000). Para lograr esta hazaña, lo primero que debemos hacer es dirigirnos a la carpeta `config` de nuestro proyecto y acceder al fichero `routes.rb`, donde encontraremos algo como lo siguiente:
 
 ``` rb
 Rails.application.routes.draw do
