@@ -86,16 +86,38 @@ La variable `@name` va a estar disponible en la vista `app/views/dashboard/index
 La etiqueta `<%= contenido %>` le indica a Rails que queremos imprimir la variable en pantalla. Si solo quisiéramos evaluar código (pero no imprimir) ignoramos el `=`, es decir, `<% contenido %>`. Por ejemplo:
 
 ``` erb
-<% [1,2,3,4].each do |number| %>  # Evalúa
-  <p>Numero: <%= number %></p>  # Imprime
+<% [1,2,3,4].each do |number| %>  <!-- Evalúa -->
+  <p>Numero: <%= number %></p>  <!-- Imprime -->
 <% end %>
-# Numero: 1
-# Numero: 2
-# Numero: 3
-# Numero: 4
+<!--
+Numero: 1
+Numero: 2
+Numero: 3
+Numero: 4
+-->
 ```
 
 #### 1.3.2. Query String
+
+El **query string** corresponde al conjunto de propiedades que van después del signo de interrogación (?) de un URL. Rails automáticamente convierte las propiedades en un `hash params` al que podemos acceder desde el controlador o la vista.
+
+Por ejemplo, si queremos obtener el valor de una propiedad llamada `name` utilizaríamos `params[:name]`. Modifiquemos `app/views/dashboard/index.html.erb` para que quede de la siguiente manera:
+
+``` erb
+<h1>Hola <%= params[:name] %></h1>
+```
+
+Si ingresamos a [http://localhost:3000/?name=Nicolas](http://localhost:3000/?name=Nicolas), deberíamos ver en pantalla **"Hola Nicolas"**. Puedes probar cambiando el query string con otros nombres.
+
+Debes tener en cuenta que los valores del query string siempre llegan como cadenas de texto, por lo que si deseas otro tipo, se debe convertir manualmente. Por ejemplo:
+
+``` erb
+<h1>En cinco años tendrás <%= params[:age].to_i + 5 %> años</h1>
+```
+
+En este caso, estamos convirtiendo la propiedad `age` a un entero para poder sumarle `5`.
+
+### 1.4. ActiveRecord
 
 Hola amigos.
 
