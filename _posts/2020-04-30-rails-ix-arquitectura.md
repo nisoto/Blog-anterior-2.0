@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Ruby on Rails IX: Arquitectura"
-date: 2020-04-13
+date: 2020-04-30
 excerpt: "Capítulo N°9 del curso de Ruby on Rails"
 tags: [rails]
 ---
