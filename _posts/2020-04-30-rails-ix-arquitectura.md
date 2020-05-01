@@ -129,7 +129,7 @@ Sus principales ventajas son:
 
 ### 1.5. La aplicación de consola
 
-Una de las razones por las que Ruby on Rails es tan popular se debe a que incorpora una poderosa aplicación de consola que nos permite, entre otras cosas, generar código a través de comandos llamados **generadores**
+Una de las razones por las que Ruby on Rails es tan popular se debe a que incorpora una poderosa aplicación de consola que nos permite, entre otras cosas, generar código a través de comandos llamados **generadores**.
 
 Hasta el momento hemos visto los siguientes comandos:
 
@@ -141,9 +141,9 @@ Iremos descubriendo nuevos comandos a medida que avancemos en este curso.
 
 ## 2. Trabajando en nuestro Blog Personal
 
-A lo largo de este curso construiremos un Blog Personal, por lo que partiremos creando un nuevo controlador de nombre `articles`, el cual contendrá todas las acciones que posee un CRUD básico: listar, crear, editar y eliminar.
+A lo largo de este curso construiremos un Blog Personal, por lo que partiremos creando un nuevo controlador de nombre `articles`, el cual contendrá todas las acciones que posee un CRUD básico: listar, crear, editar y eliminar. Por el momento solamente nos centraremos en **listar** estos artículos.
 
-Para crear este controlador vamos a la terminal y ejecutamos:
+Para crear el controlador, abrimos la terminal y ejecutamos:
 
 ```
 $ rails generate controller articles
@@ -159,7 +159,7 @@ class ArticlesController < ApplicationController
 end
 ```
 
-**Nota**: Por el momento no vamos a involucrar la base de datos, por lo que trabajaremos sobre un arreglo de Artículos con 3 elementos.
+**Nota**: Aún no vamos a involucrar la base de datos, por lo que trabajaremos sobre un arreglo de Artículos con 3 elementos.
 
 El siguiente paso es crear la vista, la cual debe llevar por nombre `index.html.erb` y debe estar alojada en `app/views/articles`:
 
@@ -189,7 +189,7 @@ Por último, debemos crear la ruta. Abrimos `config/routes.rb` y agregamos la si
 get '/articles', to: 'articles#index'
 ```
 
-Si abrimos nuestro navegador e ingresamos a [http://localhost:3000/articles](http://localhost:3000/articles), podremos visualizar los 3 artículos que acabamos de crear en el método index.
+Si abrimos nuestro navegador e ingresamos a [http://localhost:3000/articles](http://localhost:3000/articles), podremos visualizar los 3 artículos que creamos en el método index.
 
 |     |     |
 |:----|----:|
