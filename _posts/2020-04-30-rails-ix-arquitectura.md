@@ -79,13 +79,13 @@ end
 
 La variable `@name` va a estar disponible en la vista `app/views/dashboard/index.html.erb` y la podríamos imprimir de la siguiente forma:
 
-``` html
+``` erb
 <h1>Hola <%= @name %></h1>
 ```
 
 La etiqueta `<%= contenido %>` le indica a Rails que queremos imprimir la variable en pantalla. Si solo quisiéramos evaluar código (pero no imprimir) ignoramos el `=`, es decir, `<% contenido %>`. Por ejemplo:
 
-``` rb
+``` erb
 <% [1,2,3,4].each do |number| %>  # Evalúa
   <p>Numero: <%= number %></p>  # Imprime
 <% end %>
