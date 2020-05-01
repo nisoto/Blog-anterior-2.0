@@ -111,7 +111,7 @@ Si ingresamos a [http://localhost:3000/?name=Nicolas](http://localhost:3000/?nam
 
 Debes tener en cuenta que los valores del query string siempre llegan como cadenas de texto, por lo que si deseas otro tipo de dato, se debe convertir manualmente. Por ejemplo:
 
-``` erb
+``` rb
 <h1>En cinco años tendrás <%= params[:age].to_i + 5 %> años</h1>
 ```
 
