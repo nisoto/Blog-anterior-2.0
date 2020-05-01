@@ -11,19 +11,19 @@ tags: [rails]
 Para crear un nuevo proyecto en Rails (esto ya se vió en el capítulo anterior), debemos ejecutar el siguiente comando en la terminal:
 
 ```
-rails new myapp
+$ rails new myapp
 ```
 
 Con esto, Rails inmediatamente comenzará a crear varias carpetas y ficheros necesarios para nuestro proyecto y por último, instalará las **Gemas** (librerías) por defecto. Una vez terminado el proceso, para ingresar al directorio de nuestro proyecto ejecutamos:
 
 ```
-cd myapp
+$ cd myapp
 ```
 
 Y luego podemos utilizar:
 
 ```
-ls
+$ ls
 ```
 
 Para visualizar todas las carpetas y ficheros que éste contiene.
@@ -80,13 +80,13 @@ Cuando accedemos a cualquier aplicación, ya sea de escritorio o web, por lo gen
 Para crear un controlador, debemos ejecutar el **generador de controladores** y especificar el nombre de este y luego una acción. Por ejemplo, si queremos que nuestro controlador se llame `dashboard` y la acción `index`, debemos ejecutar (dentro de la carpeta de nuestro proyecto) lo siguiente:
 
 ```
-rails generate controller dashboard index
+$ rails generate controller dashboard index
 ```
 
 O también:
 
 ```
-rails g controller dashboard index
+$ rails g controller dashboard index
 ```
 
 Con esto, Rails creará una serie de archivos y añadirá una ruta por ti, donde los archivos más importantes serán el **Controlador** de nombre `dashboard_controller.rb` (alojado en la ruta `app/controllers`) y la **Vista** de nombre `index.html.erb` (alojada en `app/views/dashboard`).
