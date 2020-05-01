@@ -6,15 +6,96 @@ excerpt: "Capítulo N°9 del curso de Ruby on Rails"
 tags: [rails]
 ---
 
-## 1. Hola
+## 1. Componentes de Rails
 
-Ruby on Rails usa un concepto llamado convención sobre configuración para que la estructura de todos los proyectos sea similar y escribamos menos código.
+Los componentes más importantes de Ruby on Rails son:
 
-La desventaja de la convención sobre configuración es que muchas cosas en Rails te van a parecer magia al principio. No te preocupes, es normal y con el tiempo uno aprende a entender, e incluso a apreciar, lo que está ocurriendo.
+1. **El enrutador**, que se configura en el archivo `config/routes.rb` y nos permite asociar las rutas con las acciones.
+2. **Los controladores**, que se encuentran en la carpeta `app/controllers` y almacenan las acciones.
+3. **Las vistas**, que se encuentran en `app/views` y nos permiten definir el código HTML que se renderiza desde los controladores.
+4. **ActiveRecord**, el cual nos va a permitir interactuar con la base de datos.
+5. La aplicación de **consola**, que nos permitirá ahorrar tiempo de desarrollo.
 
-Lo importante es que no olvides el objetivo principal: ser capaces de crear nuestras primeras aplicaciones Web.
+### 1.1. El enrutador
 
-## 2. Los componentes de Rails
+El enrutador es el componente que decide qué controlador y qué modelo va a procesar una petición HTTP, y se configura en el archivo `config/routes.rb`. Existen varias formas de definir las rutas, veamos la más genérica:
+
+``` rb
+get '/index', to: 'dashboard#index'
+```
+
+En este ejemplo estamos diciendo que cuando alguien haga una petición a `GET /index`, el método `index` del controlador `DashboardController` (ubicado en `app/controllers/dashboard_controller.rb`) es el que se va a encargar de procesar la petición.
+
+Otra forma equivalente es utilizar el operador `=>`, es decir:
+
+``` rb
+get '/index' => 'dashboard#index'
+```
+
+Por último, es posible omitir el controlador y el método, siempre y cuando la ruta tenga la forma `/controlador/método`. Por ejemplo, la siguiente línea utilizará el método `index` del controlador `DashboardController`
+
+``` rb
+get '/dashboard/index'
+```
+
+### 1.2. Los controladores
+
+Los controladores son **clases** de Ruby con métodos que se van a encargar de procesar las peticiones HTTP.
+
+``` rb
+class DashboardController < ApplicationController
+  def index
+  end
+end
+```
+
+### 1.3. Las vistas
+
+Podemos utilizar vistas para no tener que escribir todo el código HTML en las acciones (que es posible pero muy engorroso). Por convención, Rails renderiza una vista por defecto que se encuentra en una ubicación específica y se llama de una forma específica:
+
+* El nombre del archivo debe ser igual al método seguido de `.html.erb`.
+* Se debe ubicar en la carpeta `app/views`, dentro de una carpeta que tenga el mismo nombre del controlador.
+
+Por ejemplo, el método `index` del controlador `dashboard` va a renderizar la vista `app/views/dashboard/index.html.erb`
+
+``` rb
+class DashboardController < ApplicationController
+  def index
+  end
+end
+```
+
+#### 1.3.1. Pasando información del controlador a la vista
+
+Cuando definimos una variable de instancia en la acción, esta variable va a estar disponible en la vista. Por ejemplo
+
+``` rb
+class DashboardController < ApplicationController
+  def index
+    @name = "Nicolas"
+  end
+end
+```
+
+La variable `@name` va a estar disponible en la vista `app/views/dashboard/index.html.erb` y la podríamos imprimir de la siguiente forma:
+
+``` html
+<h1>Hola <%= @name %></h1>
+```
+
+La etiqueta `<%= contenido %>` le indica a Rails que queremos imprimir la variable en pantalla. Si solo quisiéramos evaluar código (pero no imprimir) ignoramos el `=`, es decir, `<% contenido %>`. Por ejemplo:
+
+``` rb
+<% [1,2,3,4].each do |number| %>  # Evalúa
+  <p>Numero: <%= number %></p>  # Imprime
+<% end %>
+# Numero: 1
+# Numero: 2
+# Numero: 3
+# Numero: 4
+```
+
+#### 1.3.2. Query String
 
 Hola amigos.
 
