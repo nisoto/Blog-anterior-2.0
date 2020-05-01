@@ -321,10 +321,10 @@ Para las siguientes ocasiones, solo basta con ejecutar `git push` para subir los
 Las ramas o líneas de tiempo de nuestro proyecto también podemos subirlas a Github, solo debemos especificarlo al momento de ejecutar el comando `git push`:
 
 ```
-git checkout testing
-git add -A
-git commit -m "Nuevos cambios en rama testing"
-git push origin testing
+$ git checkout testing
+$ git add -A
+$ git commit -m "Nuevos cambios en rama testing"
+$ git push origin testing
 ```
 
 ![RamasGithub]({{ site.baseurl }}/assets/img/RamasGithub.jpg)
