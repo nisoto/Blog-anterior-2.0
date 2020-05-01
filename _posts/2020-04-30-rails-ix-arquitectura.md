@@ -139,6 +139,28 @@ Hasta el momento hemos visto los siguientes comandos:
 
 Iremos descubriendo nuevos comandos a medida que avancemos en este curso.
 
+## 2. Trabajando en nuestro Blog Personal
+
+A lo largo de este curso construiremos un Blog Personal, por lo que partiremos creando un nuevo controlador de nombre `articles`, el cual contendrá todas las acciones que posee un CRUD básico: listar, crear, editar y eliminar.
+
+Para crear este controlador vamos a la terminal y ejecutamos:
+
+```
+$ rails generate controller articles
+```
+
+Ahora, nos dirigimos a `app/controllers/articles_controller.rb` para crear el método `index`:
+
+``` rb
+class ArticlesController < ApplicationController
+  def index
+    @articles = ["Article 1", "Article 2", "Article 3"]
+  end
+end
+```
+
+Hola amigos.
+
 |     |     |
 |:----|----:|
 | [< Lección N°8](https://nisoto.github.io/rails-viii-ruby-on-rails/){: .btn .btn-info} | [Inicio >](https://nisoto.github.io/blog/){: .btn .btn-info} |
