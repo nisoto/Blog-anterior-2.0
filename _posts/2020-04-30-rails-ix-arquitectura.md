@@ -17,3 +17,7 @@ Lo importante es que no olvides el objetivo principal: ser capaces de crear nues
 ## 2. Los componentes de Rails
 
 Hola amigos.
+
+|     |     |
+|:----|----:|
+| [< Lección N°8](https://nisoto.github.io/rails-viii-ruby-on-rails/){: .btn .btn-info} | [Inicio >](https://nisoto.github.io/blog/){: .btn .btn-info} |
