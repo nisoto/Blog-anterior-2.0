@@ -159,7 +159,37 @@ class ArticlesController < ApplicationController
 end
 ```
 
-Hola amigos.
+**Nota**: Por el momento no vamos a involucrar la base de datos, por lo que trabajaremos sobre un arreglo de Artículos con 3 elementos.
+
+El siguiente paso es crear la vista, la cual debe llevar por nombre `index.html.erb` y debe estar alojada en `app/views/articles`:
+
+``` erb
+<h1>Listado de Artículos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+    </tr>
+  </thead>
+  
+  <tbody>
+    <% @articles.each do |article| %>
+      <tr>
+        <td><%= article %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+```
+
+Por último, debemos crear la ruta. Abrimos `config/routes.rb` y agregamos la siguiente línea de código:
+
+``` rb
+get '/articles', to: 'articles#index'
+```
+
+Si abrimos nuestro navegador e ingresamos a [http://localhost:3000/articles](http://localhost:3000/articles), podremos visualizar los 3 artículos que acabamos de crear en el método index.
 
 |     |     |
 |:----|----:|
