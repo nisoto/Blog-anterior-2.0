@@ -141,7 +141,7 @@ Iremos descubriendo nuevos comandos a medida que avancemos en este curso.
 
 ## 2. Trabajando en nuestro Blog Personal
 
-A lo largo de este curso construiremos un Blog Personal, por lo que partiremos creando un nuevo controlador de nombre `articles`, el cual contendrá todas las acciones que posee un CRUD básico: listar, crear, editar y eliminar. Por el momento solamente nos centraremos en **listar** estos artículos.
+A lo largo de este curso construiremos un Blog Personal, por lo que partiremos creando un nuevo controlador de nombre `articles`, el cual contendrá todas las acciones que posee un CRUD básico: listar, crear, editar y eliminar. Por el momento, solo nos centraremos en **listar** estos artículos.
 
 Para crear el controlador, abrimos la terminal y ejecutamos:
 
