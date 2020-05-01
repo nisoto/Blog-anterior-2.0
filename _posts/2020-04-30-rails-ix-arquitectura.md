@@ -111,7 +111,7 @@ Si ingresamos a [http://localhost:3000/?name=Nicolas](http://localhost:3000/?nam
 
 Debes tener en cuenta que los valores del query string siempre llegan como cadenas de texto, por lo que si deseas otro tipo de dato, se debe convertir manualmente. Por ejemplo:
 
-``` rb
+``` erb
 <h1>En cinco años tendrás <%= params[:age].to_i + 5 %> años</h1>
 ```
 
@@ -126,6 +126,18 @@ Sus principales ventajas son:
 * Las acciones del CRUD están encapsuladas así que se reduce el código y se hace más fácil de comprender.
 * El código es fácil de entender y mantener.
 * Se reduce considerablemente el uso de SQL, lo que implica cierta independencia con el manejador de base de datos que utilizamos.
+
+### 1.5. La aplicación de consola
+
+Una de las razones por las que Ruby on Rails es tan popular se debe a que incorpora una poderosa aplicación de consola que nos permite, entre otras cosas, generar código a través de comandos llamados **generadores**
+
+Hasta el momento hemos visto los siguientes comandos:
+
+* `rails new`, que nos permite crear una nueva aplicación.
+* `rails server`, que nos permite iniciar el servidor.
+* `rails generate controller`, que nos permite crear un controlador.
+
+Iremos descubriendo nuevos comandos a medida que avancemos en este curso.
 
 |     |     |
 |:----|----:|
