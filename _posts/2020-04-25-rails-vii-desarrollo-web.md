@@ -109,8 +109,6 @@ Es una arquitectura muy importante ya que se utiliza tanto en componentes gráfi
 
 Una analogía que nos ayuda bastante a entender este patrón es la televisión. En nuestra televisión podemos ver distintos canales distribuidos por un proveedor (**Modelo**), todos los canales que podemos ver son la **Vista**, y nosotros cambiando de canal, controlando qué ver representamos al **Controlador**.
 
-### 4.1. Funcionamiento
-
 En la web, el MVC funciona de la siguiente manera:
 
 * El usuario manda una petición al navegador: ver un curso de Ruby.
@@ -118,7 +116,7 @@ En la web, el MVC funciona de la siguiente manera:
 * El modelo, que se encarga de los datos de la aplicación, consulta la base de datos y le responde al controlador con los datos que pidió.
 * Una vez que el controlador tiene los datos del curso de Ruby, se los envía a la vista, quien se encarga de aplicar los estilos, organizar la información y construir la página que vemos en el navegador.
 
-En resumen, tenemos lo siguiente:
+Resumamos entonces los conceptos:
 
 1. **Modelo**: Se encarga de los datos generalmente (pero no obligatoriamente) consultando la base de datos. Aquí podemos encontrar tareas como actualizaciones, consultas, búsquedas y un largo etc.
 2. **Vistas**: Son la representación visual de los datos, todo lo que tenga que ver con la interfaz gráfica va aquí. Ni el modelo ni el controlador se preocupan de cómo se verán los datos, esa responsabilidad es únicamente de la vista.
