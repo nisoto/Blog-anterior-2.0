@@ -109,7 +109,7 @@ Por ejemplo, si queremos obtener el valor de una propiedad llamada `name` utiliz
 
 Si ingresamos a [http://localhost:3000/?name=Nicolas](http://localhost:3000/?name=Nicolas), deberíamos ver en pantalla **"Hola Nicolas"**. Puedes probar cambiando el query string con otros nombres.
 
-Debes tener en cuenta que los valores del query string siempre llegan como cadenas de texto, por lo que si deseas otro tipo, se debe convertir manualmente. Por ejemplo:
+Debes tener en cuenta que los valores del query string siempre llegan como cadenas de texto, por lo que si deseas otro tipo de dato, se debe convertir manualmente. Por ejemplo:
 
 ``` erb
 <h1>En cinco años tendrás <%= params[:age].to_i + 5 %> años</h1>
@@ -119,7 +119,13 @@ En este caso, estamos convirtiendo la propiedad `age` a un entero para poder sum
 
 ### 1.4. ActiveRecord
 
-Hola amigos.
+**ActiveRecord** es una clase cuyo propósito es la administración y funcionamiento de los modelos, proporcionándonos la capa **objeto-relacional** que sigue rigurosamente el estándar **ORM**, es decir, **Tablas en Clases, Registros en Objetos y Campos en Atributos**. Esto facilita el entendimiento del código asociado a la base de datos y encapsula la lógica específica, haciendo más fácil su uso para los programadores.
+
+Sus principales ventajas son:
+* Manejo de entidades como objetos.
+* Las acciones del CRUD están encapsuladas así que se reduce el código y se hace más fácil de comprender.
+* El código es fácil de entender y mantener.
+* Se reduce considerablemente el uso de SQL, lo que implica cierta independencia con el manejador de base de datos que utilizamos.
 
 |     |     |
 |:----|----:|
