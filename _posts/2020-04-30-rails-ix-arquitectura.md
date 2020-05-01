@@ -161,7 +161,7 @@ end
 
 **Nota**: Aún no vamos a involucrar la base de datos, por lo que trabajaremos sobre un arreglo de Artículos con 3 elementos.
 
-El siguiente paso es crear la vista, la cual debe llevar por nombre `index.html.erb` y debe estar alojada en `app/views/articles`:
+El siguiente paso es crear la vista de nombre `index.html.erb`, ubicada en `app/views/articles`:
 
 ``` erb
 <h1>Listado de Artículos</h1>
