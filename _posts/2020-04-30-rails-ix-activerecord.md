@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ruby on Rails IX: Arquitectura"
+title: "Ruby on Rails IX: ActiveRecord"
 date: 2020-04-30
 excerpt: "Capítulo N°9 del curso de Ruby on Rails"
 tags: [rails]
