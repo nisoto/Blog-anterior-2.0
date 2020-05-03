@@ -6,15 +6,20 @@ excerpt: "Capítulo N°9 del curso de Ruby on Rails"
 tags: [rails]
 ---
 
-## 1. ¿Qué es?
+## 1. ActiveRecord
 
-**ActiveRecord** es una clase cuyo propósito es la administración y funcionamiento de los modelos, proporcionándonos la capa **objeto-relacional** que sigue rigurosamente el estándar **ORM**, es decir, **Tablas en Clases, Registros en Objetos y Campos en Atributos**. Esto facilita el entendimiento del código asociado a la base de datos y encapsula la lógica específica, haciendo más fácil su uso para los programadores.
+**ActiveRecord** corresponde a una capa que nos permite acceder y manipular la información de la base de datos sin la necesidad de escribir SQL, ya que sigue rigurosamente el estándar **ORM** (Object-Relational Mapping o Mapeo Objeto-Relacional en español), es decir, **Tablas en Clases**, **Registros en Objetos** y **Campos en Atributos**.
 
-Sus principales ventajas son:
-* Manejo de entidades como objetos.
-* Las acciones del CRUD están encapsuladas así que se reduce el código y se hace más fácil de comprender.
-* El código es fácil de entender y mantener.
-* Se reduce considerablemente el uso de SQL, lo que implica cierta independencia con el manejador de base de datos que utilizamos.
+El concepto más importante de ActiveRecord es el **modelo**. Un modelo es una clase de Ruby que, de acuerdo al estándar ORM, representa una tabla en la base de datos:
+
+``` rb
+class Article < ApplicationRecord
+end
+```
+
+No olvidemos que los modelos se encuentran en la carpeta `app/models`.
+
+En Ruby on Rails por convención, el nombre de la tabla en la base de datos es el mismo nombre del modelo pero sin capitalizar y en plural (articles en este caso). Aquí no se definen las columnas de la tabla explícitamente, ya que ActiveRecord las toma de la tabla directamente.
 
 ### 1.5. La aplicación de consola
 
