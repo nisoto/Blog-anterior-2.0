@@ -209,7 +209,7 @@ end
 
 ## 4. ¡No olvidar!
 
-No nos olvidemos de todo lo aprendido en la lección de Ruby Avanzado, ya que Rails trabaja con el lenguaje de programación **Ruby**.
+No olvidemos todo lo aprendido en las lecciones de Ruby básico y avanzado, ya que Rails fue creado para trabajar con este lenguaje de programación.
 
 ### 4.1. Métodos que invocamos sobre la clase
 
