@@ -3,7 +3,7 @@ layout: post
 title:  "Blog Personal"
 image: "/assets/img/ruby3.png"
 date:   2020-04-08
-excerpt: "Curso de Ruby on Rails 6 en donde se implementa un Blog Personal"
+excerpt: "Curso de Ruby on Rails desde cero"
 project: true
 tag:
 - Rails
@@ -11,7 +11,7 @@ tag:
 
 ## Descripción
 
-Implementación de un Blog personal utilizando **Ruby** (versión 2.7.0) y **Ruby on Rails** (versión 6.0.2.2).
+Curso de **Ruby** y **Ruby on Rails** desde cero, donde construiremos un **Blog Personal**.
 
 ## Requisitos
 
