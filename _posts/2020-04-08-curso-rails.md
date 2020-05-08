@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Blog Personal"
+title:  "Ruby on Rails"
 image: "/assets/img/ruby3.png"
 date:   2020-04-08
-excerpt: "Curso de Ruby on Rails desde cero"
+excerpt: "Curso de Ruby on Rails 6 desde cero"
 project: true
 tag:
 - Rails
@@ -11,7 +11,7 @@ tag:
 
 ## Descripción
 
-Curso de **Ruby** y **Ruby on Rails** desde cero, donde construiremos un **Blog Personal**.
+Curso de **Ruby** (versión 2.7.0) y **Ruby on Rails** (versión 6.0.2.2) desde cero.
 
 ## Requisitos
 
