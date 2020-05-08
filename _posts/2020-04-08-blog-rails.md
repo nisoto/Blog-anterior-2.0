@@ -3,7 +3,7 @@ layout: post
 title:  "Blog Personal"
 image: "/assets/img/ruby3.png"
 date:   2020-04-08
-excerpt: "Curso de Ruby on Rails en donde se implementa un Blog personal"
+excerpt: "Curso de Ruby on Rails 6 en donde se implementa un Blog Personal"
 project: true
 tag:
 - Rails
