@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Bases de datos"
-image: "/assets/img/ruby3.png"
+image: "/assets/img/mysql.png"
 date:   2020-04-08
 excerpt: "Curso de Bases de datos desde cero"
 project: true
