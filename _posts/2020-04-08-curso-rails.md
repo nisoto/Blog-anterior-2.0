@@ -3,7 +3,7 @@ layout: post
 title:  "Ruby on Rails"
 image: "/assets/img/ruby3.png"
 date:   2020-04-08
-excerpt: "Curso de Ruby on Rails 6 desde cero"
+excerpt: "Curso de Ruby on Rails desde cero"
 project: true
 tag:
 - Rails
@@ -11,12 +11,14 @@ tag:
 
 ## Descripción
 
-Curso de **Ruby** (versión 2.7.0) y **Ruby on Rails** (versión 6.0.2.2) desde cero.
+Dentro de este curso aprenderás sobre el lenguaje de programación **Ruby** (esencial para el funcionamiento de Rails), a utilizar **Git** y **Github** para controlar las versiones de tus proyectos, y por supuesto **Ruby on Rails**.
 
 ## Requisitos
 
 * Ruby
 * Ruby on Rails
+* Git
+* Cuenta de Github
 * Cualquier editor de código (opcional)
 
 ## Capítulos
