@@ -114,4 +114,4 @@ A partir de lo anterior, un Sistema de Control de Versiones serían todas las he
 
 |     |     |
 |:----|----:|
-| [< Inicio](https://nisoto.github.io/blog-rails/){: .btn .btn-info} | [Lección N°2 >](https://nisoto.github.io/rails-ii-control-de-versiones/){: .btn .btn-info} |
+| [< Inicio](https://nisoto.github.io/curso-rails/){: .btn .btn-info} | [Lección N°2 >](https://nisoto.github.io/rails-ii-control-de-versiones/){: .btn .btn-info} |
