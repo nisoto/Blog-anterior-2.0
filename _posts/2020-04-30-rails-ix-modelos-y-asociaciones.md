@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ruby on Rails IX: Modelos"
+title: "Ruby on Rails IX: Modelos y asociaciones"
 date: 2020-04-30
 excerpt: "Capítulo N°9 del curso de Ruby on Rails"
 tags: [rails]
@@ -209,7 +209,7 @@ end
 
 ## 4. ¡No olvidar!
 
-No olvidemos todo lo aprendido en las lecciones de Ruby básico y avanzado, ya que Rails fue creado para trabajar con este lenguaje de programación.
+No olvidemos lo aprendido en la lección de **Ruby avanzado** respecto a los **Métodos** y **Clases**.
 
 ### 4.1. Métodos que invocamos sobre la clase
 
@@ -236,6 +236,23 @@ article.title = "Segundo articulo"
 article.save
 article.update(title: "Tercer articulo")
 article.destroy
+```
+
+## 5. Asociaciones
+
+Las **asociaciones** se utilizan para definir **relaciones** entre las tablas de una base de datos. Existen dos tipos:
+
+* One to many (Uno a Muchos)
+* Many to many (Muchos a Muchos)
+
+### 5.1. One to many (uno a muchos)
+
+En una relación **Uno a Muchos**, cada registro de una tabla está relacionado a un registro de otra tabla.
+
+Por ejemplo, imaginemos que cada **comentario** pertenece a un único **artículo**. El primer paso será crear el modelo `Comment`:
+
+```
+$ rails g model Comment
 ```
 
 |     |     |
