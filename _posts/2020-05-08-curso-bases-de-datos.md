@@ -11,4 +11,13 @@ tag:
 
 ## Descripción
 
+Dentro de este curso aprenderás todo sobre **SQL** (Lenguaje de Consulta Estructurada), utilizando el Sistema de Gestión de Bases de Datos **MySQL Server**.
+
+## Requisitos
+
+* MySQL
+* Cualquier editor de código (opcional)
+
+## Capítulos
+
 Sin informar.
