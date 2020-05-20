@@ -80,15 +80,19 @@ Supongamos que queremos listar solamente el nombre y apellido del autor Stephen 
 
 A partir de nuestras respuestas podemos construir nuestra consulta mediante pseudocódigo:
 
+```
 Seleccioname el Nombre y Apellido
 De la tabla Autores
 Cuyo Nombre sea Stephen y su Apellido sea King
+```
 
 También podemos ayudarnos del identificador único (Autor_id) para este autor:
 
+```
 Seleccioname el Nombre y Apellido
 De la tabla Autores
 Cuyo Autor_id sea igual a 1
+```
 
 Si llevamos esta sentencia a SQL, tendríamos algo como lo siguiente:
 
