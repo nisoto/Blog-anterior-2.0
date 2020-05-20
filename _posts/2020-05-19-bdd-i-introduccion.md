@@ -56,7 +56,7 @@ SQL comenzó a convertirse en un lenguaje por excelencia en los diversos SGBD, l
 
 ANSI SQL a sufrido varias revisiones y agregados a lo largo del tiempo, siendo **SQL:2016** su última versión.
 
-### 3.2. Grupos de comandos SQL
+### 3.3. Grupos de comandos SQL
 
 Los comandos que podemos utilizar en SQL se dividen en 4 grandes grupos:
 
