@@ -76,3 +76,7 @@ MySQL fue inicialmente desarrollada por **MySQL AB**, la cual fue adquirida por 
 Este gestor es usado por muchos sitios web grandes y populares, como **Wikipedia**, **Google**, **Facebook**, **Twitter** y **YouTube**, entre otros.
 
 Cabe destacar que está desarrollado en su mayor parte con los lenguajes de programación C y C++.
+
+|     |     |
+|:----|----:|
+| [< Inicio](https://nisoto.github.io/curso-bases-de-datos/){: .btn .btn-info} | [Lección N°2 >](https://nisoto.github.io/curso-bases-de-datos/){: .btn .btn-info} |
