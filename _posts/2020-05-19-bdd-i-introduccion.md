@@ -37,4 +37,42 @@ Entre los tantos SGBD que existen destacan **MySQL** (con el cual trabajaremos a
 
 ## 3. SQL
 
-Sin información.
+### 3.1. ¿Qué es?
+
+**Lenguaje Estructurado de Consultas** (**Structured Query Language** por sus siglas en inglés), corresponde a un lenguaje de programación diseñado para almacenar, manipular y recuperar datos en una base de datos relacional
+
+La primera versión de SQL surgió en 1974, cuando un grupo de **IBM** desarrolló el primer prototipo de una base de datos relacional. Años más tarde, **Relational Software** (que luego se convertiría en **Oracle**) lanzó la primera base de datos relacional comercial.
+
+Funcionamiento de SQL:
+
+![FuncionamientoSQL]({{ site.baseurl }}/assets/img/FuncionamientoSQL.jpg)
+
+Importante:
+* SQL **no es considerado** un lenguaje de programación propiamente tal debido a que carece de las estructuras que posee un lenguaje de programación típico (como condicionales y bucles, por ejemplo), por lo que es comúnmente llamado **lenguaje de accceso a datos**.
+
+### 3.2. Estándar SQL
+
+SQL comenzó a convertirse en un lenguaje por excelencia en los diversos SGBD, logrando así que en 1986 sea estandarizado por **ANSI**, dando lugar a la primera versión estándar de este lenguaje: **SQL-86** o **SQL-1**. Al año siguiente, este estándar también es adoptado por **ISO**.
+
+ANSI SQL a sufrido varias revisiones y agregados a lo largo del tiempo, siendo **SQL:2016** su última versión.
+
+### 3.2. Grupos de comandos SQL
+
+Los comandos que podemos utilizar en SQL se dividen en 4 grandes grupos:
+
+1. **DDL**: Cuyas siglas significan **Data Definition Language** (Lenguaje de Definición de Datos), se utilizan para crear y modificar la estructura de una base de datos.
+2. **DML**: Cuyas siglas significan **Data Manipulation Language** (Lenguaje de Manipulación de Datos), se utilizan para seleccionar, insertar, actualizar y borrar de manera definitiva, registros en una base de datos (consultas de selección y acción).
+3. **DCL**: Cuyas siglas significan **Data Control Language** (Lenguaje de Control de Datos), proporcionan seguridad a la información de una base de datos.
+4. **TCL**: Cuyas siglas significan **Transaction Control languaje** (Lenguaje de Control de Transacciones), se preocupan de la gestión de cambios en los datos.
+
+## 4. MySQL
+
+Tal como lo mencionamos en un principio, **MySQL** es un **Sistema de Gestión de Bases de Datos** (SGBD) relacional desarrollado bajo licencia dual: Licencia pública general y Licencia comercial por Oracle.
+
+Es considerada como la base de datos de **código abierto** más popular del mundo (junto a Oracle y Microsoft SQL Server), sobre todo en entornos de desarrollo web.
+
+MySQL fue inicialmente desarrollada por **MySQL AB**, la cual fue adquirida por **Sun Microsystems** en 2008 y luego comprada por **Oracle Corporation** en 2010. Esta última ya era dueña desde el 2005 de **Innobase Oy**, una empresa finlandesa desarrolladora del motor InnoDB para MySQL.
+
+Este gestor es usado por muchos sitios web grandes y populares, como **Wikipedia**, **Google**, **Facebook**, **Twitter** y **YouTube**, entre otros.
+
+Cabe destacar que está desarrollado en su mayor parte con los lenguajes de programación C y C++.
