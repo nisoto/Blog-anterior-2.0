@@ -79,4 +79,4 @@ Cabe destacar que está desarrollado en su mayor parte con los lenguajes de prog
 
 |     |     |
 |:----|----:|
-| [< Inicio](https://nisoto.github.io/curso-bases-de-datos/){: .btn .btn-info} | [Lección N°2 >](https://nisoto.github.io/curso-bases-de-datos/){: .btn .btn-info} |
+| [< Inicio](https://nisoto.github.io/curso-bases-de-datos/){: .btn .btn-info} | [Lección N°2 >](https://nisoto.github.io/bdd-ii-primera-sentencia/){: .btn .btn-info} |
