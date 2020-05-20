@@ -10,7 +10,7 @@ tags: [mysql]
 
 Tal como lo vimos en el capítulo anterior, los comandos en SQL se dividen en 4 grupos:
 
-### 1.1. Data Definition Language (DDL)
+#### 1. Data Definition Language (DDL)
 
 **Lenguaje de Definición de Datos** en español, se utilizan para crear y modificar la estructura de una base de datos.
 
@@ -19,7 +19,7 @@ Tal como lo vimos en el capítulo anterior, los comandos en SQL se dividen en 4 
 * DROP
 * TRUNCATE
 
-### 1.2. Data Manipulation Language (DML) 
+#### 2. Data Manipulation Language (DML) 
 
 **Lenguaje de Manipulación de Datos** en español, se utilizan para seleccionar, insertar, actualizar y borrar de manera definitiva, registros en una base de datos (consultas de selección y acción).
 
@@ -28,14 +28,14 @@ Tal como lo vimos en el capítulo anterior, los comandos en SQL se dividen en 4 
 * UPDATE
 * DELETE
 
-### 1.3. Data Control Language (DCL)
+#### 3. Data Control Language (DCL)
 
 **Lenguaje de Control de Datos** en español, proporcionan seguridad a la información de una base de datos.
 
 * GRANT
 * REVOKE
 
-### 1.4. Transaction Control languaje (TCL)
+#### 4. Transaction Control languaje (TCL)
 
 **Lenguaje de Control de Transacciones** en español, se preocupan de la gestión de cambios en los datos.
 
