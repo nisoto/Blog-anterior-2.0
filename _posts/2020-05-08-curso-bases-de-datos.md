@@ -21,3 +21,4 @@ Dentro de este curso aprenderás todo sobre **SQL** (Lenguaje de Consulta Estruc
 ## Capítulos
 
 1. [Introducción](https://nisoto.github.io/bdd-i-introduccion/)
+2. [Primera sentencia](https://nisoto.github.io/bdd-ii-primera-sentencia/)
