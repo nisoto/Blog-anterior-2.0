@@ -8,50 +8,35 @@ tags: [mysql]
 
 ## 1. Grupos de comandos SQL
 
-Tal como lo vimos en el capítulo anterior, los comandos en SQL se dividen en 4 grupos:
+Tal como lo vimos en el capítulo anterior, los comandos en SQL se dividen en 4 importantes grupos:
 
-#### 1. Data Definition Language (DDL)
-
-**Lenguaje de Definición de Datos** en español, se utilizan para crear y modificar la estructura de una base de datos.
-
-* CREATE
-* ALTER
-* DROP
-* TRUNCATE
-
-#### 2. Data Manipulation Language (DML) 
-
-**Lenguaje de Manipulación de Datos** en español, se utilizan para seleccionar, insertar, actualizar y borrar de manera definitiva, registros en una base de datos (consultas de selección y acción).
-
-* SELECT
-* INSERT
-* UPDATE
-* DELETE
-
-#### 3. Data Control Language (DCL)
-
-**Lenguaje de Control de Datos** en español, proporcionan seguridad a la información de una base de datos.
-
-* GRANT
-* REVOKE
-
-#### 4. Transaction Control languaje (TCL)
-
-**Lenguaje de Control de Transacciones** en español, se preocupan de la gestión de cambios en los datos.
-
-* COMMIT
-* ROLLBACK
-* SAVEPOINT
+1. **Data Definition Language (DDL)**: Lenguaje de Definición de Datos en español, se utilizan para crear y modificar la estructura de una base de datos.
+   * CREATE
+   * ALTER
+   * DROP
+   * TRUNCATE
+2. **Data Manipulation Language (DML)**: Lenguaje de Manipulación de Datos en español, se utilizan para seleccionar, insertar, actualizar y borrar de manera definitiva, registros en una base de datos (consultas de selección y acción).
+   * SELECT
+   * INSERT
+   * UPDATE
+   * DELETE
+3. **Data Control Language (DCL)**: Lenguaje de Control de Datos en español, proporcionan seguridad a la información de una base de datos.
+   * GRANT
+   * REVOKE
+4. **Transaction Control languaje (TCL)**: Lenguaje de Control de Transacciones en español, se preocupan de la gestión de cambios en los datos.
+   * COMMIT
+   * ROLLBACK
+   * SAVEPOINT
 
 ## 2. Cláusulas
 
 Las cláusulas en SQL corresponden a las condiciones que modificarán nuestras consultas y son utilizadas para definir los datos que deseamos manipular.
 
-1. FROM: Especifica la **tabla** de la que se quieren obtener los registros.
-2. WHERE: Especifica las condiciones o criterios de los registros seleccionados.
-3. GROUP BY: Nos permite agrupar los registros seleccionados en función de un campo.
-4. HAVING: Especifica las condiciones o criterios que deben cumplir los grupos (GROUP BY).
-5. ORDER BY: Ordena los registros seleccionados en función de un campo.
+1. **FROM**: Especifica la tabla de la que se quieren obtener los registros.
+2. **WHERE**: Especifica las condiciones o criterios de los registros seleccionados.
+3. **GROUP BY**: Nos permite agrupar los registros seleccionados en función de un campo.
+4. **HAVING**: Especifica las condiciones o criterios que deben cumplir los grupos (GROUP BY).
+5. **ORDER BY**: Ordena los registros seleccionados en función de un campo.
 
 Debemos tener en cuenta que las cláusulas tienen cierto **orden de escritura** (FROM, WHERE, GROUP BY, HAVING y ORDER BY respectivamente).
 
@@ -63,9 +48,13 @@ A partir de los apartados anteriores, una instrucción SQL corresponderá a la u
 
 Hay que tener en cuenta que una instrucción SQL no necesariamente debe contar con estos 4 componentes (eso dependerá de su complejidad). Los componentes **Comando** y **Cláusula** son obligatorios.
 
+**Nota**: Tanto los Operadores como las Funciones de agregado las veremos en detalle en capítulos posteriores.
+
 ## 4. Primera sentencia SQL
 
 Para construir nuestra primera sentencia, vamos a considerar la siguiente tabla que almacena los datos de ciertos autores de novelas:
+
+![TablaAutores]({{ site.baseurl }}/assets/img/TablaAutores.png)
 
 | Autor_id | Nombre  | Apellido | Seudonimo       | Genero | Fecha_nacimiento | Pais_origen |
 |:--------:|:-------:|:--------:|:---------------:|:------:|:----------------:|:-----------:|
