@@ -56,11 +56,6 @@ Para construir nuestra primera sentencia, vamos a considerar la siguiente tabla 
 
 ![TablaAutores]({{ site.baseurl }}/assets/img/TablaAutores.png)
 
-| Autor_id | Nombre  | Apellido | Seudonimo       | Genero | Fecha_nacimiento | Pais_origen |
-|:--------:|:-------:|:--------:|:---------------:|:------:|:----------------:|:-----------:|
-| 1        | Stephen | King     | Richard Bachman | M      | 27-09-1947       | USA         |
-| 2        | Joanne  | Rowling  | J. K. Rowling   | F      | 25-09-1947       | Reino Unido |
-
 Supongamos que queremos listar solamente el nombre y apellido del autor Stephen King. Para ello, debemos hacernos como mínimo estas 3 preguntas:
 
 1. ¿Qué datos nos están pidiendo? El **nombre** y **apellido**.
