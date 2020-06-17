@@ -36,4 +36,4 @@ Dentro de este curso aprenderás sobre el lenguaje de programación **Ruby** (es
 ### Implementación
 
 1. [¡Por fin Rails!](https://nisoto.github.io/rails-viii-ruby-on-rails/)
-2. Modelos y asociaciones
+2. [Modelos y Asociaciones](https://nisoto.github.io/rails-ix-modelos-y-asociaciones/)
