@@ -98,6 +98,7 @@ Este proceso consiste en desglosar los campos definidos en la etapa anterior par
 
 Una vez hayamos normalizado nuestra tabla, podemos crearla en la Base de Datos utilizando el comando **CREATE**:
 
+``` sql
 CREATE TABLE autores(
 autor_id INT,
 nombre VARCHAR(30),
@@ -106,5 +107,6 @@ genero CHAR(1),
 fecha_nacimiento DATE,
 pais_origen VARCHAR(40)
 );
+```
 
 **Nota**: El siguiente apartado detalla los tipos de datos existentes en cualquier SGBD y sus limitaciones.
