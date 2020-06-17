@@ -26,7 +26,7 @@ Para imprimir el valor de nuestras variables, utilizamos el comando **SELECT**:
 select @variable;
 ```
 
-**Nota:** Más adelante veremos en detalle el comando `SELECT`.
+**Nota**: Más adelante veremos en detalle el comando `SELECT`.
 
 Ejemplos:
 
