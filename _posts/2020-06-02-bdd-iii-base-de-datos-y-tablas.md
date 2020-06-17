@@ -110,3 +110,7 @@ pais_origen VARCHAR(40)
 ```
 
 **Nota**: El siguiente apartado detalla los tipos de datos existentes en cualquier SGBD y sus limitaciones.
+
+## 4. Tipos de datos
+
+Hola.
