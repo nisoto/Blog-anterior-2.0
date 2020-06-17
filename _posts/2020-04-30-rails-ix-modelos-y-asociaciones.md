@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ruby on Rails IX: Modelos y asociaciones"
+title: "Ruby on Rails IX: Modelos y Asociaciones"
 date: 2020-04-30
 excerpt: "Capítulo N°9 del curso de Ruby on Rails"
 tags: [rails]
