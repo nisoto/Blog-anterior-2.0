@@ -6,7 +6,7 @@ excerpt: "Capítulo N°3 del curso de Bases de Datos"
 tags: [mysql]
 ---
 
-# 1. Variables
+## 1. Variables
 
 No olvidemos que una **variable** corresponde a un espacio reservado en la memoria que, como su nombre lo indica, puede cambiar su contenido a lo largo de la ejecución de un programa. En MySQL podemos declarar una variable de la siguiente manera:
 
