@@ -21,5 +21,6 @@ Dentro de este curso aprenderás todo sobre **SQL** (Lenguaje de Consulta Estruc
 ## Capítulos
 
 1. [Introducción](https://slides.com/nisoto4004/leccion-n-1-mysql): Presentación del curso y definiciones básicas.
-2. [Bases de datos y tablas](https://nisoto.github.io/bdd-ii-primera-sentencia/)
-4. [Insertar registros](#)
+2. [Bases de datos y tablas](https://slides.com/nisoto4004/leccion-n-2-mysql): Crear y manipular bases de datos, tablas y variables.
+4. [Insertar registros](#): Insertar uno o varios registros a una tabla.
+5. Hola
