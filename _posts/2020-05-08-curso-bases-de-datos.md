@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Bases de datos"
+title:  "MySQL"
 image: "/assets/img/mysql3.png"
 date:   2020-05-08
-excerpt: "Curso de Bases de datos desde cero"
+excerpt: "Curso de MySQL desde cero"
 project: true
 tag:
 - BDD
