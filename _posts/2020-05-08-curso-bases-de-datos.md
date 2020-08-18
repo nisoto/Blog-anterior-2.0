@@ -15,8 +15,8 @@ Dentro de este curso aprenderás todo sobre **SQL** (Lenguaje de Consulta Estruc
 
 ## Requisitos
 
-* MySQL
-* Cualquier editor de código (opcional)
+* MySQL.
+* Cualquier editor de código (opcional).
 
 ## Capítulos
 
