@@ -30,3 +30,14 @@ Dentro de este curso aprenderás todo sobre **SQL** (Lenguaje de Consulta Estruc
 8. [Funciones](https://slides.com/nisoto4004/leccion-n-8-mysql)
 9. [Búsqueda y ordenamiento](https://slides.com/nisoto4004/leccion-n-9-mysql)
 10. [Funciones de agregación](https://slides.com/nisoto4004/leccion-n-10-mysql)
+11. [Agrupamiento](https://slides.com/nisoto4004/leccion-n-11-mysql)
+12. [Unir resultados](https://slides.com/nisoto4004/leccion-n-12-mysql)
+13. [Subconsultas](https://slides.com/nisoto4004/leccion-n-13-mysql)
+14. [Cláusula JOIN](https://slides.com/nisoto4004/leccion-n-14-mysql)
+15. [Vistas](https://slides.com/nisoto4004/leccion-n-15-mysql)
+
+## Anexos
+
+1. [Repaso de contenidos N°1](https://slides.com/nisoto4004/repaso-n-1-mysql)
+2. [Ejercicios prácticos N°1](https://slides.com/nisoto4004/ejercicios-n-1-mysql)
+3. [Ejercicios prácticos N°2](https://slides.com/nisoto4004/ejercicios-n-2-mysql)
