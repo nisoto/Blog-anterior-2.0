@@ -29,3 +29,4 @@ Dentro de este curso aprenderás todo sobre **SQL** (Lenguaje de Consulta Estruc
 7. [Actualizar/Eliminar registros](https://slides.com/nisoto4004/leccion-n-7-mysql)
 8. [Funciones](https://slides.com/nisoto4004/leccion-n-8-mysql)
 9. [Búsqueda y ordenamiento](https://slides.com/nisoto4004/leccion-n-9-mysql)
+10. [Funciones de agregación](https://slides.com/nisoto4004/leccion-n-10-mysql)
