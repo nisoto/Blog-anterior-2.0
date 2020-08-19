@@ -24,3 +24,4 @@ Dentro de este curso aprenderás todo sobre **SQL** (Lenguaje de Consulta Estruc
 2. [Bases de datos y tablas](https://slides.com/nisoto4004/leccion-n-2-mysql)
 3. [Insertar registros](https://slides.com/nisoto4004/leccion-n-3-mysql)
 4. [Restricciones](https://slides.com/nisoto4004/leccion-n-4-mysql)
+5. [Modificar tablas](https://slides.com/nisoto4004/leccion-n-5-mysql)
