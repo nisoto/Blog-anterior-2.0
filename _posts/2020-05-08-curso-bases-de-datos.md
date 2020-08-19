@@ -38,6 +38,6 @@ Dentro de este curso aprenderás todo sobre **SQL** (Lenguaje de Consulta Estruc
 
 ## Anexos
 
-1. [Repaso de contenidos N°1](https://slides.com/nisoto4004/repaso-n-1-mysql)
-2. [Ejercicios prácticos N°1](https://slides.com/nisoto4004/ejercicios-n-1-mysql)
-3. [Ejercicios prácticos N°2](https://slides.com/nisoto4004/ejercicios-n-2-mysql)
+1. [Repaso de contenidos 1](https://slides.com/nisoto4004/repaso-n-1-mysql)
+2. [Ejercicios prácticos 1](https://slides.com/nisoto4004/ejercicios-n-1-mysql)
+3. [Ejercicios prácticos 2](https://slides.com/nisoto4004/ejercicios-n-2-mysql)
