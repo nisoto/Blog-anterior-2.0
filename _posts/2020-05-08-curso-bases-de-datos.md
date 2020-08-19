@@ -26,3 +26,5 @@ Dentro de este curso aprenderás todo sobre **SQL** (Lenguaje de Consulta Estruc
 4. [Restricciones](https://slides.com/nisoto4004/leccion-n-4-mysql)
 5. [Modificar tablas](https://slides.com/nisoto4004/leccion-n-5-mysql)
 6. [Cláusula SELECT](https://slides.com/nisoto4004/leccion-n-6-mysql)
+7. [Actualizar/Eliminar registros](https://slides.com/nisoto4004/leccion-n-7-mysql)
+8. [Funciones](https://slides.com/nisoto4004/leccion-n-8-mysql)
