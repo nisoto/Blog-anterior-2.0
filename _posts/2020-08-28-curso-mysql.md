@@ -15,8 +15,8 @@ En este curso aprenderás todo sobre **SQL** (Lenguaje de Consulta Estructurada)
 
 ## Requisitos
 
-* MySQL.
-* Cualquier editor de código (opcional).
+* MySQL
+* Cualquier editor de código (opcional)
 
 ## Capítulos
 
