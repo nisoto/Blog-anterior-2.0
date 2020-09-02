@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "Ruby on Rails"
+title:  "Ruby"
 image: "/assets/img/ruby3.png"
-date:   2020-08-31
-excerpt: "Curso de Ruby on Rails desde cero"
+date:   2020-09-01
+excerpt: "Curso de Ruby desde cero"
 project: true
 tag:
-- Rails
+- Ruby
 ---
 
 ## Descripción
