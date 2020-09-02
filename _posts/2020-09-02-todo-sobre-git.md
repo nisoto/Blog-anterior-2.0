@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Todo sobre Git y Github"
-date: 2020-09-03
+date: 2020-09-02
 excerpt: "Todo lo que necesitas saber sobre Git y Github"
 tags: [git]
 ---
