@@ -335,3 +335,7 @@ Existen otras funcionalidades en Github que son bastante útiles sobre todo si e
 
 1. **Issues**: Nos sirven para reportar nuevas ideas, mejoras, tareas o errores en nuestro proyecto.
 2. **Pull Request**: Nos permite subir al repositorio nuevos cambios (como la corrección de algunos errores y/o mejoras al proyecto), lo cual debe ser previamente revisado por todos los colaboradores del equipo para confirmar o rechazar estas nuevas mejoras.
+
+|     |     |
+|:----|----:|
+| [< Volver](https://nisoto.github.io/curso-git/){: .btn .btn-info} | [Explorar >](https://nisoto.github.io/blog/){: .btn .btn-info} |
