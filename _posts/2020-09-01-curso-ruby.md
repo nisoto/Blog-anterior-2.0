@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Ruby"
+title:  "Curso de Ruby"
 image: "/assets/img/ruby3.png"
 date:   2020-09-01
-excerpt: "Curso de Ruby desde cero"
+excerpt: ""
 project: true
 tag:
 - Ruby
