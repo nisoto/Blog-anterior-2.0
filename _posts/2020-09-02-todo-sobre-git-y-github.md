@@ -338,4 +338,4 @@ Existen otras funcionalidades en Github que son bastante útiles sobre todo si e
 
 |     |     |
 |:----|----:|
-| [< Volver](https://nisoto.github.io/curso-git/){: .btn .btn-info} | [Explorar >](https://nisoto.github.io/blog/){: .btn .btn-info} |
+| [< Volver a Git](https://nisoto.github.io/curso-git/){: .btn .btn-info} | [Seguir explorando >](https://nisoto.github.io/blog/){: .btn .btn-info} |
