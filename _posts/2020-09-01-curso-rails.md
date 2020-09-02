@@ -2,7 +2,7 @@
 layout: post
 title:  "Ruby on Rails"
 image: "/assets/img/ruby3.png"
-date:   2020-04-08
+date:   2020-09-01
 excerpt: "Curso de Ruby on Rails desde cero"
 project: true
 tag:
