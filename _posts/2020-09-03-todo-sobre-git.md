@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Ruby on Rails VI: Git"
-date: 2020-04-22
-excerpt: "Capítulo N°6 del curso de Ruby on Rails"
-tags: [rails]
+title: "Todo sobre Git y Github"
+date: 2020-09-03
+excerpt: "Todo lo que necesitas saber sobre Git y Github"
+tags: [git]
 ---
 
 ## 1. ¿Qué es Git?
@@ -335,7 +335,3 @@ Existen otras funcionalidades en Github que son bastante útiles sobre todo si e
 
 1. **Issues**: Nos sirven para reportar nuevas ideas, mejoras, tareas o errores en nuestro proyecto.
 2. **Pull Request**: Nos permite subir al repositorio nuevos cambios (como la corrección de algunos errores y/o mejoras al proyecto), lo cual debe ser previamente revisado por todos los colaboradores del equipo para confirmar o rechazar estas nuevas mejoras.
-
-|     |     |
-|:----|----:|
-| [< Lección N°5](https://nisoto.github.io/rails-v-ruby-avanzado/){: .btn .btn-info} | [Lección N°7 >](https://nisoto.github.io/rails-vii-desarrollo-web/){: .btn .btn-info} |
