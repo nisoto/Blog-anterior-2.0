@@ -2,7 +2,7 @@
 layout: post
 title:  "MySQL"
 image: "/assets/img/mysql3.png"
-date:   2020-09-01
+date:   2020-08-28
 excerpt: "Curso de MySQL desde cero"
 project: true
 tag:
